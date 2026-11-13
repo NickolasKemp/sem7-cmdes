@@ -1,0 +1,16 @@
+{
+  "name": "airport-petri",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Курсова робота: імітаційна модель аеропорту на основі стохастичної мережі Петрі",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.0"
+  }
+}

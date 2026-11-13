@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="72" y="30" font-size="19" font-weight="600" fill="#1d2433">Час обчислення від кількості оброблених подій ν·T</text>
+  <text x="72" y="48" font-size="13" fill="#6b7686">послідовна мережа, N = 100; змінюється T (λ = 1) або λ (T = 500)</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#dfe4ec"/>
+  <text x="62" y="412" font-size="11" text-anchor="end" fill="#6b7686">0</text>
+  <line x1="72" y1="321" x2="872" y2="321" stroke="#dfe4ec"/>
+  <text x="62" y="325" font-size="11" text-anchor="end" fill="#6b7686">50</text>
+  <line x1="72" y1="234" x2="872" y2="234" stroke="#dfe4ec"/>
+  <text x="62" y="238" font-size="11" text-anchor="end" fill="#6b7686">100</text>
+  <line x1="72" y1="147" x2="872" y2="147" stroke="#dfe4ec"/>
+  <text x="62" y="151" font-size="11" text-anchor="end" fill="#6b7686">150</text>
+  <line x1="72" y1="60" x2="872" y2="60" stroke="#dfe4ec"/>
+  <text x="62" y="64" font-size="11" text-anchor="end" fill="#6b7686">200</text>
+  <text x="72" y="428" font-size="11" text-anchor="middle" fill="#6b7686">24.02</text>
+  <text x="232.00000000000003" y="428" font-size="11" text-anchor="middle" fill="#6b7686">43.91</text>
+  <text x="392" y="428" font-size="11" text-anchor="middle" fill="#6b7686">63.79</text>
+  <text x="552" y="428" font-size="11" text-anchor="middle" fill="#6b7686">83.68</text>
+  <text x="712" y="428" font-size="11" text-anchor="middle" fill="#6b7686">103.56</text>
+  <text x="872" y="428" font-size="11" text-anchor="middle" fill="#6b7686">123.45</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#1d2433"/>
+  <line x1="72" y1="60" x2="72" y2="408" stroke="#1d2433"/>
+  <text x="472" y="452" font-size="12" text-anchor="middle" fill="#6b7686">кількість подій за інтервал моделювання, тис.</text>
+  <text x="18" y="234" font-size="12" text-anchor="middle" fill="#6b7686" transform="rotate(-90 18 234)">час обчислення, мс</text>
+  <path d="M79.9,349.2 L271.9,294.3 L458.3,238.7 L665.3,177.7 L872.0,118.9" fill="none" stroke="#4c7ef3" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="79.90908176606658" cy="349.2209155800003" r="4" fill="#4c7ef3"/>
+  <circle cx="271.8752891481444" cy="294.3468974999989" r="4" fill="#4c7ef3"/>
+  <circle cx="458.29789801870663" cy="238.69096692000042" r="4" fill="#4c7ef3"/>
+  <circle cx="665.3420496831942" cy="177.74398865999777" r="4" fill="#4c7ef3"/>
+  <circle cx="872" cy="118.88739942000126" r="4" fill="#4c7ef3"/>
+  <path d="M72.0,354.9 L271.9,299.5 L493.7,237.6 L663.0,185.8 L865.5,119.5" fill="none" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="354.88236749999743" r="4" fill="#e8590c"/>
+  <circle cx="271.8752891481444" cy="299.5050561600033" r="4" fill="#e8590c"/>
+  <circle cx="493.7479633913306" cy="237.63812250000294" r="4" fill="#e8590c"/>
+  <circle cx="662.9926581514634" cy="185.7883705799993" r="4" fill="#e8590c"/>
+  <circle cx="865.5472191491501" cy="119.51633808000082" r="4" fill="#e8590c"/>
+  <line x1="72" y1="478" x2="98" y2="478" stroke="#4c7ef3" stroke-width="3"/>
+  <text x="104" y="482" font-size="12" fill="#1d2433">змінюється час моделювання T</text>
+  <line x1="302.79999999999995" y1="478" x2="328.79999999999995" y2="478" stroke="#e8590c" stroke-width="3"/>
+  <text x="334.79999999999995" y="482" font-size="12" fill="#1d2433">змінюється інтенсивність λ</text>
+</svg>

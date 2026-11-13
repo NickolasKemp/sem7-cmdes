@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="72" y="30" font-size="19" font-weight="600" fill="#1d2433">Виручка автопідприємства за день</text>
+  <text x="72" y="48" font-size="13" fill="#6b7686">плата за проїзд 20 грн; недоотримана виручка — пасажири, що пішли на інший маршрут</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#dfe4ec"/>
+  <text x="62" y="412" font-size="11" text-anchor="end" fill="#6b7686">0</text>
+  <line x1="72" y1="338.4" x2="872" y2="338.4" stroke="#dfe4ec"/>
+  <text x="62" y="342.4" font-size="11" text-anchor="end" fill="#6b7686">5 000</text>
+  <line x1="72" y1="268.79999999999995" x2="872" y2="268.79999999999995" stroke="#dfe4ec"/>
+  <text x="62" y="272.79999999999995" font-size="11" text-anchor="end" fill="#6b7686">10 000</text>
+  <line x1="72" y1="199.20000000000002" x2="872" y2="199.20000000000002" stroke="#dfe4ec"/>
+  <text x="62" y="203.20000000000002" font-size="11" text-anchor="end" fill="#6b7686">15 000</text>
+  <line x1="72" y1="129.59999999999997" x2="872" y2="129.59999999999997" stroke="#dfe4ec"/>
+  <text x="62" y="133.59999999999997" font-size="11" text-anchor="end" fill="#6b7686">20 000</text>
+  <line x1="72" y1="60" x2="872" y2="60" stroke="#dfe4ec"/>
+  <text x="62" y="64" font-size="11" text-anchor="end" fill="#6b7686">25 000</text>
+  <text x="72" y="428" font-size="11" text-anchor="middle" fill="#6b7686">5</text>
+  <text x="272" y="428" font-size="11" text-anchor="middle" fill="#6b7686">10</text>
+  <text x="472" y="428" font-size="11" text-anchor="middle" fill="#6b7686">15</text>
+  <text x="672" y="428" font-size="11" text-anchor="middle" fill="#6b7686">20</text>
+  <text x="872" y="428" font-size="11" text-anchor="middle" fill="#6b7686">25</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#1d2433"/>
+  <line x1="72" y1="60" x2="72" y2="408" stroke="#1d2433"/>
+  <text x="472" y="452" font-size="12" text-anchor="middle" fill="#6b7686">кількість місць у мікроавтобусі n</text>
+  <text x="18" y="234" font-size="12" text-anchor="middle" fill="#6b7686" transform="rotate(-90 18 234)">гривень за день</text>
+  <path d="M72.0,375.2 L112.0,368.5 L152.0,362.1 L192.0,355.6 L232.0,349.2 L272.0,342.9 L312.0,336.5 L352.0,330.2 L392.0,324.0 L432.0,317.5 L472.0,311.0 L512.0,305.1 L552.0,299.1 L592.0,292.7 L632.0,286.9 L672.0,280.5 L712.0,274.9 L752.0,268.7 L792.0,263.4 L832.0,257.8 L872.0,252.4" fill="none" stroke="#2f9e44" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="375.23928" r="4" fill="#2f9e44"/>
+  <circle cx="112" cy="368.511744" r="4" fill="#2f9e44"/>
+  <circle cx="152" cy="362.076528" r="4" fill="#2f9e44"/>
+  <circle cx="192" cy="355.582848" r="4" fill="#2f9e44"/>
+  <circle cx="232" cy="349.193568" r="4" fill="#2f9e44"/>
+  <circle cx="272" cy="342.89615999999995" r="4" fill="#2f9e44"/>
+  <circle cx="312" cy="336.462336" r="4" fill="#2f9e44"/>
+  <circle cx="352" cy="330.24287999999996" r="4" fill="#2f9e44"/>
+  <circle cx="392" cy="323.980272" r="4" fill="#2f9e44"/>
+  <circle cx="432" cy="317.458752" r="4" fill="#2f9e44"/>
+  <circle cx="472" cy="310.99152000000004" r="4" fill="#2f9e44"/>
+  <circle cx="512" cy="305.147904" r="4" fill="#2f9e44"/>
+  <circle cx="552" cy="299.12193599999995" r="4" fill="#2f9e44"/>
+  <circle cx="592" cy="292.71734399999997" r="4" fill="#2f9e44"/>
+  <circle cx="632" cy="286.9377600000001" r="4" fill="#2f9e44"/>
+  <circle cx="672" cy="280.46635200000003" r="4" fill="#2f9e44"/>
+  <circle cx="712" cy="274.857984" r="4" fill="#2f9e44"/>
+  <circle cx="752" cy="268.6705439999999" r="4" fill="#2f9e44"/>
+  <circle cx="792" cy="263.41156800000005" r="4" fill="#2f9e44"/>
+  <circle cx="832" cy="257.80459199999984" r="4" fill="#2f9e44"/>
+  <circle cx="872" cy="252.41894400000004" r="4" fill="#2f9e44"/>
+  <path d="M72.0,115.3 L112.0,121.9 L152.0,128.4 L192.0,134.7 L232.0,141.0 L272.0,147.0 L312.0,153.6 L352.0,159.6 L392.0,165.8 L432.0,172.1 L472.0,178.3 L512.0,184.2 L552.0,190.2 L592.0,196.4 L632.0,202.0 L672.0,208.4 L712.0,214.1 L752.0,220.4 L792.0,225.4 L832.0,231.5 L872.0,236.9" fill="none" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="115.29719999999992" r="4" fill="#e8590c"/>
+  <circle cx="112" cy="121.93425600000006" r="4" fill="#e8590c"/>
+  <circle cx="152" cy="128.3611200000002" r="4" fill="#e8590c"/>
+  <circle cx="192" cy="134.73508799999996" r="4" fill="#e8590c"/>
+  <circle cx="232" cy="140.9573280000002" r="4" fill="#e8590c"/>
+  <circle cx="272" cy="147.01531199999982" r="4" fill="#e8590c"/>
+  <circle cx="312" cy="153.55353600000026" r="4" fill="#e8590c"/>
+  <circle cx="352" cy="159.612912" r="4" fill="#e8590c"/>
+  <circle cx="392" cy="165.83793599999984" r="4" fill="#e8590c"/>
+  <circle cx="432" cy="172.140912" r="4" fill="#e8590c"/>
+  <circle cx="472" cy="178.29494399999996" r="4" fill="#e8590c"/>
+  <circle cx="512" cy="184.21511999999998" r="4" fill="#e8590c"/>
+  <circle cx="552" cy="190.2257759999999" r="4" fill="#e8590c"/>
+  <circle cx="592" cy="196.377024" r="4" fill="#e8590c"/>
+  <circle cx="632" cy="202.00209599999994" r="4" fill="#e8590c"/>
+  <circle cx="672" cy="208.38302399999995" r="4" fill="#e8590c"/>
+  <circle cx="712" cy="214.07491199999998" r="4" fill="#e8590c"/>
+  <circle cx="752" cy="220.4405279999999" r="4" fill="#e8590c"/>
+  <circle cx="792" cy="225.36264000000008" r="4" fill="#e8590c"/>
+  <circle cx="832" cy="231.49857599999996" r="4" fill="#e8590c"/>
+  <circle cx="872" cy="236.91345600000002" r="4" fill="#e8590c"/>
+  <line x1="72" y1="478" x2="98" y2="478" stroke="#2f9e44" stroke-width="3"/>
+  <text x="104" y="482" font-size="12" fill="#1d2433">виручка</text>
+  <line x1="164.2" y1="478" x2="190.2" y2="478" stroke="#e8590c" stroke-width="3"/>
+  <text x="196.2" y="482" font-size="12" fill="#1d2433">недоотримано</text>
+</svg>

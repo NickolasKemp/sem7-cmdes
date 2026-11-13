@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="400" viewBox="0 0 470 400" font-family="Arial, Helvetica, sans-serif">
+<rect width="470" height="400" fill="#fff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z"/></marker></defs>
+<polyline points="20,180 130,180" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#a)"/>
+<polyline points="130,180 130,50 230,50" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#a)"/>
+<polyline points="270,50 290,50" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="330,50 380,50 380,180" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="130,180 130,130 230,130" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#a)"/>
+<polyline points="270,130 290,130" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="330,130 380,130 380,180" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="130,180 130,310 230,310" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#a)"/>
+<polyline points="270,310 290,310" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="330,310 380,310 380,180" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="380,180 440,180" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="230" y="30" width="40" height="40" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<line x1="238" y1="30" x2="238" y2="70" stroke="#000"/>
+<line x1="246" y1="30" x2="246" y2="70" stroke="#000"/>
+<line x1="254" y1="30" x2="254" y2="70" stroke="#000"/>
+<line x1="262" y1="30" x2="262" y2="70" stroke="#000"/>
+<rect x="230" y="110" width="40" height="40" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<line x1="238" y1="110" x2="238" y2="150" stroke="#000"/>
+<line x1="246" y1="110" x2="246" y2="150" stroke="#000"/>
+<line x1="254" y1="110" x2="254" y2="150" stroke="#000"/>
+<line x1="262" y1="110" x2="262" y2="150" stroke="#000"/>
+<rect x="230" y="290" width="40" height="40" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<line x1="238" y1="290" x2="238" y2="330" stroke="#000"/>
+<line x1="246" y1="290" x2="246" y2="330" stroke="#000"/>
+<line x1="254" y1="290" x2="254" y2="330" stroke="#000"/>
+<line x1="262" y1="290" x2="262" y2="330" stroke="#000"/>
+<circle cx="310" cy="50" r="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="310" y="55" font-size="13" text-anchor="middle">D1</text>
+<circle cx="310" cy="130" r="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="310" y="135" font-size="13" text-anchor="middle">D2</text>
+<circle cx="310" cy="310" r="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="310" y="315" font-size="13" text-anchor="middle">DN</text>
+<text x="20" y="170" font-size="13" text-anchor="start">t = exp(1)</text>
+<text x="138" y="42" font-size="13" text-anchor="start">p = 1/N</text>
+<text x="280" y="22" font-size="13" text-anchor="middle">СМО 1</text>
+<text x="138" y="122" font-size="13" text-anchor="start">p = 1/N</text>
+<text x="280" y="102" font-size="13" text-anchor="middle">СМО 2</text>
+<text x="138" y="302" font-size="13" text-anchor="start">p = 1/N</text>
+<text x="280" y="282" font-size="13" text-anchor="middle">СМО N</text>
+<text x="280" y="225" font-size="13" text-anchor="middle" font-weight="bold">…</text>
+<text x="388" y="170" font-size="13" text-anchor="start" fill="#555555">вихід</text>
+<text x="20" y="380" font-size="13" text-anchor="start" fill="#555555">у кожній СМО t = exp(0,3); вимога проходить лише одну СМО</text>
+</svg>

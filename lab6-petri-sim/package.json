@@ -1,0 +1,17 @@
+{
+  "name": "lab6-petri-sim",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Комп’ютерний практикум №6: моделі на алгоритмі стохастичної мережі Петрі класу PetriSim",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "report": "bun run src/index.ts --report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "docx": "^9.8.1",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="810" height="360" viewBox="0 0 810 360" font-family="Arial, Helvetica, sans-serif">
+<rect width="810" height="360" fill="#fff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z"/></marker></defs>
+<polyline points="130,175 160,175" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="160,175 190,175" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="320,175 370,175" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="370,175 370,75 420,75" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="370,175 370,255 420,255" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="550,75 590,75" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="590,75 590,20 375,20" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="375,20 160,20 160,175" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="590,75 630,75 630,175" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="550,255 590,255" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="590,255 590,340 375,340" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="375,340 160,340 160,175" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="590,255 630,255 630,175" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="630,175 670,175" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polygon points="20,150 108,150 130,175 108,200 20,200" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="64" y="180" font-size="14" text-anchor="middle">CREATE</text>
+<text x="75" y="220" font-size="13" text-anchor="middle">exp(1)</text>
+<polygon points="190,150 320,150 320,200 190,200" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="255" y="180" font-size="14" text-anchor="middle">PROCESS 1</text>
+<text x="255" y="220" font-size="13" text-anchor="middle">exp(1,2), пристроїв 2</text>
+<polygon points="420,50 550,50 550,100 420,100" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="485" y="80" font-size="14" text-anchor="middle">PROCESS 2</text>
+<text x="485" y="120" font-size="13" text-anchor="middle">exp(0,8), пристроїв 1</text>
+<polygon points="420,230 550,230 550,280 420,280" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="485" y="260" font-size="14" text-anchor="middle">PROCESS 3</text>
+<text x="485" y="300" font-size="13" text-anchor="middle">exp(1,5), пристроїв 1</text>
+<polygon points="692,150 790,150 790,200 692,200 670,175" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="741" y="180" font-size="14" text-anchor="middle">DISPOSE</text>
+<text x="383" y="67" font-size="13">0,7</text>
+<text x="383" y="247" font-size="13">0,3</text>
+<text x="598" y="45" font-size="13">0,2</text>
+<text x="598" y="67" font-size="13">0,8</text>
+<text x="598" y="305" font-size="13">0,4</text>
+<text x="598" y="247" font-size="13">0,6</text>
+</svg>

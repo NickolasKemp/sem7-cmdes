@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="72" y="30" font-size="19" font-weight="600" fill="#1d2433">Час обчислення алгоритму імітації: послідовна мережа</text>
+  <text x="72" y="48" font-size="13" fill="#6b7686">λ = 1, T = 500, найменший час з 3 повторів; пунктир — теоретична оцінка</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#dfe4ec"/>
+  <text x="62" y="412" font-size="11" text-anchor="end" fill="#6b7686">0</text>
+  <line x1="72" y1="321" x2="872" y2="321" stroke="#dfe4ec"/>
+  <text x="62" y="325" font-size="11" text-anchor="end" fill="#6b7686">500</text>
+  <line x1="72" y1="234" x2="872" y2="234" stroke="#dfe4ec"/>
+  <text x="62" y="238" font-size="11" text-anchor="end" fill="#6b7686">1 000</text>
+  <line x1="72" y1="147" x2="872" y2="147" stroke="#dfe4ec"/>
+  <text x="62" y="151" font-size="11" text-anchor="end" fill="#6b7686">1 500</text>
+  <line x1="72" y1="60" x2="872" y2="60" stroke="#dfe4ec"/>
+  <text x="62" y="64" font-size="11" text-anchor="end" fill="#6b7686">2 000</text>
+  <text x="68.7935871743487" y="428" font-size="11" text-anchor="middle" fill="#6b7686">0</text>
+  <text x="229.11422845691382" y="428" font-size="11" text-anchor="middle" fill="#6b7686">100</text>
+  <text x="389.434869739479" y="428" font-size="11" text-anchor="middle" fill="#6b7686">200</text>
+  <text x="549.7555110220442" y="428" font-size="11" text-anchor="middle" fill="#6b7686">300</text>
+  <text x="710.0761523046092" y="428" font-size="11" text-anchor="middle" fill="#6b7686">400</text>
+  <text x="870.3967935871743" y="428" font-size="11" text-anchor="middle" fill="#6b7686">500</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#1d2433"/>
+  <line x1="72" y1="60" x2="72" y2="408" stroke="#1d2433"/>
+  <text x="472" y="452" font-size="12" text-anchor="middle" fill="#6b7686">кількість подій у моделі N + 1</text>
+  <text x="18" y="234" font-size="12" text-anchor="middle" fill="#6b7686" transform="rotate(-90 18 234)">час обчислення, мс</text>
+  <path d="M72.0,407.9 L110.5,406.8 L150.6,404.4 L190.6,400.8 L230.7,396.0 L270.8,390.1 L310.9,383.0 L351.0,374.7 L391.0,365.3 L431.1,354.6 L471.2,342.8 L511.3,329.8 L551.4,315.6 L591.4,300.3 L631.5,283.7 L671.6,266.0 L711.7,247.1 L751.8,227.0 L791.8,205.8 L831.9,183.4 L872.0,159.8" fill="none" stroke="#4c7ef3" stroke-width="2" stroke-dasharray="7 5" stroke-linejoin="round"/>
+  <circle cx="72" cy="407.914884942" r="4" fill="#4c7ef3"/>
+  <circle cx="86.42885771543087" cy="407.400881808" r="4" fill="#4c7ef3"/>
+  <circle cx="110.47695390781564" cy="406.779571308" r="4" fill="#4c7ef3"/>
+  <circle cx="150.5571142284569" cy="404.460462942" r="4" fill="#4c7ef3"/>
+  <circle cx="230.7174348697395" cy="397.63344975" r="4" fill="#4c7ef3"/>
+  <circle cx="391.0380761523046" cy="365.23186575" r="4" fill="#4c7ef3"/>
+  <circle cx="551.3587174348697" cy="310.79460280800004" r="4" fill="#4c7ef3"/>
+  <circle cx="711.6793587174349" cy="242.84885699999995" r="4" fill="#4c7ef3"/>
+  <circle cx="872" cy="138.2151603839999" r="4" fill="#4c7ef3"/>
+  <line x1="72" y1="478" x2="98" y2="478" stroke="#4c7ef3" stroke-width="3" stroke-dasharray="7 5"/>
+  <text x="104" y="482" font-size="12" fill="#1d2433">теоретична оцінка O = ν·T·k</text>
+  <circle cx="309.2" cy="478" r="4" fill="#4c7ef3"/>
+  <text x="328.2" y="482" font-size="12" fill="#1d2433">експеримент</text>
+</svg>

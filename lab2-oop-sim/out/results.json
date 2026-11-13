@@ -1,0 +1,2496 @@
+{
+  "meta": {
+    "date": "21.10.2026",
+    "runtime": "Bun 1.4.2 / darwin arm64"
+  },
+  "task1": {
+    "run": {
+      "time": 1000,
+      "createMean": 2,
+      "serviceMean": 1,
+      "maxQueue": 5,
+      "created": 491,
+      "process": {
+        "name": "PROCESSOR",
+        "channels": 1,
+        "maxQueue": 5,
+        "arrivals": 491,
+        "served": 490,
+        "failures": 1,
+        "failureProbability": 0.002036659877800407,
+        "meanQueue": 0.3614512224485332,
+        "meanBusy": 0.4894866080339903,
+        "utilization": 0.4894866080339903,
+        "meanWait": 0.7376555560174147,
+        "inQueue": 0,
+        "inService": 0
+      },
+      "theory": {
+        "failureProbability": 0.007874015748031496,
+        "meanQueue": 0.44881889763779526,
+        "meanBusy": 0.49606299212598426,
+        "utilization": 0.49606299212598426,
+        "meanWait": 0.9047619047619047,
+        "meanSojourn": 1.9047619047619047,
+        "meanInSystem": 0.9448818897637795
+      },
+      "steps": 981
+    },
+    "trace": [
+      {
+        "t": 0,
+        "fired": "CREATOR",
+        "created": 1,
+        "state": 1,
+        "queue": 0,
+        "served": 0,
+        "failures": 0
+      },
+      {
+        "t": 1.8442795861426897,
+        "fired": "PROCESSOR",
+        "created": 1,
+        "state": 0,
+        "queue": 0,
+        "served": 1,
+        "failures": 0
+      },
+      {
+        "t": 2.280106088559898,
+        "fired": "CREATOR",
+        "created": 2,
+        "state": 1,
+        "queue": 0,
+        "served": 1,
+        "failures": 0
+      },
+      {
+        "t": 2.2858153728232278,
+        "fired": "PROCESSOR",
+        "created": 2,
+        "state": 0,
+        "queue": 0,
+        "served": 2,
+        "failures": 0
+      },
+      {
+        "t": 7.770625589597485,
+        "fired": "CREATOR",
+        "created": 3,
+        "state": 1,
+        "queue": 0,
+        "served": 2,
+        "failures": 0
+      },
+      {
+        "t": 9.59424589661163,
+        "fired": "CREATOR",
+        "created": 4,
+        "state": 1,
+        "queue": 1,
+        "served": 2,
+        "failures": 0
+      },
+      {
+        "t": 9.642640015701184,
+        "fired": "CREATOR",
+        "created": 5,
+        "state": 1,
+        "queue": 2,
+        "served": 2,
+        "failures": 0
+      },
+      {
+        "t": 10.59692373911464,
+        "fired": "PROCESSOR",
+        "created": 5,
+        "state": 1,
+        "queue": 1,
+        "served": 3,
+        "failures": 0
+      },
+      {
+        "t": 10.788560003251833,
+        "fired": "PROCESSOR",
+        "created": 5,
+        "state": 1,
+        "queue": 0,
+        "served": 4,
+        "failures": 0
+      },
+      {
+        "t": 11.432938462643204,
+        "fired": "PROCESSOR",
+        "created": 5,
+        "state": 0,
+        "queue": 0,
+        "served": 5,
+        "failures": 0
+      },
+      {
+        "t": 12.347364465451182,
+        "fired": "CREATOR",
+        "created": 6,
+        "state": 1,
+        "queue": 0,
+        "served": 5,
+        "failures": 0
+      },
+      {
+        "t": 13.395233586759938,
+        "fired": "PROCESSOR",
+        "created": 6,
+        "state": 0,
+        "queue": 0,
+        "served": 6,
+        "failures": 0
+      },
+      {
+        "t": 15.729738938676196,
+        "fired": "CREATOR",
+        "created": 7,
+        "state": 1,
+        "queue": 0,
+        "served": 6,
+        "failures": 0
+      },
+      {
+        "t": 17.991811711852346,
+        "fired": "PROCESSOR",
+        "created": 7,
+        "state": 0,
+        "queue": 0,
+        "served": 7,
+        "failures": 0
+      }
+    ]
+  },
+  "task2": {
+    "byTime": [
+      {
+        "time": 1000,
+        "createMean": 2,
+        "serviceMean": 1,
+        "maxQueue": 5,
+        "created": 491,
+        "process": {
+          "name": "PROCESSOR",
+          "channels": 1,
+          "maxQueue": 5,
+          "arrivals": 491,
+          "served": 490,
+          "failures": 1,
+          "failureProbability": 0.002036659877800407,
+          "meanQueue": 0.3614512224485332,
+          "meanBusy": 0.4894866080339903,
+          "utilization": 0.4894866080339903,
+          "meanWait": 0.7376555560174147,
+          "inQueue": 0,
+          "inService": 0
+        },
+        "theory": {
+          "failureProbability": 0.007874015748031496,
+          "meanQueue": 0.44881889763779526,
+          "meanBusy": 0.49606299212598426,
+          "utilization": 0.49606299212598426,
+          "meanWait": 0.9047619047619047,
+          "meanSojourn": 1.9047619047619047,
+          "meanInSystem": 0.9448818897637795
+        },
+        "steps": 981
+      },
+      {
+        "time": 10000,
+        "createMean": 2,
+        "serviceMean": 1,
+        "maxQueue": 5,
+        "created": 4928,
+        "process": {
+          "name": "PROCESSOR",
+          "channels": 1,
+          "maxQueue": 5,
+          "arrivals": 4928,
+          "served": 4902,
+          "failures": 26,
+          "failureProbability": 0.005275974025974026,
+          "meanQueue": 0.3800922891479909,
+          "meanBusy": 0.4811662724447735,
+          "utilization": 0.4811662724447735,
+          "meanWait": 0.775382066805367,
+          "inQueue": 0,
+          "inService": 0
+        },
+        "theory": {
+          "failureProbability": 0.007874015748031496,
+          "meanQueue": 0.44881889763779526,
+          "meanBusy": 0.49606299212598426,
+          "utilization": 0.49606299212598426,
+          "meanWait": 0.9047619047619047,
+          "meanSojourn": 1.9047619047619047,
+          "meanInSystem": 0.9448818897637795
+        },
+        "steps": 9830
+      },
+      {
+        "time": 100000,
+        "createMean": 2,
+        "serviceMean": 1,
+        "maxQueue": 5,
+        "created": 49918,
+        "process": {
+          "name": "PROCESSOR",
+          "channels": 1,
+          "maxQueue": 5,
+          "arrivals": 49918,
+          "served": 49529,
+          "failures": 389,
+          "failureProbability": 0.007792780159461517,
+          "meanQueue": 0.4445587645954441,
+          "meanBusy": 0.49401943661130193,
+          "utilization": 0.49401943661130193,
+          "meanWait": 0.89757266368278,
+          "inQueue": 0,
+          "inService": 0
+        },
+        "theory": {
+          "failureProbability": 0.007874015748031496,
+          "meanQueue": 0.44881889763779526,
+          "meanBusy": 0.49606299212598426,
+          "utilization": 0.49606299212598426,
+          "meanWait": 0.9047619047619047,
+          "meanSojourn": 1.9047619047619047,
+          "meanInSystem": 0.9448818897637795
+        },
+        "steps": 99447
+      },
+      {
+        "time": 1000000,
+        "createMean": 2,
+        "serviceMean": 1,
+        "maxQueue": 5,
+        "created": 500519,
+        "process": {
+          "name": "PROCESSOR",
+          "channels": 1,
+          "maxQueue": 5,
+          "arrivals": 500519,
+          "served": 496696,
+          "failures": 3822,
+          "failureProbability": 0.007636073755441852,
+          "meanQueue": 0.4491294997278791,
+          "meanBusy": 0.4964935442410307,
+          "utilization": 0.4964935442410307,
+          "meanWait": 0.9042323584154506,
+          "inQueue": 0,
+          "inService": 1
+        },
+        "theory": {
+          "failureProbability": 0.007874015748031496,
+          "meanQueue": 0.44881889763779526,
+          "meanBusy": 0.49606299212598426,
+          "utilization": 0.49606299212598426,
+          "meanWait": 0.9047619047619047,
+          "meanSojourn": 1.9047619047619047,
+          "meanInSystem": 0.9448818897637795
+        },
+        "steps": 997215
+      }
+    ],
+    "theory": {
+      "failureProbability": 0.007874015748031496,
+      "meanQueue": 0.44881889763779526,
+      "meanBusy": 0.49606299212598426,
+      "utilization": 0.49606299212598426,
+      "meanWait": 0.9047619047619047,
+      "meanSojourn": 1.9047619047619047,
+      "meanInSystem": 0.9448818897637795
+    }
+  },
+  "task3": {
+    "run": {
+      "params": {
+        "create": {
+          "label": "exp(2)",
+          "mean": 2
+        },
+        "stages": [
+          {
+            "delay": {
+              "label": "exp(1)",
+              "mean": 1
+            },
+            "maxQueue": 5
+          },
+          {
+            "delay": {
+              "label": "exp(1.5)",
+              "mean": 1.5
+            },
+            "maxQueue": 5
+          },
+          {
+            "delay": {
+              "label": "exp(1.2)",
+              "mean": 1.2
+            },
+            "maxQueue": 5
+          }
+        ],
+        "time": 100000,
+        "seed": 20261001
+      },
+      "created": 50255,
+      "stages": [
+        {
+          "name": "PROCESS 1",
+          "channels": 1,
+          "maxQueue": 5,
+          "arrivals": 50255,
+          "served": 49866,
+          "failures": 388,
+          "failureProbability": 0.007720624813451398,
+          "meanQueue": 0.4486401260890418,
+          "meanBusy": 0.49632021958247946,
+          "utilization": 0.49632021958247946,
+          "meanWait": 0.8996733833778687,
+          "inQueue": 0,
+          "inService": 1
+        },
+        {
+          "name": "PROCESS 2",
+          "channels": 1,
+          "maxQueue": 5,
+          "arrivals": 49866,
+          "served": 47505,
+          "failures": 2360,
+          "failureProbability": 0.04732683592026631,
+          "meanQueue": 1.2021368684076004,
+          "meanBusy": 0.7109895864156885,
+          "utilization": 0.7109895864156885,
+          "meanWait": 2.5304948183547493,
+          "inQueue": 0,
+          "inService": 1
+        },
+        {
+          "name": "PROCESS 3",
+          "channels": 1,
+          "maxQueue": 5,
+          "arrivals": 47505,
+          "served": 46990,
+          "failures": 510,
+          "failureProbability": 0.0107357120303126,
+          "meanQueue": 0.6042393476491187,
+          "meanBusy": 0.5639795285327435,
+          "utilization": 0.5639795285327435,
+          "meanWait": 1.2857000637912228,
+          "inQueue": 4,
+          "inService": 1
+        }
+      ],
+      "disposed": 46990,
+      "meanTimeInSystem": 8.439858870113426,
+      "inSystem": 7
+    }
+  },
+  "task4": {
+    "rows": [
+      {
+        "label": "Базовий",
+        "change": "tc = 2; t1 = 1; t2 = 1,5; t3 = 1,2; черги ≤ 5",
+        "run": {
+          "params": {
+            "create": {
+              "label": "exp(2)",
+              "mean": 2
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "exp(1)",
+                  "mean": 1
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(1.5)",
+                  "mean": 1.5
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(1.2)",
+                  "mean": 1.2
+                },
+                "maxQueue": 5
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 50255,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 50255,
+              "served": 49866,
+              "failures": 388,
+              "failureProbability": 0.007720624813451398,
+              "meanQueue": 0.4486401260890418,
+              "meanBusy": 0.49632021958247946,
+              "utilization": 0.49632021958247946,
+              "meanWait": 0.8996733833778687,
+              "inQueue": 0,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 49866,
+              "served": 47505,
+              "failures": 2360,
+              "failureProbability": 0.04732683592026631,
+              "meanQueue": 1.2021368684076004,
+              "meanBusy": 0.7109895864156885,
+              "utilization": 0.7109895864156885,
+              "meanWait": 2.5304948183547493,
+              "inQueue": 0,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 47505,
+              "served": 46990,
+              "failures": 510,
+              "failureProbability": 0.0107357120303126,
+              "meanQueue": 0.6042393476491187,
+              "meanBusy": 0.5639795285327435,
+              "utilization": 0.5639795285327435,
+              "meanWait": 1.2857000637912228,
+              "inQueue": 4,
+              "inService": 1
+            }
+          ],
+          "disposed": 46990,
+          "meanTimeInSystem": 8.439858870113426,
+          "inSystem": 7
+        },
+        "firstStageTheory": {
+          "failureProbability": 0.007874015748031496,
+          "meanQueue": 0.44881889763779526,
+          "meanBusy": 0.49606299212598426,
+          "utilization": 0.49606299212598426,
+          "meanWait": 0.9047619047619047,
+          "meanSojourn": 1.9047619047619047,
+          "meanInSystem": 0.9448818897637795
+        },
+        "checks": []
+      },
+      {
+        "label": "Інтенсивніший потік",
+        "change": "tc = 1",
+        "run": {
+          "params": {
+            "create": {
+              "label": "exp(1)",
+              "mean": 1
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "exp(1)",
+                  "mean": 1
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(1.5)",
+                  "mean": 1.5
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(1.2)",
+                  "mean": 1.2
+                },
+                "maxQueue": 5
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 100415,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 100415,
+              "served": 86036,
+              "failures": 14377,
+              "failureProbability": 0.1431758203455659,
+              "meanQueue": 2.1654677854071513,
+              "meanBusy": 0.8624913941312391,
+              "utilization": 0.8624913941312391,
+              "meanWait": 2.516897181288179,
+              "inQueue": 1,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 86036,
+              "served": 63623,
+              "failures": 22408,
+              "failureProbability": 0.26044911432423634,
+              "meanQueue": 3.0804343258377536,
+              "meanBusy": 0.9487653512032157,
+              "utilization": 0.9487653512032157,
+              "meanWait": 4.841247508112536,
+              "inQueue": 4,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 63623,
+              "served": 60710,
+              "failures": 2913,
+              "failureProbability": 0.045785329204847305,
+              "meanQueue": 1.2553851945988637,
+              "meanBusy": 0.7263464505111386,
+              "utilization": 0.7263464505111386,
+              "meanWait": 2.0678392268141295,
+              "inQueue": 0,
+              "inService": 0
+            }
+          ],
+          "disposed": 60710,
+          "meanTimeInSystem": 13.584470329295026,
+          "inSystem": 7
+        },
+        "firstStageTheory": {
+          "failureProbability": 0.14285714285714285,
+          "meanQueue": 2.1428571428571423,
+          "meanBusy": 0.857142857142857,
+          "utilization": 0.857142857142857,
+          "meanWait": 2.499999999999999,
+          "meanSojourn": 3.4999999999999987,
+          "meanInSystem": 2.999999999999999
+        },
+        "checks": [
+          {
+            "label": "U1 ↑",
+            "ok": true
+          },
+          {
+            "label": "P_відм1 ↑",
+            "ok": true
+          },
+          {
+            "label": "U2 ↑",
+            "ok": true
+          },
+          {
+            "label": "P_відм2 ↑",
+            "ok": true
+          },
+          {
+            "label": "U3 ↑",
+            "ok": true
+          },
+          {
+            "label": "P_відм3 ↑",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "Рідший потік",
+        "change": "tc = 4",
+        "run": {
+          "params": {
+            "create": {
+              "label": "exp(4)",
+              "mean": 4
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "exp(1)",
+                  "mean": 1
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(1.5)",
+                  "mean": 1.5
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(1.2)",
+                  "mean": 1.2
+                },
+                "maxQueue": 5
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 25185,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 25185,
+              "served": 25180,
+              "failures": 5,
+              "failureProbability": 0.0001985308715505261,
+              "meanQueue": 0.09116621790614182,
+              "meanBusy": 0.2541468632972191,
+              "utilization": 0.2541468632972191,
+              "meanWait": 0.36205805363837107,
+              "inQueue": 0,
+              "inService": 0
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 25180,
+              "served": 25140,
+              "failures": 39,
+              "failureProbability": 0.0015488482922954726,
+              "meanQueue": 0.21580421516598733,
+              "meanBusy": 0.37582311038235433,
+              "utilization": 0.37582311038235433,
+              "meanWait": 0.8583756221549952,
+              "inQueue": 0,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 25140,
+              "served": 25126,
+              "failures": 14,
+              "failureProbability": 0.0005568814638027049,
+              "meanQueue": 0.129067659646808,
+              "meanBusy": 0.30120930158545145,
+              "utilization": 0.30120930158545145,
+              "meanWait": 0.5136816829053887,
+              "inQueue": 0,
+              "inService": 0
+            }
+          ],
+          "disposed": 25126,
+          "meanTimeInSystem": 5.437796382928036,
+          "inSystem": 1
+        },
+        "firstStageTheory": {
+          "failureProbability": 0.00018311664530305805,
+          "meanQueue": 0.0829518403222853,
+          "meanBusy": 0.24995422083867425,
+          "utilization": 0.24995422083867425,
+          "meanWait": 0.33186813186813185,
+          "meanSojourn": 1.3318681318681318,
+          "meanInSystem": 0.33290606116095955
+        },
+        "checks": [
+          {
+            "label": "U1 ↓",
+            "ok": true
+          },
+          {
+            "label": "L_черги1 ↓",
+            "ok": true
+          },
+          {
+            "label": "U2 ↓",
+            "ok": true
+          },
+          {
+            "label": "L_черги2 ↓",
+            "ok": true
+          },
+          {
+            "label": "U3 ↓",
+            "ok": true
+          },
+          {
+            "label": "L_черги3 ↓",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "Повільніший PROCESS 1",
+        "change": "t1 = 2",
+        "run": {
+          "params": {
+            "create": {
+              "label": "exp(2)",
+              "mean": 2
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "exp(2)",
+                  "mean": 2
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(1.5)",
+                  "mean": 1.5
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(1.2)",
+                  "mean": 1.2
+                },
+                "maxQueue": 5
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 50294,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 50294,
+              "served": 43025,
+              "failures": 7263,
+              "failureProbability": 0.1444108641189804,
+              "meanQueue": 2.1189085885276535,
+              "meanBusy": 0.8566446549885537,
+              "utilization": 0.8566446549885537,
+              "meanWait": 4.9238463536455175,
+              "inQueue": 5,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 43025,
+              "served": 42199,
+              "failures": 825,
+              "failureProbability": 0.01917489831493318,
+              "meanQueue": 0.8369242159796062,
+              "meanBusy": 0.6348792113053471,
+              "utilization": 0.6348792113053471,
+              "meanWait": 1.9832327392881668,
+              "inQueue": 0,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 42199,
+              "served": 42007,
+              "failures": 191,
+              "failureProbability": 0.0045261736060096215,
+              "meanQueue": 0.4353821000799753,
+              "meanBusy": 0.5024213976229925,
+              "utilization": 0.5024213976229925,
+              "meanWait": 1.0364266332126626,
+              "inQueue": 0,
+              "inService": 1
+            }
+          ],
+          "disposed": 42007,
+          "meanTimeInSystem": 12.717389264427743,
+          "inSystem": 8
+        },
+        "firstStageTheory": {
+          "failureProbability": 0.14285714285714285,
+          "meanQueue": 2.1428571428571423,
+          "meanBusy": 0.857142857142857,
+          "utilization": 0.857142857142857,
+          "meanWait": 4.999999999999998,
+          "meanSojourn": 6.999999999999997,
+          "meanInSystem": 2.999999999999999
+        },
+        "checks": [
+          {
+            "label": "U1 ↑",
+            "ok": true
+          },
+          {
+            "label": "P_відм1 ↑",
+            "ok": true
+          },
+          {
+            "label": "U2 ↓",
+            "ok": true
+          },
+          {
+            "label": "U3 ↓",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "Повільніший PROCESS 2",
+        "change": "t2 = 3",
+        "run": {
+          "params": {
+            "create": {
+              "label": "exp(2)",
+              "mean": 2
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "exp(1)",
+                  "mean": 1
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(3)",
+                  "mean": 3
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(1.2)",
+                  "mean": 1.2
+                },
+                "maxQueue": 5
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 50083,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 50083,
+              "served": 49618,
+              "failures": 465,
+              "failureProbability": 0.009284587584609549,
+              "meanQueue": 0.45379914321213133,
+              "meanBusy": 0.49366598025659003,
+              "utilization": 0.49366598025659003,
+              "meanWait": 0.9145857213352641,
+              "inQueue": 0,
+              "inService": 0
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 49618,
+              "served": 32422,
+              "failures": 17195,
+              "failureProbability": 0.34654762384618487,
+              "meanQueue": 3.4559996439907787,
+              "meanBusy": 0.9694018041443909,
+              "utilization": 0.9694018041443909,
+              "meanWait": 10.659098923575282,
+              "inQueue": 0,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 32422,
+              "served": 32393,
+              "failures": 29,
+              "failureProbability": 0.0008944543828264759,
+              "meanQueue": 0.22387643014279826,
+              "meanBusy": 0.3874625306051066,
+              "utilization": 0.3874625306051066,
+              "meanWait": 0.6911259535788543,
+              "inQueue": 0,
+              "inService": 0
+            }
+          ],
+          "disposed": 32393,
+          "meanTimeInSystem": 17.485157292960047,
+          "inSystem": 1
+        },
+        "firstStageTheory": {
+          "failureProbability": 0.007874015748031496,
+          "meanQueue": 0.44881889763779526,
+          "meanBusy": 0.49606299212598426,
+          "utilization": 0.49606299212598426,
+          "meanWait": 0.9047619047619047,
+          "meanSojourn": 1.9047619047619047,
+          "meanInSystem": 0.9448818897637795
+        },
+        "checks": [
+          {
+            "label": "L_черги2 ↑",
+            "ok": true
+          },
+          {
+            "label": "P_відм2 ↑",
+            "ok": true
+          },
+          {
+            "label": "U3 ↓",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "Швидший PROCESS 3",
+        "change": "t3 = 0,6",
+        "run": {
+          "params": {
+            "create": {
+              "label": "exp(2)",
+              "mean": 2
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "exp(1)",
+                  "mean": 1
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(1.5)",
+                  "mean": 1.5
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(0.6)",
+                  "mean": 0.6
+                },
+                "maxQueue": 5
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 50388,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 50388,
+              "served": 49981,
+              "failures": 406,
+              "failureProbability": 0.008057474001746447,
+              "meanQueue": 0.4433254939285876,
+              "meanBusy": 0.4956170657656654,
+              "utilization": 0.4956170657656654,
+              "meanWait": 0.8869702971641543,
+              "inQueue": 0,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 49981,
+              "served": 47549,
+              "failures": 2431,
+              "failureProbability": 0.04863848262339689,
+              "meanQueue": 1.2196083921470353,
+              "meanBusy": 0.716367646472558,
+              "utilization": 0.716367646472558,
+              "meanWait": 2.564896723758209,
+              "inQueue": 0,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 47549,
+              "served": 47538,
+              "failures": 10,
+              "failureProbability": 0.00021030936507602683,
+              "meanQueue": 0.11012506344149377,
+              "meanBusy": 0.2852971080229745,
+              "utilization": 0.2852971080229745,
+              "meanWait": 0.2316520403068928,
+              "inQueue": 0,
+              "inService": 1
+            }
+          ],
+          "disposed": 47538,
+          "meanTimeInSystem": 6.7986170822648955,
+          "inSystem": 3
+        },
+        "firstStageTheory": {
+          "failureProbability": 0.007874015748031496,
+          "meanQueue": 0.44881889763779526,
+          "meanBusy": 0.49606299212598426,
+          "utilization": 0.49606299212598426,
+          "meanWait": 0.9047619047619047,
+          "meanSojourn": 1.9047619047619047,
+          "meanInSystem": 0.9448818897637795
+        },
+        "checks": [
+          {
+            "label": "U3 ↓",
+            "ok": true
+          },
+          {
+            "label": "L_черги3 ↓",
+            "ok": true
+          },
+          {
+            "label": "W ↓",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "Без черг",
+        "change": "черги = 0",
+        "run": {
+          "params": {
+            "create": {
+              "label": "exp(2)",
+              "mean": 2
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "exp(1)",
+                  "mean": 1
+                },
+                "maxQueue": 0
+              },
+              {
+                "delay": {
+                  "label": "exp(1.5)",
+                  "mean": 1.5
+                },
+                "maxQueue": 0
+              },
+              {
+                "delay": {
+                  "label": "exp(1.2)",
+                  "mean": 1.2
+                },
+                "maxQueue": 0
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 49906,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": 0,
+              "arrivals": 49906,
+              "served": 33326,
+              "failures": 16580,
+              "failureProbability": 0.33222458221456336,
+              "meanQueue": 0,
+              "meanBusy": 0.33088500716358554,
+              "utilization": 0.33088500716358554,
+              "meanWait": 0,
+              "inQueue": 0,
+              "inService": 0
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 1,
+              "maxQueue": 0,
+              "arrivals": 33326,
+              "served": 24740,
+              "failures": 8585,
+              "failureProbability": 0.257606673468163,
+              "meanQueue": 0,
+              "meanBusy": 0.3704003321874766,
+              "utilization": 0.3704003321874766,
+              "meanWait": 0,
+              "inQueue": 0,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": 0,
+              "arrivals": 24740,
+              "served": 21637,
+              "failures": 3103,
+              "failureProbability": 0.12542441390460793,
+              "meanQueue": 0,
+              "meanBusy": 0.2574062310299734,
+              "utilization": 0.2574062310299734,
+              "meanWait": 0,
+              "inQueue": 0,
+              "inService": 0
+            }
+          ],
+          "disposed": 21637,
+          "meanTimeInSystem": 3.9875054781915638,
+          "inSystem": 1
+        },
+        "firstStageTheory": {
+          "failureProbability": 0.3333333333333333,
+          "meanQueue": 0,
+          "meanBusy": 0.3333333333333333,
+          "utilization": 0.3333333333333333,
+          "meanWait": 0,
+          "meanSojourn": 0.9999999999999999,
+          "meanInSystem": 0.3333333333333333
+        },
+        "checks": [
+          {
+            "label": "L_черги1 = 0",
+            "ok": true
+          },
+          {
+            "label": "L_черги2 = 0",
+            "ok": true
+          },
+          {
+            "label": "L_черги3 = 0",
+            "ok": true
+          },
+          {
+            "label": "P_відм1 ↑",
+            "ok": true
+          },
+          {
+            "label": "P_відм2 ↑",
+            "ok": true
+          },
+          {
+            "label": "P_відм3 ↑",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "Короткі черги",
+        "change": "черги ≤ 1",
+        "run": {
+          "params": {
+            "create": {
+              "label": "exp(2)",
+              "mean": 2
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "exp(1)",
+                  "mean": 1
+                },
+                "maxQueue": 1
+              },
+              {
+                "delay": {
+                  "label": "exp(1.5)",
+                  "mean": 1.5
+                },
+                "maxQueue": 1
+              },
+              {
+                "delay": {
+                  "label": "exp(1.2)",
+                  "mean": 1.2
+                },
+                "maxQueue": 1
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 50151,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": 1,
+              "arrivals": 50151,
+              "served": 43070,
+              "failures": 7081,
+              "failureProbability": 0.14119359534206696,
+              "meanQueue": 0.1422221895793522,
+              "meanBusy": 0.4278750095491862,
+              "utilization": 0.4278750095491862,
+              "meanWait": 0.33021172412201577,
+              "inQueue": 0,
+              "inService": 0
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 1,
+              "maxQueue": 1,
+              "arrivals": 43070,
+              "served": 35699,
+              "failures": 7371,
+              "failureProbability": 0.17114000464360343,
+              "meanQueue": 0.20938889535392366,
+              "meanBusy": 0.5322694589911221,
+              "utilization": 0.5322694589911221,
+              "meanWait": 0.5865399460879118,
+              "inQueue": 0,
+              "inService": 0
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": 1,
+              "arrivals": 35699,
+              "served": 33072,
+              "failures": 2627,
+              "failureProbability": 0.07358749544805177,
+              "meanQueue": 0.11326942173522297,
+              "meanBusy": 0.39783484705286837,
+              "utilization": 0.39783484705286837,
+              "meanWait": 0.34249341356804236,
+              "inQueue": 0,
+              "inService": 0
+            }
+          ],
+          "disposed": 33072,
+          "meanTimeInSystem": 5.144102546576433,
+          "inSystem": 0
+        },
+        "firstStageTheory": {
+          "failureProbability": 0.14285714285714285,
+          "meanQueue": 0.14285714285714285,
+          "meanBusy": 0.42857142857142855,
+          "utilization": 0.42857142857142855,
+          "meanWait": 0.3333333333333333,
+          "meanSojourn": 1.3333333333333333,
+          "meanInSystem": 0.5714285714285714
+        },
+        "checks": [
+          {
+            "label": "P_відм1 ↑",
+            "ok": true
+          },
+          {
+            "label": "L_черги1 ≤ 1",
+            "ok": true
+          },
+          {
+            "label": "P_відм2 ↑",
+            "ok": true
+          },
+          {
+            "label": "L_черги2 ≤ 1",
+            "ok": true
+          },
+          {
+            "label": "P_відм3 ↑",
+            "ok": true
+          },
+          {
+            "label": "L_черги3 ≤ 1",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "Необмежені черги",
+        "change": "черги = ∞",
+        "run": {
+          "params": {
+            "create": {
+              "label": "exp(2)",
+              "mean": 2
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "exp(1)",
+                  "mean": 1
+                },
+                "maxQueue": "Infinity"
+              },
+              {
+                "delay": {
+                  "label": "exp(1.5)",
+                  "mean": 1.5
+                },
+                "maxQueue": "Infinity"
+              },
+              {
+                "delay": {
+                  "label": "exp(1.2)",
+                  "mean": 1.2
+                },
+                "maxQueue": "Infinity"
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 50297,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": "Infinity",
+              "arrivals": 50297,
+              "served": 50297,
+              "failures": 0,
+              "failureProbability": 0,
+              "meanQueue": 0.5229549807771275,
+              "meanBusy": 0.5010351734693618,
+              "utilization": 0.5010351734693618,
+              "meanWait": 1.0397339419391367,
+              "inQueue": 0,
+              "inService": 0
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 1,
+              "maxQueue": "Infinity",
+              "arrivals": 50297,
+              "served": 50294,
+              "failures": 0,
+              "failureProbability": 0,
+              "meanQueue": 2.3755070681581496,
+              "meanBusy": 0.7560636019526259,
+              "utilization": 0.7560636019526259,
+              "meanWait": 4.72310283715876,
+              "inQueue": 2,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": "Infinity",
+              "arrivals": 50294,
+              "served": 50290,
+              "failures": 0,
+              "failureProbability": 0,
+              "meanQueue": 0.8931190911297173,
+              "meanBusy": 0.6009841343178159,
+              "utilization": 0.6009841343178159,
+              "meanWait": 1.7758204687593842,
+              "inQueue": 3,
+              "inService": 1
+            }
+          ],
+          "disposed": 50290,
+          "meanTimeInSystem": 11.233386391617463,
+          "inSystem": 7
+        },
+        "firstStageTheory": {
+          "failureProbability": 0,
+          "meanQueue": 0.5,
+          "meanBusy": 0.5,
+          "utilization": 0.5,
+          "meanWait": 1,
+          "meanSojourn": 2,
+          "meanInSystem": 1
+        },
+        "checks": [
+          {
+            "label": "P_відм1 = 0",
+            "ok": true
+          },
+          {
+            "label": "P_відм2 = 0",
+            "ok": true
+          },
+          {
+            "label": "P_відм3 = 0",
+            "ok": true
+          },
+          {
+            "label": "L_черги1 ↑",
+            "ok": true
+          },
+          {
+            "label": "L_черги2 ↑",
+            "ok": true
+          },
+          {
+            "label": "L_черги3 ↑",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "Детерміновані затримки",
+        "change": "усі затримки сталі",
+        "run": {
+          "params": {
+            "create": {
+              "label": "const(2)",
+              "mean": 2
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "const(1)",
+                  "mean": 1
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "const(1.5)",
+                  "mean": 1.5
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "const(1.2)",
+                  "mean": 1.2
+                },
+                "maxQueue": 5
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 50001,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 50001,
+              "served": 50000,
+              "failures": 0,
+              "failureProbability": 0,
+              "meanQueue": 0,
+              "meanBusy": 0.5,
+              "utilization": 0.5,
+              "meanWait": 0,
+              "inQueue": 0,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 50000,
+              "served": 49999,
+              "failures": 0,
+              "failureProbability": 0,
+              "meanQueue": 0,
+              "meanBusy": 0.749995,
+              "utilization": 0.749995,
+              "meanWait": 0,
+              "inQueue": 0,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 49999,
+              "served": 49999,
+              "failures": 0,
+              "failureProbability": 0,
+              "meanQueue": 0,
+              "meanBusy": 0.5999879999991058,
+              "utilization": 0.5999879999991058,
+              "meanWait": 0,
+              "inQueue": 0,
+              "inService": 0
+            }
+          ],
+          "disposed": 49999,
+          "meanTimeInSystem": 3.700000000001938,
+          "inSystem": 2
+        },
+        "firstStageTheory": null,
+        "checks": [
+          {
+            "label": "L_черги1 = 0",
+            "ok": true
+          },
+          {
+            "label": "L_черги2 = 0",
+            "ok": true
+          },
+          {
+            "label": "L_черги3 = 0",
+            "ok": true
+          },
+          {
+            "label": "P_відм1 = 0",
+            "ok": true
+          },
+          {
+            "label": "P_відм2 = 0",
+            "ok": true
+          },
+          {
+            "label": "P_відм3 = 0",
+            "ok": true
+          },
+          {
+            "label": "U1 = 0,5",
+            "ok": true
+          },
+          {
+            "label": "U2 = 0,75",
+            "ok": true
+          },
+          {
+            "label": "U3 = 0,6",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "Рівномірні затримки",
+        "change": "unif з тими самими середніми",
+        "run": {
+          "params": {
+            "create": {
+              "label": "unif(1; 3)",
+              "mean": 2
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "unif(0.5; 1.5)",
+                  "mean": 1
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "unif(0.75; 2.25)",
+                  "mean": 1.5
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "unif(0.6; 1.7999999999999998)",
+                  "mean": 1.2
+                },
+                "maxQueue": 5
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 49985,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 49985,
+              "served": 49984,
+              "failures": 0,
+              "failureProbability": 0,
+              "meanQueue": 0.005774067867463454,
+              "meanBusy": 0.500425374444488,
+              "utilization": 0.500425374444488,
+              "meanWait": 0.011551601215291496,
+              "inQueue": 0,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 49984,
+              "served": 49984,
+              "failures": 0,
+              "failureProbability": 0,
+              "meanQueue": 0.13118689034467212,
+              "meanBusy": 0.7504424465968553,
+              "utilization": 0.7504424465968553,
+              "meanWait": 0.2624577671748402,
+              "inQueue": 0,
+              "inService": 0
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 49984,
+              "served": 49983,
+              "failures": 0,
+              "failureProbability": 0,
+              "meanQueue": 0.03435730048306627,
+              "meanBusy": 0.6005202534502887,
+              "utilization": 0.6005202534502887,
+              "meanWait": 0.06873659667706919,
+              "inQueue": 0,
+              "inService": 1
+            }
+          ],
+          "disposed": 49983,
+          "meanTimeInSystem": 4.0467408629664865,
+          "inSystem": 2
+        },
+        "firstStageTheory": null,
+        "checks": [
+          {
+            "label": "L_черги1 ↓",
+            "ok": true
+          },
+          {
+            "label": "L_черги2 ↓",
+            "ok": true
+          },
+          {
+            "label": "L_черги3 ↓",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "Затримки Ерланга",
+        "change": "erlang k = 4 з тими самими середніми",
+        "run": {
+          "params": {
+            "create": {
+              "label": "erlang(2; k=4)",
+              "mean": 2
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "erlang(1; k=4)",
+                  "mean": 1
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "erlang(1.5; k=4)",
+                  "mean": 1.5
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "erlang(1.2; k=4)",
+                  "mean": 1.2
+                },
+                "maxQueue": 5
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 49818,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 49818,
+              "served": 49818,
+              "failures": 0,
+              "failureProbability": 0,
+              "meanQueue": 0.0641024518479659,
+              "meanBusy": 0.49656083780442206,
+              "utilization": 0.49656083780442206,
+              "meanWait": 0.12867327441480167,
+              "inQueue": 0,
+              "inService": 0
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 49818,
+              "served": 49786,
+              "failures": 29,
+              "failureProbability": 0.0005821189128427476,
+              "meanQueue": 0.4707015536392708,
+              "meanBusy": 0.7479867780630544,
+              "utilization": 0.7479867780630544,
+              "meanWait": 0.9453174121870354,
+              "inQueue": 2,
+              "inService": 1
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 49786,
+              "served": 49785,
+              "failures": 0,
+              "failureProbability": 0,
+              "meanQueue": 0.16108492254415127,
+              "meanBusy": 0.5961200826844298,
+              "utilization": 0.5961200826844298,
+              "meanWait": 0.3235546590289464,
+              "inQueue": 0,
+              "inService": 1
+            }
+          ],
+          "disposed": 49785,
+          "meanTimeInSystem": 5.094027868780635,
+          "inSystem": 4
+        },
+        "firstStageTheory": null,
+        "checks": [
+          {
+            "label": "L_черги1 ↓",
+            "ok": true
+          },
+          {
+            "label": "L_черги2 ↓",
+            "ok": true
+          },
+          {
+            "label": "L_черги3 ↓",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "Два пристрої в PROCESS 2",
+        "change": "c2 = 2",
+        "run": {
+          "params": {
+            "create": {
+              "label": "exp(2)",
+              "mean": 2
+            },
+            "stages": [
+              {
+                "delay": {
+                  "label": "exp(1)",
+                  "mean": 1
+                },
+                "maxQueue": 5
+              },
+              {
+                "delay": {
+                  "label": "exp(1.5)",
+                  "mean": 1.5
+                },
+                "maxQueue": 5,
+                "channels": 2
+              },
+              {
+                "delay": {
+                  "label": "exp(1.2)",
+                  "mean": 1.2
+                },
+                "maxQueue": 5
+              }
+            ],
+            "time": 100000,
+            "seed": 20261001
+          },
+          "created": 50021,
+          "stages": [
+            {
+              "name": "PROCESS 1",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 50021,
+              "served": 49665,
+              "failures": 356,
+              "failureProbability": 0.007117010855440715,
+              "meanQueue": 0.4373002625754434,
+              "meanBusy": 0.4931879404154267,
+              "utilization": 0.4931879404154267,
+              "meanWait": 0.8804998743087555,
+              "inQueue": 0,
+              "inService": 0
+            },
+            {
+              "name": "PROCESS 2",
+              "channels": 2,
+              "maxQueue": 5,
+              "arrivals": 49665,
+              "served": 49639,
+              "failures": 26,
+              "failureProbability": 0.0005235075002516863,
+              "meanQueue": 0.10918769871192038,
+              "meanBusy": 0.7403477858569022,
+              "utilization": 0.3701738929284511,
+              "meanWait": 0.21996353414033398,
+              "inQueue": 0,
+              "inService": 0
+            },
+            {
+              "name": "PROCESS 3",
+              "channels": 1,
+              "maxQueue": 5,
+              "arrivals": 49639,
+              "served": 48735,
+              "failures": 904,
+              "failureProbability": 0.018211486935675578,
+              "meanQueue": 0.7036352888133462,
+              "meanBusy": 0.5858885296329681,
+              "utilization": 0.5858885296329681,
+              "meanWait": 1.4437986843405073,
+              "inQueue": 0,
+              "inService": 0
+            }
+          ],
+          "disposed": 48735,
+          "meanTimeInSystem": 6.236401165496506,
+          "inSystem": 0
+        },
+        "firstStageTheory": {
+          "failureProbability": 0.007874015748031496,
+          "meanQueue": 0.44881889763779526,
+          "meanBusy": 0.49606299212598426,
+          "utilization": 0.49606299212598426,
+          "meanWait": 0.9047619047619047,
+          "meanSojourn": 1.9047619047619047,
+          "meanInSystem": 0.9448818897637795
+        },
+        "checks": [
+          {
+            "label": "L_черги2 ↓",
+            "ok": true
+          },
+          {
+            "label": "P_відм2 ↓",
+            "ok": true
+          },
+          {
+            "label": "U3 ↑",
+            "ok": true
+          }
+        ]
+      }
+    ],
+    "jackson": {
+      "run": {
+        "params": {
+          "create": {
+            "label": "exp(2)",
+            "mean": 2
+          },
+          "stages": [
+            {
+              "delay": {
+                "label": "exp(1)",
+                "mean": 1
+              },
+              "maxQueue": "Infinity"
+            },
+            {
+              "delay": {
+                "label": "exp(1.5)",
+                "mean": 1.5
+              },
+              "maxQueue": "Infinity"
+            },
+            {
+              "delay": {
+                "label": "exp(1.2)",
+                "mean": 1.2
+              },
+              "maxQueue": "Infinity"
+            }
+          ],
+          "time": 1000000,
+          "seed": 20261001
+        },
+        "created": 500122,
+        "stages": [
+          {
+            "name": "PROCESS 1",
+            "channels": 1,
+            "maxQueue": "Infinity",
+            "arrivals": 500122,
+            "served": 500121,
+            "failures": 0,
+            "failureProbability": 0,
+            "meanQueue": 0.5007493446910489,
+            "meanBusy": 0.500616678403621,
+            "utilization": 0.500616678403621,
+            "meanWait": 1.0012543833125696,
+            "inQueue": 0,
+            "inService": 1
+          },
+          {
+            "name": "PROCESS 2",
+            "channels": 1,
+            "maxQueue": "Infinity",
+            "arrivals": 500121,
+            "served": 500121,
+            "failures": 0,
+            "failureProbability": 0,
+            "meanQueue": 2.269148784896966,
+            "meanBusy": 0.7503250443254191,
+            "utilization": 0.7503250443254191,
+            "meanWait": 4.537199567498663,
+            "inQueue": 0,
+            "inService": 0
+          },
+          {
+            "name": "PROCESS 3",
+            "channels": 1,
+            "maxQueue": "Infinity",
+            "arrivals": 500121,
+            "served": 500121,
+            "failures": 0,
+            "failureProbability": 0,
+            "meanQueue": 0.9008501018815036,
+            "meanBusy": 0.5995597395858214,
+            "utilization": 0.5995597395858214,
+            "meanWait": 1.801264297802939,
+            "inQueue": 0,
+            "inService": 0
+          }
+        ],
+        "disposed": 500121,
+        "meanTimeInSystem": 11.039827314233916,
+        "inSystem": 1
+      },
+      "theory": [
+        {
+          "failureProbability": 0,
+          "meanQueue": 0.5,
+          "meanBusy": 0.5,
+          "utilization": 0.5,
+          "meanWait": 1,
+          "meanSojourn": 2,
+          "meanInSystem": 1
+        },
+        {
+          "failureProbability": 0,
+          "meanQueue": 2.25,
+          "meanBusy": 0.75,
+          "utilization": 0.75,
+          "meanWait": 4.5,
+          "meanSojourn": 6,
+          "meanInSystem": 3
+        },
+        {
+          "failureProbability": 0,
+          "meanQueue": 0.8999999999999998,
+          "meanBusy": 0.6,
+          "utilization": 0.6,
+          "meanWait": 1.7999999999999996,
+          "meanSojourn": 2.9999999999999996,
+          "meanInSystem": 1.4999999999999998
+        }
+      ],
+      "meanTimeInSystem": 11
+    }
+  },
+  "task5": {
+    "createMean": 1,
+    "serviceMean": 2.5,
+    "time": 200000,
+    "rows": [
+      {
+        "channels": 1,
+        "maxQueue": 5,
+        "sim": {
+          "name": "PROCESS (c=1)",
+          "channels": 1,
+          "maxQueue": 5,
+          "arrivals": 200389,
+          "served": 80146,
+          "failures": 120237,
+          "failureProbability": 0.6000179650579622,
+          "meanQueue": 4.344784698876748,
+          "meanBusy": 0.9972674751065044,
+          "utilization": 0.9972674751065044,
+          "meanWait": 10.841789408616322,
+          "inQueue": 5,
+          "inService": 1
+        },
+        "theory": {
+          "failureProbability": 0.6009846532558945,
+          "meanQueue": 4.347282587791838,
+          "meanBusy": 0.9975383668602639,
+          "utilization": 0.9975383668602639,
+          "meanWait": 10.895026026604974,
+          "meanSojourn": 13.395026026604974,
+          "meanInSystem": 5.344820954652102
+        }
+      },
+      {
+        "channels": 2,
+        "maxQueue": 5,
+        "sim": {
+          "name": "PROCESS (c=2)",
+          "channels": 2,
+          "maxQueue": 5,
+          "arrivals": 200512,
+          "served": 150703,
+          "failures": 49802,
+          "failureProbability": 0.24837416214490904,
+          "meanQueue": 2.864173216063217,
+          "meanBusy": 1.8874937667632339,
+          "utilization": 0.9437468833816169,
+          "meanWait": 3.8009733498330527,
+          "inQueue": 5,
+          "inService": 2
+        },
+        "theory": {
+          "failureProbability": 0.2465312073007949,
+          "meanQueue": 2.848322956670464,
+          "meanBusy": 1.883671981748013,
+          "utilization": 0.9418359908740065,
+          "meanWait": 3.780279932320373,
+          "meanSojourn": 6.280279932320374,
+          "meanInSystem": 4.731994938418477
+        }
+      },
+      {
+        "channels": 3,
+        "maxQueue": 5,
+        "sim": {
+          "name": "PROCESS (c=3)",
+          "channels": 3,
+          "maxQueue": 5,
+          "arrivals": 199549,
+          "served": 187597,
+          "failures": 11950,
+          "failureProbability": 0.05988504076692942,
+          "meanQueue": 1.184725017068073,
+          "meanBusy": 2.337222790477502,
+          "utilization": 0.7790742634925006,
+          "meanWait": 1.263039799858294,
+          "inQueue": 0,
+          "inService": 2
+        },
+        "theory": {
+          "failureProbability": 0.06149983555435972,
+          "meanQueue": 1.2084471687089466,
+          "meanBusy": 2.3462504111141005,
+          "utilization": 0.7820834703713668,
+          "meanWait": 1.287636608377965,
+          "meanSojourn": 3.787636608377965,
+          "meanInSystem": 3.5546975798230473
+        }
+      },
+      {
+        "channels": 4,
+        "maxQueue": 5,
+        "sim": {
+          "name": "PROCESS (c=4)",
+          "channels": 4,
+          "maxQueue": 5,
+          "arrivals": 200552,
+          "served": 198217,
+          "failures": 2330,
+          "failureProbability": 0.011617934500777853,
+          "meanQueue": 0.39649122755674604,
+          "meanBusy": 2.4715289340022264,
+          "utilization": 0.6178822335005566,
+          "meanWait": 0.40003940295796003,
+          "inQueue": 1,
+          "inService": 4
+        },
+        "theory": {
+          "failureProbability": 0.011661288975251871,
+          "meanQueue": 0.39445009636127965,
+          "meanBusy": 2.4708467775618703,
+          "utilization": 0.6177116943904676,
+          "meanWait": 0.39910416536482557,
+          "meanSojourn": 2.8991041653648257,
+          "meanInSystem": 2.86529687392315
+        }
+      },
+      {
+        "channels": 5,
+        "maxQueue": 5,
+        "sim": {
+          "name": "PROCESS (c=5)",
+          "channels": 5,
+          "maxQueue": 5,
+          "arrivals": 200323,
+          "served": 199935,
+          "failures": 387,
+          "failureProbability": 0.0019318800137777489,
+          "meanQueue": 0.11767788296137664,
+          "meanBusy": 2.499254746990187,
+          "utilization": 0.4998509493980374,
+          "meanWait": 0.11771555193799679,
+          "inQueue": 0,
+          "inService": 1
+        },
+        "theory": {
+          "failureProbability": 0.0020412095718032207,
+          "meanQueue": 0.11634894559278358,
+          "meanBusy": 2.4948969760704918,
+          "utilization": 0.49897939521409834,
+          "meanWait": 0.11658692393787266,
+          "meanSojourn": 2.6165869239378723,
+          "meanInSystem": 2.6112459216632753
+        }
+      },
+      {
+        "channels": 3,
+        "maxQueue": "Infinity",
+        "sim": {
+          "name": "PROCESS (c=3)",
+          "channels": 3,
+          "maxQueue": "Infinity",
+          "arrivals": 199889,
+          "served": 199883,
+          "failures": 0,
+          "failureProbability": 0,
+          "meanQueue": 3.468687469993896,
+          "meanBusy": 2.502953864790249,
+          "utilization": 0.834317954930083,
+          "meanWait": 3.47063081742082,
+          "inQueue": 3,
+          "inService": 3
+        },
+        "theory": {
+          "failureProbability": 0,
+          "meanQueue": 3.5112359550561805,
+          "meanBusy": 2.5,
+          "utilization": 0.8333333333333334,
+          "meanWait": 3.5112359550561805,
+          "meanSojourn": 6.011235955056181,
+          "meanInSystem": 6.011235955056181
+        }
+      },
+      {
+        "channels": 4,
+        "maxQueue": "Infinity",
+        "sim": {
+          "name": "PROCESS (c=4)",
+          "channels": 4,
+          "maxQueue": "Infinity",
+          "arrivals": 200398,
+          "served": 200395,
+          "failures": 0,
+          "failureProbability": 0,
+          "meanQueue": 0.5424859723520513,
+          "meanBusy": 2.5067507461771394,
+          "utilization": 0.6266876865442849,
+          "meanWait": 0.541408569299146,
+          "inQueue": 0,
+          "inService": 3
+        },
+        "theory": {
+          "failureProbability": 0,
+          "meanQueue": 0.5330945069941999,
+          "meanBusy": 2.5,
+          "utilization": 0.625,
+          "meanWait": 0.5330945069941999,
+          "meanSojourn": 3.0330945069941997,
+          "meanInSystem": 3.0330945069941997
+        }
+      },
+      {
+        "channels": 5,
+        "maxQueue": "Infinity",
+        "sim": {
+          "name": "PROCESS (c=5)",
+          "channels": 5,
+          "maxQueue": "Infinity",
+          "arrivals": 199101,
+          "served": 199099,
+          "failures": 0,
+          "failureProbability": 0,
+          "meanQueue": 0.12377321548417612,
+          "meanBusy": 2.4846297113181777,
+          "utilization": 0.4969259422636355,
+          "meanWait": 0.1243320882207283,
+          "inQueue": 0,
+          "inService": 2
+        },
+        "theory": {
+          "failureProbability": 0,
+          "meanQueue": 0.13037129745515227,
+          "meanBusy": 2.5,
+          "utilization": 0.5,
+          "meanWait": 0.13037129745515227,
+          "meanSojourn": 2.6303712974551523,
+          "meanInSystem": 2.6303712974551523
+        }
+      }
+    ]
+  },
+  "task6": {
+    "createMean": 1,
+    "nodes": [
+      {
+        "name": "PROCESS 1",
+        "delay": 1.2,
+        "channels": 2
+      },
+      {
+        "name": "PROCESS 2",
+        "delay": 0.8,
+        "channels": 1
+      },
+      {
+        "name": "PROCESS 3",
+        "delay": 1.5,
+        "channels": 1
+      }
+    ],
+    "routing": [
+      [
+        0,
+        0.7,
+        0.3
+      ],
+      [
+        0.2,
+        0,
+        0
+      ],
+      [
+        0.4,
+        0,
+        0
+      ]
+    ],
+    "lambdas": [
+      1.3513513513513513,
+      0.9459459459459458,
+      0.40540540540540543
+    ],
+    "theory": [
+      {
+        "failureProbability": 0,
+        "meanQueue": 3.1118538581225135,
+        "meanBusy": 1.6216216216216215,
+        "utilization": 0.8108108108108107,
+        "meanWait": 2.30277185501066,
+        "meanSojourn": 3.5027718550106597,
+        "meanInSystem": 4.7334754797441345
+      },
+      {
+        "failureProbability": 0,
+        "meanQueue": 2.3543543543543533,
+        "meanBusy": 0.7567567567567567,
+        "utilization": 0.7567567567567567,
+        "meanWait": 2.488888888888888,
+        "meanSojourn": 3.288888888888888,
+        "meanInSystem": 3.11111111111111
+      },
+      {
+        "failureProbability": 0,
+        "meanQueue": 0.9436160298229261,
+        "meanBusy": 0.6081081081081081,
+        "utilization": 0.6081081081081081,
+        "meanWait": 2.327586206896551,
+        "meanSojourn": 3.827586206896551,
+        "meanInSystem": 1.5517241379310343
+      }
+    ],
+    "theoryTimeInSystem": 9.396310728786279,
+    "time": 1000000,
+    "unlimited": {
+      "maxQueue": "Infinity",
+      "created": 998264,
+      "disposed": 998263,
+      "meanTimeInSystem": 9.255110057225776,
+      "nodes": [
+        {
+          "name": "PROCESS 1",
+          "channels": 2,
+          "maxQueue": "Infinity",
+          "arrivals": 1347483,
+          "served": 1347483,
+          "failures": 0,
+          "failureProbability": 0,
+          "meanQueue": 3.023384048089083,
+          "meanBusy": 1.6166693340429472,
+          "utilization": 0.8083346670214736,
+          "meanWait": 2.2437270437466474,
+          "inQueue": 0,
+          "inService": 0
+        },
+        {
+          "name": "PROCESS 2",
+          "channels": 1,
+          "maxQueue": "Infinity",
+          "arrivals": 942934,
+          "served": 942933,
+          "failures": 0,
+          "failureProbability": 0,
+          "meanQueue": 2.3154670905114076,
+          "meanBusy": 0.7542807100883102,
+          "utilization": 0.7542807100883102,
+          "meanWait": 2.455598260866184,
+          "inQueue": 0,
+          "inService": 1
+        },
+        {
+          "name": "PROCESS 3",
+          "channels": 1,
+          "maxQueue": "Infinity",
+          "arrivals": 404549,
+          "served": 404549,
+          "failures": 0,
+          "failureProbability": 0,
+          "meanQueue": 0.922060256031789,
+          "meanBusy": 0.6071772304651966,
+          "utilization": 0.6071772304651966,
+          "meanWait": 2.2792300958148184,
+          "inQueue": 0,
+          "inService": 0
+        }
+      ],
+      "transitions": [
+        {
+          "from": "PROCESS 1",
+          "to": "PROCESS 2",
+          "p": 0.7,
+          "observed": 0.699774319972868
+        },
+        {
+          "from": "PROCESS 1",
+          "to": "PROCESS 3",
+          "p": 0.3,
+          "observed": 0.30022568002713207
+        },
+        {
+          "from": "PROCESS 2",
+          "to": "PROCESS 1",
+          "p": 0.2,
+          "observed": 0.19981377255860172
+        },
+        {
+          "from": "PROCESS 2",
+          "to": "DISPOSE",
+          "p": 0.8,
+          "observed": 0.8001862274413982
+        },
+        {
+          "from": "PROCESS 3",
+          "to": "PROCESS 1",
+          "p": 0.4,
+          "observed": 0.39749943764537793
+        },
+        {
+          "from": "PROCESS 3",
+          "to": "DISPOSE",
+          "p": 0.6,
+          "observed": 0.602500562354622
+        }
+      ]
+    },
+    "limited": {
+      "maxQueue": 3,
+      "created": 998787,
+      "disposed": 826084,
+      "meanTimeInSystem": 4.824648571726548,
+      "nodes": [
+        {
+          "name": "PROCESS 1",
+          "channels": 2,
+          "maxQueue": 3,
+          "arrivals": 1290944,
+          "served": 1178128,
+          "failures": 112812,
+          "failureProbability": 0.08738721431758466,
+          "meanQueue": 0.6853824391692105,
+          "meanBusy": 1.4120860687491368,
+          "utilization": 0.7060430343745684,
+          "meanWait": 0.58175140000845,
+          "inQueue": 2,
+          "inService": 2
+        },
+        {
+          "name": "PROCESS 2",
+          "channels": 1,
+          "maxQueue": 3,
+          "arrivals": 824736,
+          "served": 775950,
+          "failures": 48786,
+          "failureProbability": 0.059153474566406704,
+          "meanQueue": 0.6123291329596168,
+          "meanBusy": 0.6215232606657991,
+          "utilization": 0.6215232606657991,
+          "meanWait": 0.7891347805394892,
+          "inQueue": 0,
+          "inService": 0
+        },
+        {
+          "name": "PROCESS 3",
+          "channels": 1,
+          "maxQueue": 3,
+          "arrivals": 353392,
+          "served": 342291,
+          "failures": 11101,
+          "failureProbability": 0.03141270883325033,
+          "meanQueue": 0.3909859011121634,
+          "meanBusy": 0.5131803141177679,
+          "utilization": 0.5131803141177679,
+          "meanWait": 1.142261704550115,
+          "inQueue": 0,
+          "inService": 0
+        }
+      ],
+      "transitions": [
+        {
+          "from": "PROCESS 1",
+          "to": "PROCESS 2",
+          "p": 0.7,
+          "observed": 0.7000393845150952
+        },
+        {
+          "from": "PROCESS 1",
+          "to": "PROCESS 3",
+          "p": 0.3,
+          "observed": 0.2999606154849049
+        },
+        {
+          "from": "PROCESS 2",
+          "to": "PROCESS 1",
+          "p": 0.2,
+          "observed": 0.20007861331271345
+        },
+        {
+          "from": "PROCESS 2",
+          "to": "DISPOSE",
+          "p": 0.8,
+          "observed": 0.7999213866872865
+        },
+        {
+          "from": "PROCESS 3",
+          "to": "PROCESS 1",
+          "p": 0.4,
+          "observed": 0.3999696164959055
+        },
+        {
+          "from": "PROCESS 3",
+          "to": "DISPOSE",
+          "p": 0.6,
+          "observed": 0.6000303835040944
+        }
+      ]
+    }
+  }
+}

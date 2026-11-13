@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net id="WebServers" type="http://www.pnml.org/version-2009/grammar/ptnet">
+    <name>
+      <text>WebServers</text>
+    </name>
+    <page id="page1">
+      <place id="p-623694b7">
+        <name>
+          <text>Генератор</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+        <graphics>
+          <position x="60" y="400"/>
+        </graphics>
+      </place>
+      <place id="p-1a28778f">
+        <name>
+          <text>Запит</text>
+        </name>
+        <graphics>
+          <position x="280" y="400"/>
+        </graphics>
+      </place>
+      <place id="p-e19d662b">
+        <name>
+          <text>Місця</text>
+        </name>
+        <initialMarking>
+          <text>1000</text>
+        </initialMarking>
+        <graphics>
+          <position x="540" y="400"/>
+        </graphics>
+      </place>
+      <place id="p-1efc646e">
+        <name>
+          <text>Відхилено</text>
+        </name>
+        <graphics>
+          <position x="60" y="560"/>
+        </graphics>
+      </place>
+      <place id="p-b91406e5">
+        <name>
+          <text>БД</text>
+        </name>
+        <initialMarking>
+          <text>6</text>
+        </initialMarking>
+        <graphics>
+          <position x="1040" y="400"/>
+        </graphics>
+      </place>
+      <place id="p-6a291bb6">
+        <name>
+          <text>Виконано</text>
+        </name>
+        <graphics>
+          <position x="1570" y="400"/>
+        </graphics>
+      </place>
+      <place id="p-1-5d23115f">
+        <name>
+          <text>Черга1</text>
+        </name>
+        <graphics>
+          <position x="540" y="200"/>
+        </graphics>
+      </place>
+      <place id="p-1-7be978c5">
+        <name>
+          <text>Потоки1</text>
+        </name>
+        <initialMarking>
+          <text>12</text>
+        </initialMarking>
+        <graphics>
+          <position x="540" y="60"/>
+        </graphics>
+      </place>
+      <place id="p-1-6b5d3df8">
+        <name>
+          <text>Готовий1</text>
+        </name>
+        <graphics>
+          <position x="780" y="200"/>
+        </graphics>
+      </place>
+      <place id="p-1-4bd445af">
+        <name>
+          <text>Ядра1</text>
+        </name>
+        <initialMarking>
+          <text>8</text>
+        </initialMarking>
+        <graphics>
+          <position x="820" y="330"/>
+        </graphics>
+      </place>
+      <place id="p-1-c0872fac">
+        <name>
+          <text>Обчислено1</text>
+        </name>
+        <graphics>
+          <position x="1020" y="200"/>
+        </graphics>
+      </place>
+      <place id="p-1-ed297a12">
+        <name>
+          <text>Збережено1</text>
+        </name>
+        <graphics>
+          <position x="1260" y="200"/>
+        </graphics>
+      </place>
+      <place id="p-2-e4f009de">
+        <name>
+          <text>Черга2</text>
+        </name>
+        <graphics>
+          <position x="540" y="600"/>
+        </graphics>
+      </place>
+      <place id="p-2-58d4e51b">
+        <name>
+          <text>Потоки2</text>
+        </name>
+        <initialMarking>
+          <text>6</text>
+        </initialMarking>
+        <graphics>
+          <position x="540" y="740"/>
+        </graphics>
+      </place>
+      <place id="p-2-16d48fb4">
+        <name>
+          <text>Готовий2</text>
+        </name>
+        <graphics>
+          <position x="780" y="600"/>
+        </graphics>
+      </place>
+      <place id="p-2-cf19eb2b">
+        <name>
+          <text>Ядра2</text>
+        </name>
+        <initialMarking>
+          <text>4</text>
+        </initialMarking>
+        <graphics>
+          <position x="820" y="470"/>
+        </graphics>
+      </place>
+      <place id="p-2-eddd8c7f">
+        <name>
+          <text>Обчислено2</text>
+        </name>
+        <graphics>
+          <position x="1020" y="600"/>
+        </graphics>
+      </place>
+      <place id="p-2-c03c4d85">
+        <name>
+          <text>Збережено2</text>
+        </name>
+        <graphics>
+          <position x="1260" y="600"/>
+        </graphics>
+      </place>
+      <transition id="t-5883ed90">
+        <name>
+          <text>Надходження</text>
+        </name>
+        <toolspecific tool="PetriObjModel" version="2.8.1">
+          <timeDelay>2.0</timeDelay>
+          <delayMeanValue>2.0</delayMeanValue>
+          <distribution>exp</distribution>
+        </toolspecific>
+        <graphics>
+          <position x="170" y="400"/>
+        </graphics>
+      </transition>
+      <transition id="t-f93f5342">
+        <name>
+          <text>Відмова</text>
+        </name>
+        <graphics>
+          <position x="170" y="560"/>
+        </graphics>
+      </transition>
+      <transition id="t-eaea4377">
+        <name>
+          <text>ДоГоловного</text>
+        </name>
+        <toolspecific tool="PetriObjModel" version="2.8.1">
+          <priority>1</priority>
+          <probability>0.7</probability>
+        </toolspecific>
+        <graphics>
+          <position x="421" y="200"/>
+        </graphics>
+      </transition>
+      <transition id="t-1-1cdf7d3c">
+        <name>
+          <text>Прийняти1</text>
+        </name>
+        <graphics>
+          <position x="660" y="200"/>
+        </graphics>
+      </transition>
+      <transition id="t-1-433e8902">
+        <name>
+          <text>Обчислення1</text>
+        </name>
+        <toolspecific tool="PetriObjModel" version="2.8.1">
+          <timeDelay>16.0</timeDelay>
+          <delayMeanValue>16.0</delayMeanValue>
+          <distribution>exp</distribution>
+        </toolspecific>
+        <graphics>
+          <position x="900" y="200"/>
+        </graphics>
+      </transition>
+      <transition id="t-1-e59d0706">
+        <name>
+          <text>Запис1</text>
+        </name>
+        <toolspecific tool="PetriObjModel" version="2.8.1">
+          <timeDelay>8.0</timeDelay>
+          <delayMeanValue>8.0</delayMeanValue>
+          <distribution>exp</distribution>
+        </toolspecific>
+        <graphics>
+          <position x="1140" y="200"/>
+        </graphics>
+      </transition>
+      <transition id="t-1-55748b82">
+        <name>
+          <text>Відповідь1</text>
+        </name>
+        <toolspecific tool="PetriObjModel" version="2.8.1">
+          <timeDelay>1.0</timeDelay>
+          <delayMeanValue>1.0</delayMeanValue>
+        </toolspecific>
+        <graphics>
+          <position x="1380" y="100"/>
+        </graphics>
+      </transition>
+      <transition id="t-cb3b78b5">
+        <name>
+          <text>ДоДопоміжного</text>
+        </name>
+        <toolspecific tool="PetriObjModel" version="2.8.1">
+          <priority>1</priority>
+          <probability>0.3</probability>
+        </toolspecific>
+        <graphics>
+          <position x="421" y="600"/>
+        </graphics>
+      </transition>
+      <transition id="t-2-7d113ffd">
+        <name>
+          <text>Прийняти2</text>
+        </name>
+        <graphics>
+          <position x="660" y="600"/>
+        </graphics>
+      </transition>
+      <transition id="t-2-5171c8e6">
+        <name>
+          <text>Обчислення2</text>
+        </name>
+        <toolspecific tool="PetriObjModel" version="2.8.1">
+          <timeDelay>20.0</timeDelay>
+          <delayMeanValue>20.0</delayMeanValue>
+          <distribution>exp</distribution>
+        </toolspecific>
+        <graphics>
+          <position x="900" y="600"/>
+        </graphics>
+      </transition>
+      <transition id="t-2-eabfa60f">
+        <name>
+          <text>Запис2</text>
+        </name>
+        <toolspecific tool="PetriObjModel" version="2.8.1">
+          <timeDelay>8.0</timeDelay>
+          <delayMeanValue>8.0</delayMeanValue>
+          <distribution>exp</distribution>
+        </toolspecific>
+        <graphics>
+          <position x="1140" y="600"/>
+        </graphics>
+      </transition>
+      <transition id="t-2-4a6c5c3c">
+        <name>
+          <text>Відповідь2</text>
+        </name>
+        <toolspecific tool="PetriObjModel" version="2.8.1">
+          <timeDelay>1.0</timeDelay>
+          <delayMeanValue>1.0</delayMeanValue>
+        </toolspecific>
+        <graphics>
+          <position x="1380" y="700"/>
+        </graphics>
+      </transition>
+      <arc id="arc-5bbd5f6e" source="p-623694b7" target="t-5883ed90">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-5004d304" source="p-1a28778f" target="t-f93f5342">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-8df6a869" source="p-1a28778f" target="t-eaea4377">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-33850c4d" source="p-e19d662b" target="t-eaea4377">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-e14f0857" source="p-1-5d23115f" target="t-1-1cdf7d3c">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-4e974680" source="p-1-7be978c5" target="t-1-1cdf7d3c">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-7297b4e9" source="p-1-6b5d3df8" target="t-1-433e8902">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-cd965137" source="p-1-4bd445af" target="t-1-433e8902">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-3903ae71" source="p-1-c0872fac" target="t-1-e59d0706">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-f9f47a98" source="p-b91406e5" target="t-1-e59d0706">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-3608c988" source="p-1-ed297a12" target="t-1-55748b82">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-b0d17a74" source="p-1a28778f" target="t-cb3b78b5">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-90c5b492" source="p-e19d662b" target="t-cb3b78b5">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-4c494214" source="p-2-e4f009de" target="t-2-7d113ffd">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-21407181" source="p-2-58d4e51b" target="t-2-7d113ffd">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-cd5a66ce" source="p-2-16d48fb4" target="t-2-5171c8e6">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-6997f9ef" source="p-2-cf19eb2b" target="t-2-5171c8e6">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-13514d6e" source="p-2-eddd8c7f" target="t-2-eabfa60f">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-bd06f6be" source="p-b91406e5" target="t-2-eabfa60f">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-c458a96b" source="p-2-c03c4d85" target="t-2-4a6c5c3c">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-a12dd019" source="t-5883ed90" target="p-623694b7">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-0103b652" source="t-5883ed90" target="p-1a28778f">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-1709fe4b" source="t-f93f5342" target="p-1efc646e">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-686b6a8c" source="t-eaea4377" target="p-1-5d23115f">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-e34ac5fd" source="t-1-1cdf7d3c" target="p-1-6b5d3df8">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-c002cedf" source="t-1-1cdf7d3c" target="p-e19d662b">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-1d858ef3" source="t-1-433e8902" target="p-1-c0872fac">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-5f4c79b3" source="t-1-433e8902" target="p-1-4bd445af">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-e2ad945f" source="t-1-e59d0706" target="p-1-ed297a12">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-5d16d60d" source="t-1-e59d0706" target="p-b91406e5">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-1941aeff" source="t-1-55748b82" target="p-6a291bb6">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-ab8191dc" source="t-1-55748b82" target="p-1-7be978c5">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-51f7727f" source="t-cb3b78b5" target="p-2-e4f009de">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-e634107b" source="t-2-7d113ffd" target="p-2-16d48fb4">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-c00bad9b" source="t-2-7d113ffd" target="p-e19d662b">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-e87daa51" source="t-2-5171c8e6" target="p-2-eddd8c7f">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-e4bfec62" source="t-2-5171c8e6" target="p-2-cf19eb2b">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-51e2dbfa" source="t-2-eabfa60f" target="p-2-c03c4d85">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-19a11b33" source="t-2-eabfa60f" target="p-b91406e5">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-c8ec1cfe" source="t-2-4a6c5c3c" target="p-6a291bb6">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arc-dd9cbdfb" source="t-2-4a6c5c3c" target="p-2-58d4e51b">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+    </page>
+  </net>
+</pnml>

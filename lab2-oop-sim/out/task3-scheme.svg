@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="890" height="120" viewBox="0 0 890 120" font-family="Arial, Helvetica, sans-serif">
+<rect width="890" height="120" fill="#fff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z"/></marker></defs>
+<polyline points="150,55 200,55" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="330,55 380,55" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="510,55 560,55" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="690,55 740,55" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polygon points="20,30 128,30 150,55 128,80 20,80" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="74" y="60" font-size="14" text-anchor="middle">CREATE</text>
+<text x="85" y="100" font-size="13" text-anchor="middle">exp(2)</text>
+<polygon points="200,30 330,30 330,80 200,80" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="265" y="60" font-size="14" text-anchor="middle">PROCESS 1</text>
+<text x="265" y="100" font-size="13" text-anchor="middle">exp(1), черга ≤ 5</text>
+<polygon points="380,30 510,30 510,80 380,80" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="445" y="60" font-size="14" text-anchor="middle">PROCESS 2</text>
+<text x="445" y="100" font-size="13" text-anchor="middle">exp(1,5), черга ≤ 5</text>
+<polygon points="560,30 690,30 690,80 560,80" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="625" y="60" font-size="14" text-anchor="middle">PROCESS 3</text>
+<text x="625" y="100" font-size="13" text-anchor="middle">exp(1,2), черга ≤ 5</text>
+<polygon points="762,30 870,30 870,80 762,80 740,55" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="816" y="60" font-size="14" text-anchor="middle">DISPOSE</text>
+</svg>

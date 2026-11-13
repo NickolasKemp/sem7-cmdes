@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="72" y="30" font-size="19" font-weight="600" fill="#1d2433">Середній час обробки запиту</text>
+  <text x="72" y="48" font-size="13" fill="#6b7686">сталий режим без відхилених запитів; від надходження до повернення відповіді</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#dfe4ec"/>
+  <text x="62" y="412" font-size="11" text-anchor="end" fill="#6b7686">0</text>
+  <line x1="72" y1="338.4" x2="872" y2="338.4" stroke="#dfe4ec"/>
+  <text x="62" y="342.4" font-size="11" text-anchor="end" fill="#6b7686">20</text>
+  <line x1="72" y1="268.79999999999995" x2="872" y2="268.79999999999995" stroke="#dfe4ec"/>
+  <text x="62" y="272.79999999999995" font-size="11" text-anchor="end" fill="#6b7686">40</text>
+  <line x1="72" y1="199.20000000000002" x2="872" y2="199.20000000000002" stroke="#dfe4ec"/>
+  <text x="62" y="203.20000000000002" font-size="11" text-anchor="end" fill="#6b7686">60</text>
+  <line x1="72" y1="129.59999999999997" x2="872" y2="129.59999999999997" stroke="#dfe4ec"/>
+  <text x="62" y="133.59999999999997" font-size="11" text-anchor="end" fill="#6b7686">80</text>
+  <line x1="72" y1="60" x2="872" y2="60" stroke="#dfe4ec"/>
+  <text x="62" y="64" font-size="11" text-anchor="end" fill="#6b7686">100</text>
+  <text x="72" y="428" font-size="11" text-anchor="middle" fill="#6b7686">250</text>
+  <text x="289.30909090909086" y="428" font-size="11" text-anchor="middle" fill="#6b7686">333</text>
+  <text x="464.72727272727275" y="428" font-size="11" text-anchor="middle" fill="#6b7686">400</text>
+  <text x="726.5454545454546" y="428" font-size="11" text-anchor="middle" fill="#6b7686">500</text>
+  <text x="873.1636363636364" y="428" font-size="11" text-anchor="middle" fill="#6b7686">556</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#1d2433"/>
+  <line x1="72" y1="60" x2="72" y2="408" stroke="#1d2433"/>
+  <text x="472" y="452" font-size="12" text-anchor="middle" fill="#6b7686">інтенсивність надходження, запитів за секунду</text>
+  <text x="18" y="234" font-size="12" text-anchor="middle" fill="#6b7686" transform="rotate(-90 18 234)">мілісекунд</text>
+  <path d="M72.0,304.7 L290.2,299.8 L464.7,291.0 L726.5,245.8 L872.0,92.6" fill="none" stroke="#4c7ef3" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="304.65042036809064" r="4" fill="#4c7ef3"/>
+  <circle cx="290.18181818181813" cy="299.8187456072486" r="4" fill="#4c7ef3"/>
+  <circle cx="464.72727272727275" cy="290.97583516371327" r="4" fill="#4c7ef3"/>
+  <circle cx="726.5454545454546" cy="245.76383392829402" r="4" fill="#4c7ef3"/>
+  <circle cx="872" cy="92.56952975130764" r="4" fill="#4c7ef3"/>
+  <path d="M72.0,315.9 L290.2,313.7 L464.7,309.8 L726.5,287.3 L872.0,219.4" fill="none" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="315.89887049620626" r="4" fill="#e8590c"/>
+  <circle cx="290.18181818181813" cy="313.73486734317527" r="4" fill="#e8590c"/>
+  <circle cx="464.72727272727275" cy="309.78683872787644" r="4" fill="#e8590c"/>
+  <circle cx="726.5454545454546" cy="287.2509963906447" r="4" fill="#e8590c"/>
+  <circle cx="872" cy="219.37753418555383" r="4" fill="#e8590c"/>
+  <path d="M72.0,320.7 L290.2,319.7 L464.7,317.9 L726.5,305.0 L872.0,273.7" fill="none" stroke="#2f9e44" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="320.7404395687647" r="4" fill="#2f9e44"/>
+  <circle cx="290.18181818181813" cy="319.6957600414333" r="4" fill="#2f9e44"/>
+  <circle cx="464.72727272727275" cy="317.8574148884097" r="4" fill="#2f9e44"/>
+  <circle cx="726.5454545454546" cy="305.0069847044263" r="4" fill="#2f9e44"/>
+  <circle cx="872" cy="273.74802592626696" r="4" fill="#2f9e44"/>
+  <line x1="72" y1="478" x2="98" y2="478" stroke="#4c7ef3" stroke-width="3"/>
+  <text x="104" y="482" font-size="12" fill="#1d2433">допоміжний сервер</text>
+  <line x1="230.2" y1="478" x2="256.2" y2="478" stroke="#e8590c" stroke-width="3"/>
+  <text x="262.2" y="482" font-size="12" fill="#1d2433">у середньому</text>
+  <line x1="355.4" y1="478" x2="381.4" y2="478" stroke="#2f9e44" stroke-width="3"/>
+  <text x="387.4" y="482" font-size="12" fill="#1d2433">головний сервер</text>
+</svg>

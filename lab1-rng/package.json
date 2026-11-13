@@ -1,0 +1,16 @@
+{
+  "name": "lab1-rng",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Комп'ютерний практикум №1: перевірка генератора випадкових чисел на відповідність закону розподілу",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.0"
+  }
+}

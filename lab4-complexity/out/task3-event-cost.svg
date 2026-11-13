@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="72" y="30" font-size="19" font-weight="600" fill="#1d2433">Середній час обробки однієї події</text>
+  <text x="72" y="48" font-size="13" fill="#6b7686">час обчислення / кількість подій; пунктир — k(N) = 4·(N + 2)·α + β + γ</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#dfe4ec"/>
+  <text x="62" y="412" font-size="11" text-anchor="end" fill="#6b7686">0</text>
+  <line x1="72" y1="321" x2="872" y2="321" stroke="#dfe4ec"/>
+  <text x="62" y="325" font-size="11" text-anchor="end" fill="#6b7686">2</text>
+  <line x1="72" y1="234" x2="872" y2="234" stroke="#dfe4ec"/>
+  <text x="62" y="238" font-size="11" text-anchor="end" fill="#6b7686">4</text>
+  <line x1="72" y1="147" x2="872" y2="147" stroke="#dfe4ec"/>
+  <text x="62" y="151" font-size="11" text-anchor="end" fill="#6b7686">6</text>
+  <line x1="72" y1="60" x2="872" y2="60" stroke="#dfe4ec"/>
+  <text x="62" y="64" font-size="11" text-anchor="end" fill="#6b7686">8</text>
+  <text x="68.7935871743487" y="428" font-size="11" text-anchor="middle" fill="#6b7686">0</text>
+  <text x="229.11422845691382" y="428" font-size="11" text-anchor="middle" fill="#6b7686">100</text>
+  <text x="389.434869739479" y="428" font-size="11" text-anchor="middle" fill="#6b7686">200</text>
+  <text x="549.7555110220442" y="428" font-size="11" text-anchor="middle" fill="#6b7686">300</text>
+  <text x="710.0761523046092" y="428" font-size="11" text-anchor="middle" fill="#6b7686">400</text>
+  <text x="870.3967935871743" y="428" font-size="11" text-anchor="middle" fill="#6b7686">500</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#1d2433"/>
+  <line x1="72" y1="60" x2="72" y2="408" stroke="#1d2433"/>
+  <text x="472" y="452" font-size="12" text-anchor="middle" fill="#6b7686">кількість подій у моделі N + 1</text>
+  <text x="18" y="234" font-size="12" text-anchor="middle" fill="#6b7686" transform="rotate(-90 18 234)">мкс на подію</text>
+  <path d="M72.0,395.5 L86.4,391.2 L110.5,384.2 L150.6,372.4 L230.7,348.8 L391.0,301.7 L551.4,254.5 L711.7,207.4 L872.0,160.2" fill="none" stroke="#4c7ef3" stroke-width="2" stroke-dasharray="7 5" stroke-linejoin="round"/>
+  <circle cx="72" cy="386.24257208588915" r="4" fill="#4c7ef3"/>
+  <circle cx="86.42885771543087" cy="382.88184672144894" r="4" fill="#4c7ef3"/>
+  <circle cx="110.47695390781564" cy="384.8998203361599" r="4" fill="#4c7ef3"/>
+  <circle cx="150.5571142284569" cy="374.28498573115905" r="4" fill="#4c7ef3"/>
+  <circle cx="230.7174348697395" cy="354.9600597089763" r="4" fill="#4c7ef3"/>
+  <circle cx="391.0380761523046" cy="310.6182106425611" r="4" fill="#4c7ef3"/>
+  <circle cx="551.3587174348697" cy="252.51315935556525" r="4" fill="#4c7ef3"/>
+  <circle cx="711.6793587174349" cy="192.96728895300683" r="4" fill="#4c7ef3"/>
+  <circle cx="872" cy="134.6617633069908" r="4" fill="#4c7ef3"/>
+  <line x1="72" y1="478" x2="98" y2="478" stroke="#4c7ef3" stroke-width="3" stroke-dasharray="7 5"/>
+  <text x="104" y="482" font-size="12" fill="#1d2433">теоретична оцінка</text>
+  <circle cx="243.2" cy="478" r="4" fill="#4c7ef3"/>
+  <text x="262.2" y="482" font-size="12" fill="#1d2433">експеримент</text>
+</svg>

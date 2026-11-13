@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+build/
+target/
+dist/
+.env*
+*.mp4
+
+# Separate clones of upstream repos (StetsenkoInna)
+petri-lib/
+petri-paint/

@@ -1,0 +1,122 @@
+% Курсова робота з освітнього компоненту «Моделювання систем. Курсова робота», завдання В12.
+% Структура — за посібником Стеценко І. В. та ін. (2024): титул (додаток А), завдання (додаток Б),
+% анотація (додаток В), зміст, вступ, п'ять розділів, висновки, джерела, додатки.
+\documentclass[coursework]{kpi-thesis}
+\usepackage{kpi-titles}
+\usepackage{fvextra}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.multipart,shapes.geometric,calc,fit}
+
+% Посібник вимагає полів 2 см з усіх боків.
+\geometry{left=20mm,right=20mm,top=20mm,bottom=20mm}
+\graphicspath{{media/}{../model/out/}}
+
+\kpiset{
+  title      = {Імітаційна модель системи посадки літаків в аеропорту на основі формального опису стохастичною мережею Петрі},
+  discipline = {Моделювання систем. Курсова робота},
+  group      = {ІП-34},
+  gender     = {m},
+  student    = {Микола ТУБОЛЕВ},
+  advisor    = {ас. Коринецький Д. С.},
+  year       = {2026},
+}
+\newcommand\recordbook{№ 14309039}
+% Члени комісії на титулі — у форматі «Ім'я ПРІЗВИЩЕ».
+\newcommand\advisorCommission{Д. КОРИНЕЦЬКИЙ}
+
+% Код моделі з українськими коментарями: listings під XeLaTeX псує розділові знаки поряд з кирилицею.
+\fvset{fontsize=\setstretch{1}\fontsize{10}{11.5}\selectfont, breaklines, breakanywhere, tabsize=2, xleftmargin=1.25cm}
+\newcommand\tsfile[1]{%
+  \par\noindent\textbf{Файл }\path{#1}\par
+  \VerbatimInput[fontsize=\setstretch{1}\fontsize{9}{10.5}\selectfont, xleftmargin=0pt]{../model/#1}%
+}
+\newcommand\code[1]{\texttt{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\kpiloadstats{self}{build/main.kpistats}
+
+\makeatletter
+\newcommand\courseworkTitle{%
+  \begingroup
+  \thispagestyle{empty}%
+  \setstretch{1.15}%
+  \begin{center}
+  МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ\\
+  НАЦІОНАЛЬНИЙ ТЕХНІЧНИЙ УНІВЕРСИТЕТ УКРАЇНИ\\
+  «КИЇВСЬКИЙ ПОЛІТЕХНІЧНИЙ ІНСТИТУТ імені ІГОРЯ СІКОРСЬКОГО»\\
+  КАФЕДРА ІНФОРМАТИКИ ТА ПРОГРАМНОЇ ІНЖЕНЕРІЇ
+
+  \vspace{3.5cm}
+  Курсова робота з освітнього компоненту\\
+  «\kpi@g{discipline}»
+
+  \vspace{0.3cm}
+  Тема: \textbf{\kpi@g{title}}
+  \end{center}
+
+  \vspace{2.5cm}
+  \noindent
+  \begin{minipage}[t]{0.47\textwidth}
+  \raggedright
+  Керівник:\\
+  \kpi@g{advisor}
+
+  \vspace{0.6cm}
+  «Допущено до захисту»\\
+  \sigline{5cm}
+
+  «\sigline{0.8cm}» \sigline{3cm} 20\sigline{0.6cm} р.
+
+  \vspace{0.6cm}
+  Захищено з оцінкою\\
+  \sigline{5cm}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.47\textwidth}
+  \raggedright
+  Виконавець:\\
+  \kpi@g{student}\\
+  студент групи \kpi@g{group}\\
+  залікова книжка \recordbook
+
+  \vspace{0.6cm}
+  \sigline{5cm}
+
+  «\sigline{0.8cm}» \sigline{3cm} 20\sigline{0.6cm} р.
+  \end{minipage}
+
+  \vspace{1cm}
+  \noindent Члени комісії:
+
+  \vspace{0.3cm}
+  \noindent\sigline{5cm}\hfill\makebox[0.47\textwidth][l]{Інна СТЕЦЕНКО}
+
+  \vspace{0.4cm}
+  \noindent\sigline{5cm}\hfill\makebox[0.47\textwidth][l]{\advisorCommission}
+
+  \vfill
+  \begin{center}
+  Київ -- \kpi@g{year}
+  \end{center}
+  \endgroup
+  \clearpage
+}
+\makeatother
+
+\begin{document}
+\courseworkTitle
+\mainmatter
+
+\input{chapters/task}
+\input{chapters/annotation}
+\tableofcontents
+\input{chapters/00-intro}
+\input{chapters/01-conceptual}
+\input{chapters/02-formal}
+\input{chapters/03-algorithm}
+\input{chapters/04-experiment}
+\input{chapters/05-interpretation}
+\input{chapters/99-conclusions}
+\input{chapters/sources}
+\input{chapters/appendices}
+\end{document}

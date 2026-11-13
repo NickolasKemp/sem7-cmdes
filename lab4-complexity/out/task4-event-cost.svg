@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="72" y="30" font-size="19" font-weight="600" fill="#1d2433">Середній час обробки однієї події для мереж різної структури</text>
+  <text x="72" y="48" font-size="13" fill="#6b7686">час обчислення / кількість подій</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#dfe4ec"/>
+  <text x="62" y="412" font-size="11" text-anchor="end" fill="#6b7686">0</text>
+  <line x1="72" y1="321" x2="872" y2="321" stroke="#dfe4ec"/>
+  <text x="62" y="325" font-size="11" text-anchor="end" fill="#6b7686">5</text>
+  <line x1="72" y1="234" x2="872" y2="234" stroke="#dfe4ec"/>
+  <text x="62" y="238" font-size="11" text-anchor="end" fill="#6b7686">10</text>
+  <line x1="72" y1="147" x2="872" y2="147" stroke="#dfe4ec"/>
+  <text x="62" y="151" font-size="11" text-anchor="end" fill="#6b7686">15</text>
+  <line x1="72" y1="60" x2="872" y2="60" stroke="#dfe4ec"/>
+  <text x="62" y="64" font-size="11" text-anchor="end" fill="#6b7686">20</text>
+  <text x="68.7935871743487" y="428" font-size="11" text-anchor="middle" fill="#6b7686">0</text>
+  <text x="229.11422845691382" y="428" font-size="11" text-anchor="middle" fill="#6b7686">100</text>
+  <text x="389.434869739479" y="428" font-size="11" text-anchor="middle" fill="#6b7686">200</text>
+  <text x="549.7555110220442" y="428" font-size="11" text-anchor="middle" fill="#6b7686">300</text>
+  <text x="710.0761523046092" y="428" font-size="11" text-anchor="middle" fill="#6b7686">400</text>
+  <text x="870.3967935871743" y="428" font-size="11" text-anchor="middle" fill="#6b7686">500</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#1d2433"/>
+  <line x1="72" y1="60" x2="72" y2="408" stroke="#1d2433"/>
+  <text x="472" y="452" font-size="12" text-anchor="middle" fill="#6b7686">кількість подій у моделі N + 1</text>
+  <text x="18" y="234" font-size="12" text-anchor="middle" fill="#6b7686" transform="rotate(-90 18 234)">мкс на подію</text>
+  <path d="M72.0,399.3 L86.4,398.0 L110.5,398.8 L150.6,394.5 L230.7,386.8 L391.0,369.0 L551.4,345.8 L711.7,322.0 L872.0,298.7" fill="none" stroke="#4c7ef3" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="399.2970288343557" r="4" fill="#4c7ef3"/>
+  <circle cx="86.42885771543087" cy="397.9527386885796" r="4" fill="#4c7ef3"/>
+  <circle cx="110.47695390781564" cy="398.75992813446396" r="4" fill="#4c7ef3"/>
+  <circle cx="150.5571142284569" cy="394.5139942924636" r="4" fill="#4c7ef3"/>
+  <circle cx="230.7174348697395" cy="386.7840238835905" r="4" fill="#4c7ef3"/>
+  <circle cx="391.0380761523046" cy="369.04728425702444" r="4" fill="#4c7ef3"/>
+  <circle cx="551.3587174348697" cy="345.8052637422261" r="4" fill="#4c7ef3"/>
+  <circle cx="711.6793587174349" cy="321.98691558120277" r="4" fill="#4c7ef3"/>
+  <circle cx="872" cy="298.6647053227963" r="4" fill="#4c7ef3"/>
+  <path d="M72.0,402.6 L86.4,396.1 L110.5,389.4 L150.6,380.0 L230.7,352.7 L391.0,287.8 L551.4,243.8 L711.7,185.1 L872.0,146.0" fill="none" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="402.57287239263877" r="4" fill="#e8590c"/>
+  <circle cx="86.42885771543087" cy="396.1417088825599" r="4" fill="#e8590c"/>
+  <circle cx="110.47695390781564" cy="389.428905071805" r="4" fill="#e8590c"/>
+  <circle cx="150.5571142284569" cy="380.0373025788302" r="4" fill="#e8590c"/>
+  <circle cx="230.7174348697395" cy="352.6618011461355" r="4" fill="#e8590c"/>
+  <circle cx="391.0380761523046" cy="287.8182664756389" r="4" fill="#e8590c"/>
+  <circle cx="551.3587174348697" cy="243.8259312320941" r="4" fill="#e8590c"/>
+  <circle cx="711.6793587174349" cy="185.07322750715775" r="4" fill="#e8590c"/>
+  <circle cx="872" cy="145.98970315182981" r="4" fill="#e8590c"/>
+  <path d="M72.0,403.8 L86.4,400.9 L110.5,399.3 L150.6,392.7 L230.7,384.8 L391.0,368.3 L551.4,345.9 L711.7,325.3 L872.0,303.7" fill="none" stroke="#2f9e44" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="403.83828650304287" r="4" fill="#2f9e44"/>
+  <circle cx="86.42885771543087" cy="400.85639482051516" r="4" fill="#2f9e44"/>
+  <circle cx="110.47695390781564" cy="399.2964740354468" r="4" fill="#2f9e44"/>
+  <circle cx="150.5571142284569" cy="392.6519011124072" r="4" fill="#2f9e44"/>
+  <circle cx="230.7174348697395" cy="384.7585098101341" r="4" fill="#2f9e44"/>
+  <circle cx="391.0380761523046" cy="368.3163549752917" r="4" fill="#2f9e44"/>
+  <circle cx="551.3587174348697" cy="345.90709413287294" r="4" fill="#2f9e44"/>
+  <circle cx="711.6793587174349" cy="325.2761572214277" r="4" fill="#2f9e44"/>
+  <circle cx="872" cy="303.74414096767714" r="4" fill="#2f9e44"/>
+  <path d="M72.0,403.5 L86.4,399.3 L110.5,397.5 L150.6,392.7 L230.7,384.4 L391.0,365.6 L551.4,342.2 L711.7,318.6 L872.0,296.1" fill="none" stroke="#ae3ec9" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="403.5491760736494" r="4" fill="#ae3ec9"/>
+  <circle cx="86.42885771543087" cy="399.3430631149652" r="4" fill="#ae3ec9"/>
+  <circle cx="110.47695390781564" cy="397.5122091171786" r="4" fill="#ae3ec9"/>
+  <circle cx="150.5571142284569" cy="392.7442702034085" r="4" fill="#ae3ec9"/>
+  <circle cx="230.7174348697395" cy="384.39902447310806" r="4" fill="#ae3ec9"/>
+  <circle cx="391.0380761523046" cy="365.58421490454657" r="4" fill="#ae3ec9"/>
+  <circle cx="551.3587174348697" cy="342.2342884736499" r="4" fill="#ae3ec9"/>
+  <circle cx="711.6793587174349" cy="318.59572324060696" r="4" fill="#ae3ec9"/>
+  <circle cx="872" cy="296.0532508342445" r="4" fill="#ae3ec9"/>
+  <path d="M72.0,403.3 L86.4,400.6 L110.5,397.8 L150.6,393.0 L230.7,384.6 L391.0,367.2 L551.4,346.7 L711.7,323.9 L872.0,300.5" fill="none" stroke="#868e96" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="403.2854196053522" r="4" fill="#868e96"/>
+  <circle cx="86.42885771543087" cy="400.63467740574316" r="4" fill="#868e96"/>
+  <circle cx="110.47695390781564" cy="397.75457941752074" r="4" fill="#868e96"/>
+  <circle cx="150.5571142284569" cy="392.97892469850535" r="4" fill="#868e96"/>
+  <circle cx="230.7174348697395" cy="384.6114020270266" r="4" fill="#868e96"/>
+  <circle cx="391.0380761523046" cy="367.2197409822499" r="4" fill="#868e96"/>
+  <circle cx="551.3587174348697" cy="346.6592833034109" r="4" fill="#868e96"/>
+  <circle cx="711.6793587174349" cy="323.8844060920244" r="4" fill="#868e96"/>
+  <circle cx="872" cy="300.5362231194" r="4" fill="#868e96"/>
+  <line x1="72" y1="478" x2="98" y2="478" stroke="#4c7ef3" stroke-width="3"/>
+  <text x="104" y="482" font-size="12" fill="#1d2433">послідовна</text>
+  <line x1="184" y1="478" x2="210" y2="478" stroke="#e8590c" stroke-width="3"/>
+  <text x="216" y="482" font-size="12" fill="#1d2433">віяло</text>
+  <line x1="263" y1="478" x2="289" y2="478" stroke="#2f9e44" stroke-width="3"/>
+  <text x="295" y="482" font-size="12" fill="#1d2433">дерево</text>
+  <line x1="348.6" y1="478" x2="374.6" y2="478" stroke="#ae3ec9" stroke-width="3"/>
+  <text x="380.6" y="482" font-size="12" fill="#1d2433">з пропуском</text>
+  <line x1="467.20000000000005" y1="478" x2="493.20000000000005" y2="478" stroke="#868e96" stroke-width="3"/>
+  <text x="499.20000000000005" y="482" font-size="12" fill="#1d2433">з поверненням</text>
+</svg>

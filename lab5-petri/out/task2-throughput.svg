@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="72" y="30" font-size="19" font-weight="600" fill="#1d2433">Пропускна здатність гнучкої виробничої системи</text>
+  <text x="72" y="48" font-size="13" fill="#6b7686">деталей за годину, що надійшли на склад; пунктир — інтенсивність надходження деталей</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#dfe4ec"/>
+  <text x="62" y="412" font-size="11" text-anchor="end" fill="#6b7686">0</text>
+  <line x1="72" y1="292" x2="872" y2="292" stroke="#dfe4ec"/>
+  <text x="62" y="296" font-size="11" text-anchor="end" fill="#6b7686">50</text>
+  <line x1="72" y1="176" x2="872" y2="176" stroke="#dfe4ec"/>
+  <text x="62" y="180" font-size="11" text-anchor="end" fill="#6b7686">100</text>
+  <line x1="72" y1="60" x2="872" y2="60" stroke="#dfe4ec"/>
+  <text x="62" y="64" font-size="11" text-anchor="end" fill="#6b7686">150</text>
+  <text x="72" y="428" font-size="11" text-anchor="middle" fill="#6b7686">35</text>
+  <text x="186.28571428571428" y="428" font-size="11" text-anchor="middle" fill="#6b7686">40</text>
+  <text x="300.57142857142856" y="428" font-size="11" text-anchor="middle" fill="#6b7686">45</text>
+  <text x="414.85714285714283" y="428" font-size="11" text-anchor="middle" fill="#6b7686">50</text>
+  <text x="529.1428571428571" y="428" font-size="11" text-anchor="middle" fill="#6b7686">55</text>
+  <text x="643.4285714285714" y="428" font-size="11" text-anchor="middle" fill="#6b7686">60</text>
+  <text x="872" y="428" font-size="11" text-anchor="middle" fill="#6b7686">70</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#1d2433"/>
+  <line x1="72" y1="60" x2="72" y2="408" stroke="#1d2433"/>
+  <text x="472" y="452" font-size="12" text-anchor="middle" fill="#6b7686">середній інтервал надходження деталей, с</text>
+  <text x="18" y="234" font-size="12" text-anchor="middle" fill="#6b7686" transform="rotate(-90 18 234)">деталей за годину</text>
+  <path d="M872.0,288.7 L643.4,268.8 L529.1,256.1 L414.9,241.0 L300.6,222.4 L186.3,199.2 L72.0,169.4" fill="none" stroke="#868e96" stroke-width="2" stroke-dasharray="7 5" stroke-linejoin="round"/>
+  <path d="M872.0,288.5 L643.4,270.4 L529.1,256.4 L414.9,241.3 L300.6,233.2 L186.3,232.5 L72.0,232.2" fill="none" stroke="#4c7ef3" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="872" cy="288.46432" r="4" fill="#4c7ef3"/>
+  <circle cx="643.4285714285714" cy="270.36832000000004" r="4" fill="#4c7ef3"/>
+  <circle cx="529.1428571428571" cy="256.36015999999995" r="4" fill="#4c7ef3"/>
+  <circle cx="414.85714285714283" cy="241.34512" r="4" fill="#4c7ef3"/>
+  <circle cx="300.57142857142856" cy="233.19728000000003" r="4" fill="#4c7ef3"/>
+  <circle cx="186.28571428571428" cy="232.45024000000004" r="4" fill="#4c7ef3"/>
+  <circle cx="72" cy="232.22752000000003" r="4" fill="#4c7ef3"/>
+  <path d="M872.0,289.9 L643.4,270.9 L529.1,255.9 L414.9,243.4 L300.6,240.9 L186.3,240.7 L72.0,240.1" fill="none" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="872" cy="289.85632" r="4" fill="#e8590c"/>
+  <circle cx="643.4285714285714" cy="270.85087999999996" r="4" fill="#e8590c"/>
+  <circle cx="529.1428571428571" cy="255.93792000000002" r="4" fill="#e8590c"/>
+  <circle cx="414.85714285714283" cy="243.39136" r="4" fill="#e8590c"/>
+  <circle cx="300.57142857142856" cy="240.8904" r="4" fill="#e8590c"/>
+  <circle cx="186.28571428571428" cy="240.66768" r="4" fill="#e8590c"/>
+  <circle cx="72" cy="240.11088000000004" r="4" fill="#e8590c"/>
+  <line x1="72" y1="478" x2="98" y2="478" stroke="#868e96" stroke-width="3" stroke-dasharray="7 5"/>
+  <text x="104" y="482" font-size="12" fill="#1d2433">надходження</text>
+  <line x1="190.6" y1="478" x2="216.6" y2="478" stroke="#4c7ef3" stroke-width="3"/>
+  <text x="222.6" y="482" font-size="12" fill="#1d2433">варіант 1: робот на кожному шляху</text>
+  <line x1="454.4" y1="478" x2="480.4" y2="478" stroke="#e8590c" stroke-width="3"/>
+  <text x="486.4" y="482" font-size="12" fill="#1d2433">варіант 2: найближчий вільний робот</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="72" y="30" font-size="19" font-weight="600" fill="#1d2433">Оброблені та відхилені запити</text>
+  <text x="72" y="48" font-size="13" fill="#6b7686">черга обмежена 1000 запитами; пунктир — інтенсивність надходження</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#dfe4ec"/>
+  <text x="62" y="412" font-size="11" text-anchor="end" fill="#6b7686">0</text>
+  <line x1="72" y1="292" x2="872" y2="292" stroke="#dfe4ec"/>
+  <text x="62" y="296" font-size="11" text-anchor="end" fill="#6b7686">500</text>
+  <line x1="72" y1="176" x2="872" y2="176" stroke="#dfe4ec"/>
+  <text x="62" y="180" font-size="11" text-anchor="end" fill="#6b7686">1 000</text>
+  <line x1="72" y1="60" x2="872" y2="60" stroke="#dfe4ec"/>
+  <text x="62" y="64" font-size="11" text-anchor="end" fill="#6b7686">1 500</text>
+  <text x="72" y="428" font-size="11" text-anchor="middle" fill="#6b7686">250</text>
+  <text x="232" y="428" font-size="11" text-anchor="middle" fill="#6b7686">400</text>
+  <text x="338.66666666666663" y="428" font-size="11" text-anchor="middle" fill="#6b7686">500</text>
+  <text x="472" y="428" font-size="11" text-anchor="middle" fill="#6b7686">625</text>
+  <text x="566.9333333333334" y="428" font-size="11" text-anchor="middle" fill="#6b7686">714</text>
+  <text x="693.8666666666667" y="428" font-size="11" text-anchor="middle" fill="#6b7686">833</text>
+  <text x="872" y="428" font-size="11" text-anchor="middle" fill="#6b7686">1 000</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#1d2433"/>
+  <line x1="72" y1="60" x2="72" y2="408" stroke="#1d2433"/>
+  <text x="472" y="452" font-size="12" text-anchor="middle" fill="#6b7686">інтенсивність надходження, запитів за секунду</text>
+  <text x="18" y="234" font-size="12" text-anchor="middle" fill="#6b7686" transform="rotate(-90 18 234)">запитів за секунду</text>
+  <path d="M72.0,350.0 L160.9,330.7 L232.0,315.2 L338.7,292.0 L397.9,279.1 L472.0,263.0 L516.4,253.3 L567.2,242.3 L625.8,229.5 L694.2,214.7 L872.0,176.0" fill="none" stroke="#868e96" stroke-width="2" stroke-dasharray="7 5" stroke-linejoin="round"/>
+  <path d="M72.0,349.8 L160.9,330.3 L232.0,315.3 L338.7,292.2 L397.9,278.8 L472.0,267.4 L516.4,267.4 L567.2,267.0 L625.8,268.1 L694.2,267.6 L872.0,268.2" fill="none" stroke="#2f9e44" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="349.82058666666666" r="4" fill="#2f9e44"/>
+  <circle cx="160.88888888888886" cy="330.27020444444446" r="4" fill="#2f9e44"/>
+  <circle cx="232" cy="315.3332711111111" r="4" fill="#2f9e44"/>
+  <circle cx="338.66666666666663" cy="292.21988444444446" r="4" fill="#2f9e44"/>
+  <circle cx="397.9259259259259" cy="278.8378666666666" r="4" fill="#2f9e44"/>
+  <circle cx="472" cy="267.38299555555557" r="4" fill="#2f9e44"/>
+  <circle cx="516.4444444444443" cy="267.40954666666664" r="4" fill="#2f9e44"/>
+  <circle cx="567.2380952380952" cy="266.99916444444443" r="4" fill="#2f9e44"/>
+  <circle cx="625.8461538461537" cy="268.0890488888889" r="4" fill="#2f9e44"/>
+  <circle cx="694.2222222222223" cy="267.60030222222224" r="4" fill="#2f9e44"/>
+  <circle cx="872" cy="268.1934488888889" r="4" fill="#2f9e44"/>
+  <path d="M72.0,408.0 L160.9,408.0 L232.0,408.0 L338.7,408.0 L397.9,408.0 L472.0,404.3 L516.4,394.5 L567.2,383.3 L625.8,369.3 L694.2,355.0 L872.0,315.7" fill="none" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="408" r="4" fill="#e8590c"/>
+  <circle cx="160.88888888888886" cy="408" r="4" fill="#e8590c"/>
+  <circle cx="232" cy="408" r="4" fill="#e8590c"/>
+  <circle cx="338.66666666666663" cy="408" r="4" fill="#e8590c"/>
+  <circle cx="397.9259259259259" cy="408" r="4" fill="#e8590c"/>
+  <circle cx="472" cy="404.31057376294075" r="4" fill="#e8590c"/>
+  <circle cx="516.4444444444443" cy="394.5018180083086" r="4" fill="#e8590c"/>
+  <circle cx="567.2380952380952" cy="383.2575596516112" r="4" fill="#e8590c"/>
+  <circle cx="625.8461538461537" cy="369.29326253412773" r="4" fill="#e8590c"/>
+  <circle cx="694.2222222222223" cy="354.99929436705" r="4" fill="#e8590c"/>
+  <circle cx="872" cy="315.6981700906315" r="4" fill="#e8590c"/>
+  <line x1="72" y1="478" x2="98" y2="478" stroke="#868e96" stroke-width="3" stroke-dasharray="7 5"/>
+  <text x="104" y="482" font-size="12" fill="#1d2433">надходить</text>
+  <line x1="177.4" y1="478" x2="203.4" y2="478" stroke="#2f9e44" stroke-width="3"/>
+  <text x="209.4" y="482" font-size="12" fill="#1d2433">оброблено</text>
+  <line x1="282.8" y1="478" x2="308.8" y2="478" stroke="#e8590c" stroke-width="3"/>
+  <text x="314.8" y="482" font-size="12" fill="#1d2433">відхилено</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 530" width="760" height="530" font-family="Arial, sans-serif" font-size="12">
+<rect width="760" height="530" fill="#fff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z"/></marker></defs>
+<path d="M15.0 250.0 L80.0 250.0" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M120.0 250.0 L160.0 250.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M160.0 110.0 L160.0 440.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M160.0 110.0 L250.0 110.0" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M160.0 300.0 L250.0 300.0" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M160.0 440.0 L215.0 440.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M215.0 440.0 L280.0 440.0" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M320.0 440.0 L400.0 440.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M250.0 60.0 L250.0 160.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M350.0 60.0 L350.0 160.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M350.0 110.0 L400.0 110.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M250.0 60.0 L280.0 60.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M320.0 60.0 L350.0 60.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M250.0 110.0 L280.0 110.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M320.0 110.0 L350.0 110.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M250.0 160.0 L280.0 160.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M320.0 160.0 L350.0 160.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M250.0 250.0 L250.0 350.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M350.0 250.0 L350.0 350.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M350.0 300.0 L400.0 300.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M250.0 250.0 L280.0 250.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M320.0 250.0 L350.0 250.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M250.0 300.0 L280.0 300.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M320.0 300.0 L350.0 300.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M250.0 350.0 L280.0 350.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M320.0 350.0 L350.0 350.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M400.0 110.0 L400.0 440.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M400.0 275.0 L470.0 275.0" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M215.0 448.0 L215.0 500.0" fill="none" stroke="#000" stroke-width="1.4" stroke-dasharray="5 4"/>
+<rect x="80" y="230" width="40" height="40" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<line x1="88" y1="230" x2="88" y2="270" stroke="#000"/>
+<line x1="96" y1="230" x2="96" y2="270" stroke="#000"/>
+<line x1="104" y1="230" x2="104" y2="270" stroke="#000"/>
+<line x1="112" y1="230" x2="112" y2="270" stroke="#000"/>
+<polygon points="207,432 207,448 223,440" fill="#000"/>
+<circle cx="300" cy="440" r="20" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="300" y="444" text-anchor="middle" font-weight="bold">Dк</text>
+<circle cx="300" cy="60" r="20" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="300" y="64" text-anchor="middle" font-weight="bold">D1</text>
+<circle cx="300" cy="110" r="20" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="300" y="114" text-anchor="middle" font-weight="bold">D2</text>
+<circle cx="300" cy="160" r="20" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="300" y="164" text-anchor="middle" font-weight="bold">D3</text>
+<circle cx="300" cy="250" r="20" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="300" y="254" text-anchor="middle" font-weight="bold">D4</text>
+<circle cx="300" cy="300" r="20" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="300" y="304" text-anchor="middle" font-weight="bold">D5</text>
+<circle cx="300" cy="350" r="20" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="300" y="354" text-anchor="middle" font-weight="bold">D6</text>
+<text x="45" y="240" text-anchor="middle">t = exp(2)</text>
+<text x="100" y="210" text-anchor="middle" font-weight="bold">Черга</text>
+<text x="100" y="292" text-anchor="middle" fill="#555">спільна, без</text>
+<text x="100" y="308" text-anchor="middle" fill="#555">обмеження, L(t)</text>
+<text x="200" y="102" text-anchor="middle">3</text>
+<text x="200" y="292" text-anchor="middle">2</text>
+<text x="185" y="432" text-anchor="middle">1</text>
+<text x="300" y="28" text-anchor="middle" font-weight="bold">Місця 1–3</text>
+<text x="300" y="198" text-anchor="middle">t = exp(10)</text>
+<text x="300" y="225" text-anchor="middle" font-weight="bold">Місця 4–6</text>
+<text x="300" y="388" text-anchor="middle">t = exp(10)</text>
+<text x="300" y="482" text-anchor="middle" font-weight="bold">Касир, t = tк</text>
+<text x="435" y="267" text-anchor="middle" fill="#555">вихід</text>
+<text x="215" y="515" text-anchor="middle">B(S,t) = (K(t) = 0)</text>
+<text x="480" y="360" text-anchor="start">Пріоритет маршруту: 3 &gt; 2 &gt; 1.</text>
+<text x="480" y="380" text-anchor="start">Якщо всі маршрути зайняті — покупець</text>
+<text x="480" y="398" text-anchor="start">залишається в черзі.</text>
+<text x="480" y="428" text-anchor="start">K(t) — стан касира:</text>
+<text x="480" y="446" text-anchor="start">K := 1, якщо L(t) &gt; 5</text>
+<text x="480" y="464" text-anchor="start">K := 0, якщо L(t) = 0</text>
+<text x="480" y="494" text-anchor="start" font-weight="bold">L_сер = Σ Lᵢ·Δtᵢ / T_mod</text>
+</svg>

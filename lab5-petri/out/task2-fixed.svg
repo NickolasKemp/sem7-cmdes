@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1230" height="790" viewBox="0 0 1230 790" font-family="Times New Roman, serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1230" height="790" fill="#fff"/>
+<circle cx="180" cy="170" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="180.0" y="202.0" font-size="13" text-anchor="middle">деталі на</text>
+<text x="180.0" y="217.0" font-size="13" text-anchor="middle">пункті</text>
+<text x="180.0" y="232.0" font-size="13" text-anchor="middle">прибуття</text>
+<circle cx="970" cy="170" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="993.0" y="167.5" font-size="13" text-anchor="start">оброблені на</text>
+<text x="993.0" y="182.5" font-size="13" text-anchor="start">верстаті 1</text>
+<circle cx="270" cy="390" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="247.0" y="387.5" font-size="13" text-anchor="end">оброблені на</text>
+<text x="247.0" y="402.5" font-size="13" text-anchor="end">верстаті 2</text>
+<circle cx="770" cy="630" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="793.0" y="620.0" font-size="13" text-anchor="start">склад</text>
+<text x="793.0" y="635.0" font-size="13" text-anchor="start">оброблених</text>
+<text x="793.0" y="650.0" font-size="13" text-anchor="start">деталей</text>
+<circle cx="40" cy="170" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="40" cy="170" r="3.5" fill="#000"/>
+<circle cx="770" cy="170" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="770.0" y="202.0" font-size="13" text-anchor="middle">деталі на</text>
+<text x="770.0" y="217.0" font-size="13" text-anchor="middle">верстаті 1</text>
+<circle cx="470" cy="390" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="470.0" y="422.0" font-size="13" text-anchor="middle">деталі на</text>
+<text x="470.0" y="437.0" font-size="13" text-anchor="middle">верстаті 2</text>
+<circle cx="180" cy="285" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="180" y="290" font-size="14" text-anchor="middle">3</text>
+<text x="157.0" y="282.5" font-size="13" text-anchor="end">вільні місця</text>
+<text x="157.0" y="297.5" font-size="13" text-anchor="end">на верстаті 1</text>
+<circle cx="1070" cy="390" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="1070" y="395" font-size="14" text-anchor="middle">3</text>
+<text x="1093.0" y="387.5" font-size="13" text-anchor="start">вільні місця</text>
+<text x="1093.0" y="402.5" font-size="13" text-anchor="start">на верстаті 2</text>
+<circle cx="270" cy="80" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="270" cy="80" r="3.5" fill="#000"/>
+<text x="270.0" y="57.0" font-size="13" text-anchor="middle">робот 1 біля А</text>
+<circle cx="670" cy="80" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="670.0" y="42.0" font-size="13" text-anchor="middle">робот 1 біля</text>
+<text x="670.0" y="57.0" font-size="13" text-anchor="middle">В1</text>
+<circle cx="370" cy="170" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="370.0" y="202.0" font-size="13" text-anchor="middle">робот 1 везе</text>
+<text x="370.0" y="217.0" font-size="13" text-anchor="middle">деталь А→В1</text>
+<circle cx="570" cy="170" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="570.0" y="202.0" font-size="13" text-anchor="middle">робот 1 з</text>
+<text x="570.0" y="217.0" font-size="13" text-anchor="middle">деталлю біля</text>
+<text x="570.0" y="232.0" font-size="13" text-anchor="middle">В1</text>
+<circle cx="970" cy="480" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="970" cy="480" r="3.5" fill="#000"/>
+<text x="970.0" y="512.0" font-size="13" text-anchor="middle">робот 2 біля</text>
+<text x="970.0" y="527.0" font-size="13" text-anchor="middle">В1</text>
+<circle cx="570" cy="480" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="570.0" y="512.0" font-size="13" text-anchor="middle">робот 2 біля</text>
+<text x="570.0" y="527.0" font-size="13" text-anchor="middle">В2</text>
+<circle cx="870" cy="390" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="870.0" y="422.0" font-size="13" text-anchor="middle">робот 2 везе</text>
+<text x="870.0" y="437.0" font-size="13" text-anchor="middle">деталь В1→В2</text>
+<circle cx="670" cy="390" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="670.0" y="422.0" font-size="13" text-anchor="middle">робот 2 з</text>
+<text x="670.0" y="437.0" font-size="13" text-anchor="middle">деталлю біля</text>
+<text x="670.0" y="452.0" font-size="13" text-anchor="middle">В2</text>
+<circle cx="270" cy="720" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="270" cy="720" r="3.5" fill="#000"/>
+<text x="270.0" y="752.0" font-size="13" text-anchor="middle">робот 3 біля</text>
+<text x="270.0" y="767.0" font-size="13" text-anchor="middle">В2</text>
+<circle cx="670" cy="720" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="670.0" y="752.0" font-size="13" text-anchor="middle">робот 3 біля С</text>
+<circle cx="370" cy="630" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="370.0" y="662.0" font-size="13" text-anchor="middle">робот 3 везе</text>
+<text x="370.0" y="677.0" font-size="13" text-anchor="middle">деталь В2→С</text>
+<circle cx="570" cy="630" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="570.0" y="662.0" font-size="13" text-anchor="middle">робот 3 з</text>
+<text x="570.0" y="677.0" font-size="13" text-anchor="middle">деталлю біля С</text>
+<rect x="96.5" y="150" width="7" height="40" fill="#000"/>
+<text x="100.0" y="114.0" font-size="13" text-anchor="middle">прибуття</text>
+<text x="100.0" y="129.0" font-size="13" text-anchor="middle">деталі</text>
+<text x="100.0" y="144.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">exp(40)</text>
+<path d="M57.0,170.0 L96.5,170.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M103.5,170.0 L163.0,170.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M100.0,190.0 L100.0,210.0 L40.0,210.0 L40.0,187.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="866.5" y="150" width="7" height="40" fill="#000"/>
+<text x="870.0" y="114.0" font-size="13" text-anchor="middle">обробка на</text>
+<text x="870.0" y="129.0" font-size="13" text-anchor="middle">верстаті 1</text>
+<text x="870.0" y="144.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">norm(60; 10)</text>
+<path d="M787.0,170.0 L866.5,170.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M873.5,170.0 L953.0,170.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="366.5" y="370" width="7" height="40" fill="#000"/>
+<text x="370.0" y="334.0" font-size="13" text-anchor="middle">обробка на</text>
+<text x="370.0" y="349.0" font-size="13" text-anchor="middle">верстаті 2</text>
+<text x="370.0" y="364.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">exp(100)</text>
+<path d="M453.0,390.0 L373.5,390.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M366.5,390.0 L287.0,390.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="266.5" y="150" width="7" height="40" fill="#000"/>
+<text x="270.0" y="205.0" font-size="13" text-anchor="middle">захоплення</text>
+<text x="270.0" y="220.0" font-size="13" text-anchor="middle">біля А</text>
+<text x="270.0" y="235.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">unif(7; 9)</text>
+<path d="M197.0,170.0 L266.5,170.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M270.0,97.0 L270.0,150.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M190.5,271.6 L266.5,174.5" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M273.5,170.0 L353.0,170.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="466.5" y="150" width="7" height="40" fill="#000"/>
+<text x="470.0" y="114.0" font-size="13" text-anchor="middle">переміщення</text>
+<text x="470.0" y="129.0" font-size="13" text-anchor="middle">А→В1</text>
+<text x="470.0" y="144.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">const(6)</text>
+<path d="M387.0,170.0 L466.5,170.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M473.5,170.0 L553.0,170.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="666.5" y="150" width="7" height="40" fill="#000"/>
+<text x="670.0" y="205.0" font-size="13" text-anchor="middle">вивільнення</text>
+<text x="670.0" y="220.0" font-size="13" text-anchor="middle">біля В1</text>
+<text x="670.0" y="235.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">unif(7; 9)</text>
+<path d="M587.0,170.0 L666.5,170.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M673.5,170.0 L753.0,170.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M670.0,150.0 L670.0,97.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="466.5" y="60" width="7" height="40" fill="#000"/>
+<text x="470.0" y="24.0" font-size="13" text-anchor="middle">холостий хід</text>
+<text x="470.0" y="39.0" font-size="13" text-anchor="middle">В1→А</text>
+<text x="470.0" y="54.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">const(6)</text>
+<path d="M653.0,80.0 L473.5,80.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M466.5,80.0 L287.0,80.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="966.5" y="370" width="7" height="40" fill="#000"/>
+<text x="1025.0" y="334.0" font-size="13" text-anchor="middle">захоплення</text>
+<text x="1025.0" y="349.0" font-size="13" text-anchor="middle">біля В1</text>
+<text x="1025.0" y="364.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">unif(7; 9)</text>
+<path d="M970.0,187.0 L970.0,370.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M970.0,463.0 L970.0,410.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M1053.0,390.0 L973.5,390.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M966.5,390.0 L887.0,390.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M966.5,377.8 L940.0,285.0 L197.0,285.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="766.5" y="370" width="7" height="40" fill="#000"/>
+<text x="770.0" y="334.0" font-size="13" text-anchor="middle">переміщення</text>
+<text x="770.0" y="349.0" font-size="13" text-anchor="middle">В1→В2</text>
+<text x="770.0" y="364.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">const(7)</text>
+<path d="M853.0,390.0 L773.5,390.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M766.5,390.0 L687.0,390.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="566.5" y="370" width="7" height="40" fill="#000"/>
+<text x="570.0" y="334.0" font-size="13" text-anchor="middle">вивільнення</text>
+<text x="570.0" y="349.0" font-size="13" text-anchor="middle">біля В2</text>
+<text x="570.0" y="364.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">unif(7; 9)</text>
+<path d="M653.0,390.0 L573.5,390.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M566.5,390.0 L487.0,390.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M570.0,410.0 L570.0,463.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="766.5" y="460" width="7" height="40" fill="#000"/>
+<text x="770.0" y="515.0" font-size="13" text-anchor="middle">холостий хід</text>
+<text x="770.0" y="530.0" font-size="13" text-anchor="middle">В2→В1</text>
+<text x="770.0" y="545.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">const(7)</text>
+<path d="M587.0,480.0 L766.5,480.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M773.5,480.0 L953.0,480.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="266.5" y="610" width="7" height="40" fill="#000"/>
+<text x="260.5" y="620.0" font-size="13" text-anchor="end">захоплення</text>
+<text x="260.5" y="635.0" font-size="13" text-anchor="end">біля В2</text>
+<text x="260.5" y="650.0" font-size="13" text-anchor="end" fill="#555555" font-style="italic">unif(7; 9)</text>
+<path d="M270.0,407.0 L270.0,610.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M270.0,703.0 L270.0,650.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M273.5,630.0 L353.0,630.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M273.5,620.7 L300.0,550.0 L1070.0,550.0 L1070.0,407.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="466.5" y="610" width="7" height="40" fill="#000"/>
+<text x="470.0" y="574.0" font-size="13" text-anchor="middle">переміщення</text>
+<text x="470.0" y="589.0" font-size="13" text-anchor="middle">В2→С</text>
+<text x="470.0" y="604.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">const(5)</text>
+<path d="M387.0,630.0 L466.5,630.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M473.5,630.0 L553.0,630.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="666.5" y="610" width="7" height="40" fill="#000"/>
+<text x="670.0" y="574.0" font-size="13" text-anchor="middle">вивільнення</text>
+<text x="670.0" y="589.0" font-size="13" text-anchor="middle">біля С</text>
+<text x="670.0" y="604.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">unif(7; 9)</text>
+<path d="M587.0,630.0 L666.5,630.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M673.5,630.0 L753.0,630.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M670.0,650.0 L670.0,703.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="466.5" y="700" width="7" height="40" fill="#000"/>
+<text x="470.0" y="755.0" font-size="13" text-anchor="middle">холостий хід</text>
+<text x="470.0" y="770.0" font-size="13" text-anchor="middle">С→В2</text>
+<text x="470.0" y="785.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">const(5)</text>
+<path d="M653.0,720.0 L473.5,720.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M466.5,720.0 L287.0,720.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="72" y="30" font-size="19" font-weight="600" fill="#1d2433">Завантаження пристроїв конвеєра</text>
+  <text x="72" y="48" font-size="13" fill="#6b7686">4 деталі за хвилину, обробка exp(1); середнє за 20 прогонами</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#dfe4ec"/>
+  <text x="62" y="412" font-size="11" text-anchor="end" fill="#6b7686">0</text>
+  <line x1="72" y1="338.4" x2="872" y2="338.4" stroke="#dfe4ec"/>
+  <text x="62" y="342.4" font-size="11" text-anchor="end" fill="#6b7686">0.2</text>
+  <line x1="72" y1="268.79999999999995" x2="872" y2="268.79999999999995" stroke="#dfe4ec"/>
+  <text x="62" y="272.79999999999995" font-size="11" text-anchor="end" fill="#6b7686">0.4</text>
+  <line x1="72" y1="199.19999999999996" x2="872" y2="199.19999999999996" stroke="#dfe4ec"/>
+  <text x="62" y="203.19999999999996" font-size="11" text-anchor="end" fill="#6b7686">0.6</text>
+  <line x1="72" y1="129.59999999999997" x2="872" y2="129.59999999999997" stroke="#dfe4ec"/>
+  <text x="62" y="133.59999999999997" font-size="11" text-anchor="end" fill="#6b7686">0.8</text>
+  <line x1="72" y1="60" x2="872" y2="60" stroke="#dfe4ec"/>
+  <text x="62" y="64" font-size="11" text-anchor="end" fill="#6b7686">1</text>
+  <text x="72" y="428" font-size="11" text-anchor="middle" fill="#6b7686">1</text>
+  <text x="272" y="428" font-size="11" text-anchor="middle" fill="#6b7686">2</text>
+  <text x="472" y="428" font-size="11" text-anchor="middle" fill="#6b7686">3</text>
+  <text x="672" y="428" font-size="11" text-anchor="middle" fill="#6b7686">4</text>
+  <text x="872" y="428" font-size="11" text-anchor="middle" fill="#6b7686">5</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#1d2433"/>
+  <line x1="72" y1="60" x2="72" y2="408" stroke="#1d2433"/>
+  <text x="472" y="452" font-size="12" text-anchor="middle" fill="#6b7686">номер пристрою</text>
+  <text x="18" y="234" font-size="12" text-anchor="middle" fill="#6b7686" transform="rotate(-90 18 234)">частка</text>
+  <path d="M72.0,100.0 L272.0,110.3 L472.0,124.7 L672.0,143.4 L872.0,167.1" fill="none" stroke="#4c7ef3" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="100.01743991323053" r="4" fill="#4c7ef3"/>
+  <circle cx="272" cy="110.32899651992352" r="4" fill="#4c7ef3"/>
+  <circle cx="472" cy="124.72830490151932" r="4" fill="#4c7ef3"/>
+  <circle cx="672" cy="143.4431951544929" r="4" fill="#4c7ef3"/>
+  <circle cx="872" cy="167.05268081102332" r="4" fill="#4c7ef3"/>
+  <path d="M72.0,331.1 L272.0,333.7 L472.0,337.2 L672.0,341.9 L872.0,348.1" fill="none" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="331.1340580078508" r="4" fill="#e8590c"/>
+  <circle cx="272" cy="333.7021245611562" r="4" fill="#e8590c"/>
+  <circle cx="472" cy="337.17245891222643" r="4" fill="#e8590c"/>
+  <circle cx="672" cy="341.9084567076672" r="4" fill="#e8590c"/>
+  <circle cx="872" cy="348.08290181109936" r="4" fill="#e8590c"/>
+  <line x1="72" y1="478" x2="98" y2="478" stroke="#4c7ef3" stroke-width="3"/>
+  <text x="104" y="482" font-size="12" fill="#1d2433">завантаження пристрою</text>
+  <line x1="256.6" y1="478" x2="282.6" y2="478" stroke="#e8590c" stroke-width="3"/>
+  <text x="288.6" y="482" font-size="12" fill="#1d2433">частка оброблених деталей</text>
+</svg>

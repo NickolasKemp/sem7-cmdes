@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="72" y="30" font-size="19" font-weight="600" fill="#1d2433">Зайнятість місць на верстаті 2</text>
+  <text x="72" y="48" font-size="13" fill="#6b7686">частка часу, протягом якої місце зайняте: деталь везуть, обробляють або вона чекає на робота</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#dfe4ec"/>
+  <text x="62" y="412" font-size="11" text-anchor="end" fill="#6b7686">0</text>
+  <line x1="72" y1="292" x2="872" y2="292" stroke="#dfe4ec"/>
+  <text x="62" y="296" font-size="11" text-anchor="end" fill="#6b7686">0.5</text>
+  <line x1="72" y1="176" x2="872" y2="176" stroke="#dfe4ec"/>
+  <text x="62" y="180" font-size="11" text-anchor="end" fill="#6b7686">1</text>
+  <line x1="72" y1="60" x2="872" y2="60" stroke="#dfe4ec"/>
+  <text x="62" y="64" font-size="11" text-anchor="end" fill="#6b7686">1.5</text>
+  <text x="72" y="428" font-size="11" text-anchor="middle" fill="#6b7686">35</text>
+  <text x="186.28571428571428" y="428" font-size="11" text-anchor="middle" fill="#6b7686">40</text>
+  <text x="300.57142857142856" y="428" font-size="11" text-anchor="middle" fill="#6b7686">45</text>
+  <text x="414.85714285714283" y="428" font-size="11" text-anchor="middle" fill="#6b7686">50</text>
+  <text x="529.1428571428571" y="428" font-size="11" text-anchor="middle" fill="#6b7686">55</text>
+  <text x="643.4285714285714" y="428" font-size="11" text-anchor="middle" fill="#6b7686">60</text>
+  <text x="872" y="428" font-size="11" text-anchor="middle" fill="#6b7686">70</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#1d2433"/>
+  <line x1="72" y1="60" x2="72" y2="408" stroke="#1d2433"/>
+  <text x="472" y="452" font-size="12" text-anchor="middle" fill="#6b7686">середній інтервал надходження деталей, с</text>
+  <text x="18" y="234" font-size="12" text-anchor="middle" fill="#6b7686" transform="rotate(-90 18 234)">частка</text>
+  <path d="M872.0,258.1 L643.4,234.2 L529.1,215.7 L414.9,197.2 L300.6,183.7 L186.3,183.6 L72.0,183.8" fill="none" stroke="#4c7ef3" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="872" cy="258.10340980736714" r="4" fill="#4c7ef3"/>
+  <circle cx="643.4285714285714" cy="234.17529817000573" r="4" fill="#4c7ef3"/>
+  <circle cx="529.1428571428571" cy="215.7421787344015" r="4" fill="#4c7ef3"/>
+  <circle cx="414.85714285714283" cy="197.1762042750302" r="4" fill="#4c7ef3"/>
+  <circle cx="300.57142857142856" cy="183.72765953011663" r="4" fill="#4c7ef3"/>
+  <circle cx="186.28571428571428" cy="183.64217779921208" r="4" fill="#4c7ef3"/>
+  <circle cx="72" cy="183.83003370808532" r="4" fill="#4c7ef3"/>
+  <path d="M872.0,297.5 L643.4,280.6 L529.1,267.5 L414.9,254.7 L300.6,244.5 L186.3,244.7 L72.0,245.0" fill="none" stroke="#4c7ef3" stroke-width="2" stroke-dasharray="7 5" stroke-linejoin="round"/>
+  <path d="M872.0,257.3 L643.4,230.7 L529.1,211.8 L414.9,195.1 L300.6,192.2 L186.3,192.4 L72.0,192.6" fill="none" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="872" cy="257.2543490970305" r="4" fill="#e8590c"/>
+  <circle cx="643.4285714285714" cy="230.7316786107095" r="4" fill="#e8590c"/>
+  <circle cx="529.1428571428571" cy="211.80627946417664" r="4" fill="#e8590c"/>
+  <circle cx="414.85714285714283" cy="195.09520887959903" r="4" fill="#e8590c"/>
+  <circle cx="300.57142857142856" cy="192.18329157486977" r="4" fill="#e8590c"/>
+  <circle cx="186.28571428571428" cy="192.44559492421894" r="4" fill="#e8590c"/>
+  <circle cx="72" cy="192.56067573968159" r="4" fill="#e8590c"/>
+  <path d="M872.0,299.1 L643.4,279.8 L529.1,266.4 L414.9,254.4 L300.6,252.2 L186.3,252.6 L72.0,252.9" fill="none" stroke="#e8590c" stroke-width="2" stroke-dasharray="7 5" stroke-linejoin="round"/>
+  <line x1="72" y1="478" x2="98" y2="478" stroke="#4c7ef3" stroke-width="3"/>
+  <text x="104" y="482" font-size="12" fill="#1d2433">варіант 1: робот на кожному шляху, місця</text>
+  <line x1="382" y1="478" x2="408" y2="478" stroke="#4c7ef3" stroke-width="3" stroke-dasharray="7 5"/>
+  <text x="414" y="482" font-size="12" fill="#1d2433">обробка</text>
+  <line x1="474.2" y1="478" x2="500.2" y2="478" stroke="#e8590c" stroke-width="3"/>
+  <text x="506.2" y="482" font-size="12" fill="#1d2433">варіант 2: найближчий вільний робот, місця</text>
+  <line x1="797.4" y1="478" x2="823.4" y2="478" stroke="#e8590c" stroke-width="3" stroke-dasharray="7 5"/>
+  <text x="829.4" y="482" font-size="12" fill="#1d2433">обробка</text>
+</svg>

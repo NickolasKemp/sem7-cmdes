@@ -1,0 +1,309 @@
+<title>Тренажер КП6</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one study column — header with section map, then a single question card; same identity as the KP4 trainer */
+:root{
+  --bg:#f3f5f7; --surface:#ffffff; --surface-2:#e9edf1; --line:#d3dae1;
+  --fg:#16202b; --muted:#566473; --accent:#0d6e7a; --accent-soft:#d8eef0;
+  --ok:#2f7d32; --ok-soft:#e1f1e1; --bad:#b3261e; --bad-soft:#f8e1df; --warn:#8a5a00; --warn-soft:#f6ecd6;
+  --display:"Unbounded",system-ui,sans-serif; --body:"Golos Text",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f151b; --surface:#17202a; --surface-2:#1f2a35; --line:#2c3a47;
+  --fg:#e5ebf0; --muted:#97a6b4; --accent:#5cc3cf; --accent-soft:#163a40;
+  --ok:#7cc77f; --ok-soft:#1b3320; --bad:#f08a80; --bad-soft:#3d1d1a; --warn:#e3b55a; --warn-soft:#3a2d12; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f151b; --surface:#17202a; --surface-2:#1f2a35; --line:#2c3a47;
+  --fg:#e5ebf0; --muted:#97a6b4; --accent:#5cc3cf; --accent-soft:#163a40;
+  --ok:#7cc77f; --ok-soft:#1b3320; --bad:#f08a80; --bad-soft:#3d1d1a; --warn:#e3b55a; --warn-soft:#3a2d12; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1{font:600 26px/1.2 var(--display);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0;font-size:15px}
+.overall{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.track{flex:1;height:8px;background:var(--surface-2);border-radius:4px;overflow:hidden}
+.track>i{display:block;height:100%;background:var(--accent);transition:width .4s}
+.sections{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:8px}
+.sec{font:inherit;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;color:var(--fg);display:flex;flex-direction:column;gap:6px;min-width:0}
+.sec:hover{border-color:var(--accent)}
+.sec[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.sec b{font-weight:500;font-size:14px}
+.sec span{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.sec .mini{height:4px;background:var(--surface-2);border-radius:2px;overflow:hidden}
+.sec .mini>i{display:block;height:100%;background:var(--accent)}
+.sec.done .mini>i{background:var(--ok)}
+.recap{background:var(--surface-2);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted)}
+.recap summary{cursor:pointer;color:var(--fg);font-weight:500}
+.recap ul{margin:8px 0 0;padding-left:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 22px 18px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.meta{display:flex;gap:6px;flex-wrap:wrap}
+.pill{font-size:12px;padding:2px 10px;border-radius:999px;background:var(--surface-2);color:var(--muted)}
+.pill.sec-pill{background:var(--accent-soft);color:var(--accent)}
+.pill.retry{background:var(--warn-soft);color:var(--warn)}
+.q{font-size:18px;font-weight:500;line-height:1.5;margin:0;text-wrap:pretty}
+code,.f{font-family:var(--mono);font-size:.92em;background:var(--surface-2);padding:1px 6px;border-radius:5px}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{font:inherit;font-size:15px;text-align:left;background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:11px 14px;cursor:pointer;line-height:1.45}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt:disabled{cursor:default}
+.opt.ok{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.opt.bad{background:var(--bad-soft);border-color:var(--bad);color:var(--bad)}
+.numrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+input[type=number]{font:inherit;width:170px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--fg)}
+input.ok{border-color:var(--ok)} input.bad{border-color:var(--bad)}
+.exp{font-size:15px;line-height:1.65;border-radius:10px;padding:12px 14px;background:var(--surface-2)}
+.exp.ok{background:var(--ok-soft)} .exp.bad{background:var(--bad-soft)}
+.exp strong{font-weight:600}
+.fig{margin:0;background:var(--surface-2);border-radius:10px;padding:12px;overflow-x:auto;color:var(--fg);display:flex;flex-direction:column;gap:6px}
+.exp .fig{margin-top:10px;background:var(--surface)}
+.fig svg{display:block;max-width:100%;height:auto;margin:0 auto;font:12px var(--body);fill:var(--fg)}
+.fig svg text{fill:var(--fg)}
+.fig svg .fw{font-family:var(--mono);font-size:11px}
+.fig svg .hl{fill:var(--accent)} .fig svg .hlt{fill:var(--accent);font-weight:600}
+.fig svg .bar{fill:var(--muted);opacity:.55} .fig svg .barhl{fill:var(--accent)}
+.fig figcaption{font-size:13px;color:var(--muted);text-align:center;line-height:1.45}
+.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+button.btn{font:inherit;font-size:14px;padding:9px 16px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+button.btn:hover{border-color:var(--accent)}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+button.primary:hover{filter:brightness(1.08)}
+button.ghost{border-color:transparent;color:var(--muted)}
+button:focus-visible,.opt:focus-visible,.sec:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.err{font-size:13px;color:var(--bad)}
+.end h2{font:600 20px/1.3 var(--display);margin:0}
+.weak{margin:0;padding-left:18px;font-size:14px;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.confirm{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Тренажер КП6</h1>
+    <p class="sub">Моделі на алгоритмі PetriSim бібліотеки PetriObjModelPaint. Прогрес зберігається в цьому браузері: засвоєні питання більше не з’являються.</p>
+  </header>
+  <div class="overall"><span id="ovText">0 з 0 засвоєно</span><div class="track"><i id="ovBar" style="width:0"></i></div></div>
+  <nav class="sections" id="sections" aria-label="Розділи"></nav>
+  <details class="recap" id="recap"><summary id="recapTitle">Коротко про розділ</summary><ul id="recapList"></ul></details>
+  <main class="card" id="card" aria-live="polite"></main>
+  <div class="foot"><span id="hintKeys">Клавіші: 1–4 — варіант, Enter — далі</span><span id="resetZone"><button class="btn ghost" id="resetBtn">Скинути прогрес</button></span></div>
+</div>
+
+<script>
+const SECTIONS=[
+ {id:'basics',name:'PetriSim',recap:['Бібліотека PetriObjModelPaint: <code>PetriP</code> — позиція, <code>PetriT</code> — перехід, <code>ArcIn</code> / <code>ArcOut</code> — дуги, <code>PetriNet</code> — мережа, <code>PetriSim</code> — алгоритм імітації.','<code>input()</code> — вхід маркерів у переходи, доки є переходи з виконаною умовою запуску; <code>output()</code> — вихід маркерів з каналів, момент виходу яких настав.','Конфлікт (<code>doConflikt</code>): спершу найбільший пріоритет, серед рівних — вибір за ймовірністю; ймовірність 1 у всіх означає «порівну».','Перехід багатоканальний: <code>timeOut</code> — список моментів виходу, <code>buffer</code> — кількість зайнятих каналів.','Інформаційна дуга — <code>ArcIn</code> з ознакою <code>inf</code>: перевіряє маркери, не забирає.','Середній час = середня кількість / інтенсивність (Літтл).','Верифікація: інваріанти, рівняння станів, незалежне джерело, зміна параметрів.']},
+ {id:'t1',name:'Завдання 1',recap:['Конвеєр з КП5 на PetriSim: 16 позицій, 11 переходів.','«Обробка i» (пріоритет 1) проти «Рух» (0) за позицію «Біля i».','Час перебування 9,45 ± 0,22 хв; у КП5 було 9,75 ± 0,18 — інтервали перекриваються.','Зайнято 3,995 пристрою; теорія λ·T = 4.','Інваріант: «Вільний i» + канали «Обробка i» = 1; порушень 0 на 1,6 млн подій.']},
+ {id:'t2',name:'Завдання 2',recap:['Запаси холодильників з КП5 на PetriSim: 13 позицій, 11 переходів.','Інформаційна дуга ×54 з «Нестачі» в «Замовити»: умова «поточний стан ≤ 18».','Середній запас 29,04 ± 0,17 (КП5: 29,05); між втраченими продажами 2,36 тижня.','Інваріант: поточний стан запасу + нестача = 72.','10,8 % часу запасу немає — тоді й втрачаються продажі.']},
+ {id:'t3',name:'Завдання 3',recap:['Два сервери: головний 12 потоків / 8 ядер / exp(16) мс, допоміжний 6 / 4 / exp(20) мс; спільна БД: 6 з’єднань, exp(8) мс.','Надходження exp(2) мс = 500 запитів/с; до допоміжного 0,3; черга ≤ 1000.','Потік зайнятий від «Прийняти» до «Відповідь», ядро — лише під час обчислень.','Час обробки 34,5 мс: головний 29,3, допоміжний 46,5.','Без обмеження потоків модель = теорія M/M/c: 31,65 проти 31,66 мс.','Межа ≈ 605 запитів/с; вузьке місце — потоки допоміжного сервера.']},
+ {id:'t4',name:'Завдання 4',recap:['Пакет на кожну мережу: task.txt, net.png, net.pns, net.pnml, method.txt.','net.png малює метод редактора <code>paintGraphPetriNet</code>; net.pns — те, що пише Save GraphNet.','PNML пише <code>PnmlGenerator</code>, читає <code>PnmlParser</code>; після запису файл читається назад і порівнюється з мережею.','method.txt — метод <code>CreateNet…</code> зі списками <code>d_P</code>, <code>d_T</code>, <code>d_In</code>, <code>d_Out</code>.']},
+ {id:'t5',name:'Завдання 5',recap:['N = (P, T, A, W, K, I, R); стан S(t) = (M(t), E(t)).','tₙ = min τ(tₙ₋₁); S(tₙ) = (D⁻)ᵐ(D⁺(S(tₙ₋₁))).','D⁺: M⁺ = M′ + Σ Y·s (вихід маркерів); D⁻: M = M⁺ − Σ u (вхід маркерів).','Z(T, tₙ) = 1, якщо в кожній вхідній позиції M⁺ ≥ кратність дуги.','Матричні: μ(tₙ) = μ(t₀) + a·γ(tₙ), μ = M + a⁺·v; η = γ − v + v(t₀).','S-інваріант: aᵀ·w = 0 → wᵀ·μ стала (потоки, ядра, з’єднання, місця).']}
+];
+
+const Q=[
+ {id:'b-classes',s:'basics',type:'mc',q:'Який клас бібліотеки PetriObjModelPaint виконує алгоритм імітації мережі Петрі?',o:['<code>PetriNet</code>','<code>PetriSim</code>','<code>PetriT</code>','<code>GraphPetriNet</code>'],a:1,e:'<code>PetriNet</code> лише зберігає позиції, переходи й дуги. <code>PetriSim</code> бере мережу і просуває її в часі.'},
+ {id:'b-input',s:'basics',type:'mc',q:'Що робить метод <code>PetriSim.input()</code>?',o:['Читає мережу з файла','Здійснює вхід маркерів у переходи, доки є переходи з виконаною умовою запуску','Здійснює вихід маркерів з переходів','Просуває час'],a:1,e:'У циклі: <code>findActiveT()</code> → <code>doConflikt()</code> → <code>actIn()</code>, доки список активних переходів не спорожніє.'},
+ {id:'b-order',s:'basics',type:'mc',q:'Правильний порядок одного кроку алгоритму після початкового входу маркерів?',o:['вхід → вихід → час','час до найближчої події → вихід маркерів → вхід маркерів','вихід → час → вхід','час → вхід → вихід'],a:1,e:'<code>getTimeMin()</code> дає момент найближчої події, <code>output()</code> випускає маркери, <code>input()</code> знову запускає переходи.'},
+ {id:'b-conf',s:'basics',type:'mc',q:'Як <code>doConflikt</code> вибирає перехід серед кількох готових?',o:['Перший у списку','Найбільший пріоритет; серед рівних — випадково за ймовірністю','Найменша затримка','Випадково серед усіх'],a:1,e:'Список сортується за спаданням пріоритету. У верхній групі перехід вибирається за ймовірністю запуску.'},
+ {id:'b-prob1',s:'basics',type:'num',q:'Три готові переходи мають однаковий пріоритет і ймовірність 1,0 кожен. З якою ймовірністю (у відсотках) буде вибрано перший?',a:33.3,tol:0.02,h:'ймовірність 1 означає «порівну»',e:'Якщо ймовірність 1, бібліотека бере 1 / кількість суперників = 33,3 %.'},
+ {id:'b-multi',s:'basics',type:'mc',q:'У переході <code>PetriT</code> поле <code>buffer</code> дорівнює 4. Що це означає?',o:['Затримка 4','У переході зараз 4 зайняті канали — 4 маркери чекають виходу','Пріоритет 4','Кратність дуги 4'],a:1,e:'Кожен вхід додає момент виходу в список <code>timeOut</code>; <code>buffer</code> — їх кількість.'},
+ {id:'b-inf',s:'basics',type:'mc',q:'Як у бібліотеці задати інформаційну дугу?',o:['<code>new ArcOut(t, p, k)</code>','<code>new ArcIn(p, t, k, true)</code> або <code>setInf(true)</code>','Окремим класом <code>ArcInfo</code>','Ніяк, їх немає'],a:1,e:'Ознака <code>inf</code> у вхідної дуги: умова перевіряється, маркери лишаються.'},
+ {id:'b-little',s:'basics',type:'num',q:'У системі в середньому 17,2 запиту, проходить 0,5 запиту за мілісекунду. Середній час у системі, мс?',a:34.4,tol:0.02,h:'L / λ',e:'Формула Літтла: 17,2 / 0,5 = 34,4 мс.'},
+ {id:'b-stat',s:'basics',type:'mc',q:'Чому статистику зібрано у власному циклі, а не методом <code>doStatistics()</code>?',o:['Він не працює','Щоб рахувати після періоду розгону і для довільних функцій стану','Так швидше','Так вимагає редактор'],a:1,e:'<code>PetriSim</code> рахує середні лише від нуля. Власний цикл викликає ті самі <code>input()</code> / <code>output()</code>.'},
+ {id:'b-verif',s:'basics',type:'mc',q:'Що НЕ входило у верифікацію моделей?',o:['Перевірка інваріантів у кожний момент подій','Перевірка матричних рівнянь станів','Порівняння з незалежним джерелом','Порівняння з вимірюваннями реальної системи'],a:3,e:'Порівняння з реальною системою — це валідація. Верифікація перевіряє, що модель працює так, як задумано.'},
+
+ {id:'t1-conf',s:'t1',type:'mc',q:'Пристрій 2 зайнятий, біля нього деталь. Що запуститься?',o:['«Обробка2» — у неї пріоритет','«Рух23»: умова «Обробка2» не виконана, бо «Вільний2» порожня','Нічого, деталь чекає','Обидва переходи'],a:1,e:'Пріоритет діє лише серед переходів з виконаною умовою. Без маркера «Вільний2» обробка не в списку.'},
+ {id:'t1-busy',s:'t1',type:'num',q:'Надходить 4 деталі за хвилину, обробка в середньому 1 хв. Скільки пристроїв зайнято в середньому?',a:4,tol:0.02,h:'λ · T',e:'λ·T = 4. Модель дала 3,995 ± 0,011.'},
+ {id:'t1-res',s:'t1',type:'mc',q:'Середній час перебування деталі в моделі на PetriSim?',o:['≈ 1 хв','≈ 4 хв','≈ 9,5 хв','≈ 37 хв'],a:2,e:'9,45 ± 0,22 хв. У КП5 — 9,75 ± 0,18: інтервали перекриваються.'},
+ {id:'t1-inv',s:'t1',type:'mc',q:'Який інваріант перевірявся для кожного пристрою?',o:['«Біля i» ≤ 1','«Вільний i» + зайняті канали «Обробка i» = 1','«Готово i» зростає','«Вільний i» = 1'],a:1,e:'Пристрій або вільний, або обробляє одну деталь. Порушень 0 на 1,6 млн моментів подій.'},
+ {id:'t1-var',s:'t1',type:'mc',q:'Обробку сповільнили до exp(1,2). Що сталося?',o:['Нічого','Потрібно 4,8 пристрою з 5: деталі кружляють, ≈ 41 повернення на деталь','Система стала швидшою','Деталі губляться'],a:1,e:'Система на межі: час перебування виріс до сотень хвилин.'},
+ {id:'t1-why',s:'t1',type:'mc',q:'Навіщо порівнювати з результатами КП5?',o:['Для обсягу звіту','Дві незалежні реалізації (Java і TypeScript) з однаковим результатом підтверджують і мережу, і алгоритми','Так вимагає редактор','Щоб знайти швидшу'],a:1,e:'Збіг у межах довірчих інтервалів — сильна перевірка: помилка мала б бути однаковою в обох.'},
+ {id:'t1-ret',s:'t1',type:'num',q:'На деталь припадає 0,73 повернення, кожне — 4 хв руху і 5 хв повернення. Скільки хвилин руху це додає в середньому?',a:6.57,tol:0.03,h:'0,73 · 9',e:'0,73 · 9 ≈ 6,6 хв — основна частина часу перебування.'},
+
+ {id:'t2-info',s:'t2',type:'mc',q:'Навіщо дуга з «Нестачі» в «Замовити» інформаційна з кратністю 54?',o:['Щоб забрати 54 маркери','Перевірити «нестача ≥ 54» (поточний стан ≤ 18), не забираючи маркерів','Щоб замовити 54 штуки','Для краси'],a:1,e:'72 − 18 = 54. Маркери лишаються: їх потім переносить «Дозамовлення».'},
+ {id:'t2-prio',s:'t2',type:'mc',q:'«Дозамовлення» має пріоритет 4, «Кінець» — 2. Обидва чекають маркер «Оформлення». Чому так?',o:['Випадково','Спершу вся нестача переноситься у «ВДорозі», і лише коли вона нульова, «Кінець» забирає маркер','Щоб замовити одну штуку','Щоб замовлення тривало довше'],a:1,e:'«Дозамовлення» лише перевіряє «Оформлення» (інформаційна дуга), тому запускається багато разів.'},
+ {id:'t2-res',s:'t2',type:'mc',q:'Середній запас холодильників у моделі на PetriSim?',o:['≈ 72','≈ 54','≈ 29','≈ 18'],a:2,e:'29,04 ± 0,17; у КП5 — 29,05 ± 0,14.'},
+ {id:'t2-lost',s:'t2',type:'num',q:'За 520 тижнів не відбулися 224 продажі. Середній час між ними, тижнів?',a:2.32,tol:0.03,h:'T / кількість',e:'520 / 224 ≈ 2,32 (середнє за прогонами 2,36).'},
+ {id:'t2-inv',s:'t2',type:'mc',q:'Який інваріант перевірявся в моделі запасів?',o:['Запас ≤ 72','Поточний стан запасу + нестача = 72','Запас + борг = 72','Нестача = 54'],a:1,e:'Позиція «Нестача» завжди доповнює поточний стан запасу до контрольного рівня.'},
+ {id:'t2-var',s:'t2',type:'mc',q:'Частка покупців, що йдуть, упала з 80 % до 50 %. Що змінилося?',o:['Запас вичерпується рідше','Втрачених продажів менше, а частка часу без запасу та сама','Замовлень удвічі більше','Нічого'],a:1,e:'Запас вичерпується так само (≈ 10,5 % часу), змінюється лише поведінка покупця.'},
+ {id:'t2-best',s:'t2',type:'mc',q:'Що найсильніше зменшило втрачені продажі?',o:['Перегляд кожні 2 тижні','Точка замовлення 36 замість 18','Менше покупців ідуть','Нічого з цього'],a:1,e:'Точка 36: ≈ 1 втрачений продаж на рік замість 22. Перегляд кожні 2 тижні — 11.'},
+
+ {id:'t3-thread',s:'t3',type:'mc',q:'Коли потік повертається в пул «Потоки i»?',o:['Після обчислень','Після запису в БД','Після переходу «Відповідь i»','Одразу після «Прийняти i»'],a:2,e:'Потік веде запит до кінця: чекає ядро, обчислює, чекає БД, пише, відповідає.'},
+ {id:'t3-core',s:'t3',type:'mc',q:'Як мережа відтворює «8 ядер» головного сервера?',o:['Вісьмома переходами','Позиція «Ядра1» з 8 маркерами і багатоканальний перехід «Обчислення1»','Дугою кратності 8','Пріоритетом 8'],a:1,e:'Перехід входить стільки разів, скільки є маркерів-ядер, і повертає ядро після обчислень.'},
+ {id:'t3-route',s:'t3',type:'mc',q:'Вільних місць у черзі немає. Що відбувається з новим запитом?',o:['Чекає','«ДоГоловного» і «ДоДопоміжного» не готові, запускається «Відмова» з пріоритетом 0','Іде на головний сервер','Модель зупиняється'],a:1,e:'Маршрутизація потребує маркера «Місця». Без нього лишається тільки відмова.'},
+ {id:'t3-load',s:'t3',type:'num',q:'На допоміжний сервер іде 0,3 від 500 запитів/с, обчислення 20 мс, ядер 4. Завантаження ядер у відсотках?',a:75,tol:0.02,h:'λ · T / c',e:'150 запитів/с · 0,020 с / 4 = 0,75. Модель: 75,0 %.'},
+ {id:'t3-time',s:'t3',type:'mc',q:'Середній час обробки запиту за 500 запитів/с?',o:['≈ 25 мс','≈ 34,5 мс','≈ 100 мс','≈ 1,7 с'],a:1,e:'34,48 ± 0,39 мс: головний 29,3, допоміжний 46,5.'},
+ {id:'t3-min',s:'t3',type:'num',q:'Скільки мілісекунд триває обробка на головному сервері без жодного очікування (обчислення 16, запис 8, відповідь 1)?',a:25,tol:0,h:'сума',e:'16 + 8 + 1 = 25 мс. Решта з 29,3 мс — очікування потоку, ядра і з’єднання.'},
+ {id:'t3-theory',s:'t3',type:'mc',q:'З чим порівняно модель без обмеження потоків?',o:['З КП5','З системами M/M/c (формула Ерланга C) для ядер і БД','З реальним сервером','Ні з чим'],a:1,e:'Пуассонівський потік ділиться на два, вихід M/M/c пуассонівський, тому вузли незалежні. 31,65 проти 31,66 мс.'},
+ {id:'t3-dbconf',s:'t3',type:'mc',q:'Чому запити допоміжного сервера чекають з’єднання з БД менше (0,93 мс проти 1,25)?',o:['У них швидший запис','<code>doConflikt</code> вибирає між «Запис1» і «Запис2» порівну, а не за кількістю запитів','БД ближче','Помилка моделі'],a:1,e:'Запитів допоміжного менше, а шанс переходу той самий. Зважене середнє 1,15 мс збігається з теорією 1,14.'},
+ {id:'t3-bottle',s:'t3',type:'mc',q:'Що обмежує пропускну здатність системи (≈ 605 запитів/с)?',o:['Ядра головного','З’єднання з БД','Потоки допоміжного сервера: зайняті всі 6, а ядра лише на 89 %','Обмеження черги'],a:2,e:'Частина потоків чекає запис у БД, тому 4 ядра не завжди зайняті: 178 запитів/с замість 200.'},
+ {id:'t3-ddos',s:'t3',type:'mc',q:'Надходить 1000 запитів/с. Що робить обмеження черги?',o:['Нічого','Тримає час обробки ≈ 1,7 с і відхиляє ≈ 40 % запитів','Прискорює сервери','Зупиняє модель'],a:1,e:'Без обмеження черга і час росли б безмежно. 1,7 с — час проходження 1000 місць.'},
+ {id:'t3-thr8',s:'t3',type:'mc',q:'Потоків зробили стільки ж, скільки ядер (8 і 4). Результат?',o:['Швидше','Ядра простоюють (64 %), черга росте до обмеження, 9 % відмов','Без змін','БД перевантажена'],a:1,e:'Потік, що пише в БД, не обчислює. Потоків має бути більше, ніж ядер.'},
+ {id:'t3-shared',s:'t3',type:'mc',q:'Чому за перевантаження відхиляються й запити до головного сервера, який має запас?',o:['Він теж перевантажений','1000 місць спільні, і їх займають запити допоміжного сервера','Через БД','Через пріоритет'],a:1,e:'Позиція «Місця» одна на обидві черги. Розділення черг це виправило б.'},
+
+ {id:'t4-files',s:'t4',type:'mc',q:'Який файл пакета є результатом команди Save GraphNet?',o:['method.txt','net.pnml','net.pns — серіалізована <code>GraphPetriNet</code>','task.txt'],a:2,e:'net.png — зображення цієї ж графічної мережі, як його малює полотно редактора.'},
+ {id:'t4-pnml',s:'t4',type:'mc',q:'Що зберігає PNML, крім позицій, переходів і дуг?',o:['Лише назви','Маркірування, затримки, розподіли, пріоритети, ймовірності та координати','Результати імітації','Java-код'],a:1,e:'Специфічні параметри лежать у блоці <code>toolspecific</code>, координати — у <code>graphics</code>.'},
+ {id:'t4-method',s:'t4',type:'mc',q:'Що таке method.txt?',o:['Опис алгоритму','Java-метод <code>CreateNet…</code>, який створює мережу зі списків <code>d_P</code>, <code>d_T</code>, <code>d_In</code>, <code>d_Out</code>','Протокол імітації','Тест'],a:1,e:'Його вставляють у бібліотеку мереж і викликають, щоб отримати <code>PetriNet</code>.'},
+ {id:'t4-check',s:'t4',type:'mc',q:'Як перевірено, що PNML справді описує мережу?',o:['Ніяк','Файл читається назад <code>PnmlParser</code>, і мережа порівнюється з початковою','Відкрито в блокноті','Порівняно розмір'],a:1,e:'Порівнюються назви, маркірування, затримки, розподіли, пріоритети, ймовірності, кратності, ознаки дуг.'},
+ {id:'t4-init',s:'t4',type:'mc',q:'Навіщо в кінці методу <code>PetriP.initNext()</code>, <code>PetriT.initNext()</code>?',o:['Запускають імітацію','Скидають лічильники номерів, щоб наступна мережа нумерувалась з нуля','Очищають маркери','Зберігають файл'],a:1,e:'Номер елемента — це індекс у масивах мережі, тому нумерація має починатися з 0.'},
+
+ {id:'t5-tuple',s:'t5',type:'mc',q:'Що таке K у N = (P, T, A, W, K, I, R)?',o:['Кратності дуг','Пари «пріоритет, ймовірність запуску» переходів','Затримки','Інформаційні дуги'],a:1,e:'W — кратності, I — інформаційні дуги, R — затримки.'},
+ {id:'t5-state',s:'t5',type:'mc',q:'З чого складається стан S(t) стохастичної мережі Петрі?',o:['Лише маркірування M(t)','M(t) і E(t) — множини моментів виходу маркерів з переходів','M(t) і поточний час','Матриці a⁺ і a⁻'],a:1,e:'Маркери всередині переходів теж частина стану, тому потрібна E(t).'},
+ {id:'t5-order',s:'t5',type:'mc',q:'Рівняння станів S(tₙ) = …',o:['D⁺((D⁻)ᵐ(S(tₙ₋₁)))','(D⁻)ᵐ(D⁺(S(tₙ₋₁)))','D⁺(S) + D⁻(S)','(D⁺)ᵐ(S(tₙ₋₁))'],a:1,e:'Спершу вихід маркерів D⁺, потім вхід D⁻ — m разів, доки є що запускати.'},
+ {id:'t5-place',s:'t5',type:'mc',q:'Рівняння виходу маркерів для позиції «Місця» (P2): M⁺ = M′ + …',o:['Y₂·s₂ + Y₇·s₇','Y₃·s₃ + Y₈·s₈ («Прийняти1», «Прийняти2»)','u₂ + u₇','нічого'],a:1,e:'Місце звільняють переходи «Прийняти». Забирають його T2 і T7: M = M⁺ − u₂ − u₇.'},
+ {id:'t5-z',s:'t5',type:'mc',q:'Коли Z(«Обчислення1», tₙ) = 1?',o:['M⁺(Готовий1) ≥ 1','M⁺(Готовий1) ≥ 1 і M⁺(Ядра1) ≥ 1','M⁺(Ядра1) = 8','Завжди'],a:1,e:'Умова запуску: у кожній вхідній позиції маркерів не менше кратності дуги.'},
+ {id:'t5-u',s:'t5',type:'num',q:'Після виходу маркерів M⁺(Готовий1) = 5, M⁺(Ядра1) = 3. Скільки разів увійдуть маркери в «Обчислення1»?',a:3,tol:0,h:'min',e:'u = min{5, 3} = 3: ядер вистачить на три запити.'},
+ {id:'t5-mu',s:'t5',type:'mc',q:'Що таке розширене маркірування μ(t)?',o:['M(t) + a⁺·v(t): маркери в позиціях плюс ті, що очікують виходу з переходів','M(t) − a⁻·v(t)','Початкове маркірування','Сума всіх маркерів'],a:0,e:'Саме для μ виконується μ(tₙ) = μ(t₀) + a·γ(tₙ).'},
+ {id:'t5-eta',s:'t5',type:'num',q:'У «Запис1» маркери ввійшли 373 рази, зараз активні 6 каналів, на початку активних не було. Скільки було виходів?',a:367,tol:0,h:'η = γ − v',e:'η = γ − v + v(t₀) = 373 − 6 + 0 = 367.'},
+ {id:'t5-inv',s:'t5',type:'mc',q:'Що таке S-інваріант?',o:['Вектор запусків v з a·v = 0','Вектор w з aᵀ·w = 0: зважена сума маркірування стала','Матриця a','Момент часу'],a:1,e:'Приклад: μ(Місця) + μ(Черга1) + μ(Черга2) = 1000.'},
+ {id:'t5-self',s:'t5',type:'mc',q:'Чому в матриці a = a⁺ − a⁻ елемент («Ядра1», «Обчислення1») дорівнює нулю?',o:['Дуг немає','Є і вхідна, і вихідна дуга: +1 − 1 = 0','Помилка','Дуга інформаційна'],a:1,e:'Ядро береться і повертається тим самим переходом, тому μ(Ядра1) = 8 завжди.'}
+];
+
+/* Рисунки: P — [id, x, y, маркери, підпис, бік a|b|l|r], T — [id, x, y, підпис, бік, підсвітити],
+   A — [звідки, куди, кратність, стиль ''|'d' пунктир|'p' без стрілки, проміжні точки, підпис дуги] */
+const FIG={
+ 'b-conf':{ef:{w:400,h:175,cap:'обидва готові — запускається перехід з більшим пріоритетом',P:[['q',50,88,1,'Біля1','b'],['m',310,35,0,'Готово1','r'],['z',310,140,0,'Біля2','r']],T:[['a',180,35,'Обробка1 · c = 1','a',1],['b',180,140,'Рух12 · c = 0','b']],A:[['q','a'],['q','b'],['a','m'],['b','z']]}},
+ 'b-multi':{ef:{w:380,h:160,cap:'8 маркерів-ядер: у переході до 8 запитів, у кожного свій момент виходу',P:[['q',50,105,5,'Готовий1','b'],['k',190,30,4,'Ядра1','r'],['o',330,105,0,'Обчислено1','b']],T:[['t',190,105,'Обчислення1 · buffer = 4','b',1]],A:[['q','t'],['k','t',1,'',[[168,62]]],['t','k',1,'',[[212,62]]],['t','o']]}},
+ 't1-conf':{img:{w:380,h:185,cap:'«Вільний2» порожня → умова «Обробка2» не виконана',P:[['at',60,140,1,'Біля2','b'],['f',115,55,0,'Вільний2','l'],['d',320,55,0,'Готово2','b'],['n',330,140,0,'Біля3','b']],T:[['s',210,55,'Обробка2 · c = 1','a'],['m',210,140,'Рух23 · 1 хв','b',1]],A:[['at','s'],['f','s',1,'',[[160,47]]],['s','f',1,'',[[160,63]]],['s','d'],['at','m'],['m','n']]}},
+ 't1-res':{ef:{bars:[['PetriSim',9.45,1],['КП5',9.75]],max:12,unit:' хв',cap:'час перебування деталі: інтервали ± 0,22 і ± 0,18 перекриваються'}},
+ 't1-var':{ef:{bars:[['exp(0,5)',2.0],['exp(1)',4.0],['exp(1,2)',4.51,1]],max:5,unit:' пристр.',cap:'зайнято пристроїв у середньому'}},
+ 't2-info':{img:{w:360,h:150,cap:'пунктир ×54: перевіряє нестачу, маркерів не забирає',P:[['g',60,105,57,'Нестача','b'],['r',190,30,1,'Перегляд','r'],['o',310,105,0,'Оформлення','b']],T:[['t',190,105,'Замовити · c = 3','b',1]],A:[['g','t','54','d'],['r','t'],['t','o']]}},
+ 't2-res':{ef:{bars:[['PetriSim',29.04,1],['КП5',29.05]],max:36,unit:'',cap:'середній запас холодильників'}},
+ 't2-best':{ef:{bars:[['базовий',22.4],['перегляд 2 тиж.',11.4],['доставка 1 тиж.',5.2],['точка 36',1.1,1]],max:25,unit:' / рік',cap:'продажів, що не відбулися, за рік'}},
+ 't3-thread':{img:{w:430,h:130,cap:'потік зайнятий на всьому шляху запиту, ядро — лише в «Обчислення»',P:[['th',30,30,12,'Потоки1','r'],['r',130,95,0,'Готовий1','b'],['c',250,95,0,'Обчислено1','b'],['s',370,95,0,'Збережено1','b']],T:[['a',70,95,'Прийняти1','b'],['k',190,95,'Обчислення1','a',1],['w',310,95,'Запис1','a'],['v',410,95,'Відповідь1','a']],A:[['th','a'],['a','r'],['r','k'],['k','c'],['c','w'],['w','s'],['s','v'],['v','th',1,'',[[410,30]]]]}},
+ 't3-route':{img:{w:400,h:215,cap:'немає маркера «Місця» → готова лише «Відмова»',P:[['b',55,110,1,'Запит','b'],['s',190,20,0,'Місця','r'],['q1',330,65,0,'Черга1','r'],['l',330,185,0,'Відхилено','r']],T:[['m',190,65,'ДоГоловного · c = 1, b = 0,7','b'],['r',190,185,'Відмова · c = 0','b',1]],A:[['b','m'],['s','m'],['m','q1'],['b','r'],['r','l']]}},
+ 't3-time':{ef:{bars:[['головний',29.3],['допоміжний',46.5],['у середньому',34.5,1]],max:50,unit:' мс',cap:'середній час обробки запиту за 500 запитів/с'}},
+ 't3-theory':{ef:{bars:[['модель',31.65,1],['теорія M/M/c',31.66]],max:36,unit:' мс',cap:'модель без обмеження потоків проти аналітичного розв’язку'}},
+ 't3-bottle':{ef:{bars:[['потоки доп.',100,1],['ядра доп.',89.3],['ядра гол.',85.1],['з’єднання БД',80.5]],max:100,unit:' %',cap:'зайнятість ресурсів за 1000 запитів/с'}},
+ 't3-ddos':{ef:{bars:[['надходить',1000],['оброблено',603,1],['відхилено',398]],max:1000,unit:' /с',cap:'потік 1000 запитів/с, черга ≤ 1000'}},
+ 't3-thr8':{ef:{bars:[['8 і 4',2202,1],['12 і 6',34.5],['24 і 12',31.7]],max:2300,unit:' мс',cap:'середній час обробки залежно від кількості потоків'}},
+ 't5-z':{img:{w:380,h:160,cap:'обидві вхідні позиції мають маркери → Z = 1',P:[['q',50,105,5,'Готовий1 (P8)','b'],['k',190,30,3,'Ядра1 (P9)','r'],['o',330,105,0,'Обчислено1','b']],T:[['t',190,105,'Обчислення1 (T4)','b',1]],A:[['q','t'],['k','t',1,'',[[168,62]]],['t','k',1,'',[[212,62]]],['t','o']]}},
+ 't5-u':{ef:{w:380,h:160,cap:'після входу: M(Готовий1) = 2, M(Ядра1) = 0, у переході 3 канали',P:[['q',50,105,2,'Готовий1','b'],['k',190,30,0,'Ядра1','r'],['o',330,105,0,'Обчислено1','b']],T:[['t',190,105,'Обчислення1 · u = 3','b',1]],A:[['q','t'],['k','t',1,'',[[168,62]]],['t','k',1,'',[[212,62]]],['t','o']]}}
+};
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+function drawPetri(f){
+  const R=14,BW=6,BH=34,el={},o=[];
+  for(const [id,x,y,tk,l,pos] of f.P)el[id]={p:1,x,y,tk,l,pos:pos||'b'};
+  for(const [id,x,y,l,pos,hl] of f.T)el[id]={p:0,x,y,l,pos:pos||'a',hl};
+  const clip=(e,[tx,ty])=>{const dx=tx-e.x,dy=ty-e.y,len=Math.hypot(dx,dy)||1;
+    if(e.p)return[e.x+dx/len*R,e.y+dy/len*R];
+    const s=Math.min(dx?BW/2/Math.abs(dx):1e9,dy?BH/2/Math.abs(dy):1e9);return[e.x+dx*s,e.y+dy*s];};
+  for(const [a,b,w=1,st='',via=[],lab] of f.A){
+    const s=el[a],t=el[b],pts=[clip(s,via[0]||[t.x,t.y]),...via,clip(t,via.length?via[via.length-1]:[s.x,s.y])];
+    o.push(`<path d="${pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+','+p[1].toFixed(1)).join(' ')}" fill="none" stroke="currentColor" stroke-width="1.4"${st==='d'?' stroke-dasharray="5 4"':''}${st==='p'?'':' marker-end="url(#ah)"'}/>`);
+    const [p,q]=[pts[pts.length-2],pts[pts.length-1]],m=[p[0]+(q[0]-p[0])*.5,p[1]+(q[1]-p[1])*.5];
+    if(w!==1){o.push(`<path d="M${m[0]-4},${m[1]+6}L${m[0]+4},${m[1]-6}" stroke="currentColor" stroke-width="1.4"/>`,`<text x="${m[0]+7}" y="${m[1]-6}" class="fw">${esc(w)}</text>`);}
+    if(lab)o.push(`<text x="${m[0]}" y="${m[1]-7}" text-anchor="middle" class="fw">${esc(lab)}</text>`);
+  }
+  for(const e of Object.values(el)){
+    const hl=e.hl?' class="hl"':'';
+    if(e.p){o.push(`<circle cx="${e.x}" cy="${e.y}" r="${R}" fill="var(--surface)" stroke="currentColor" stroke-width="1.5"/>`);
+      if(e.tk===1)o.push(`<circle cx="${e.x}" cy="${e.y}" r="3.2" fill="currentColor"/>`);
+      else if(e.tk)o.push(`<text x="${e.x}" y="${e.y+4.5}" text-anchor="middle" class="fw">${esc(e.tk)}</text>`);}
+    else o.push(`<rect x="${e.x-BW/2}" y="${e.y-BH/2}" width="${BW}" height="${BH}"${hl} fill="currentColor"/>`);
+    if(!e.l)continue;
+    const ls=e.l.split('\n'),off=e.p?R:BH/2,n=ls.length;
+    const [x,y0,anc]=e.pos==='a'?[e.x,e.y-off-6-(n-1)*13,'middle']:e.pos==='b'?[e.x,e.y+off+14,'middle']:e.pos==='l'?[e.x-(e.p?R:BW)-6,e.y+4-(n-1)*6.5,'end']:[e.x+(e.p?R:BW)+6,e.y+4-(n-1)*6.5,'start'];
+    ls.forEach((t,i)=>o.push(`<text x="${x}" y="${y0+i*13}" text-anchor="${anc}"${e.hl?' class="hlt"':''}>${esc(t)}</text>`));
+  }
+  return `<svg viewBox="0 0 ${f.w} ${f.h}" width="${f.w}" role="img"><defs><marker id="ah" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="currentColor"/></marker></defs>${o.join('')}</svg>`;
+}
+function drawBars(f){
+  const rowH=26,lw=96,bw=200,h=f.bars.length*rowH+6;
+  const rows=f.bars.map(([l,v,hl],i)=>{const y=i*rowH+4,w=v/f.max*bw;
+    return `<text x="${lw-8}" y="${y+14}" text-anchor="end">${esc(l)}</text><rect x="${lw}" y="${y+2}" width="${Math.max(w,1.5)}" height="16" rx="3" class="${hl?'barhl':'bar'}"/><text x="${lw+w+6}" y="${y+14}" class="fw">${String(v).replace('.',',')}${esc(f.unit||'')}</text>`;}).join('');
+  return `<svg viewBox="0 0 ${lw+bw+90} ${h}" width="${lw+bw+90}" role="img">${rows}</svg>`;
+}
+const figure=f=>f?`<figure class="fig">${f.bars?drawBars(f):drawPetri(f)}${f.cap?`<figcaption>${esc(f.cap)}</figcaption>`:''}</figure>`:'';
+
+const KEY='kp6-trainer-v1';
+let st={mastered:{},misses:{},retryQueue:[]};
+try{const raw=localStorage.getItem(KEY);if(raw){const p=JSON.parse(raw);st={mastered:p.mastered||{},misses:p.misses||{},retryQueue:p.retryQueue||[]};}}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}};
+let filter=null,cur=null,answered=false;
+const $=id=>document.getElementById(id);
+const byId=Object.fromEntries(Q.map(x=>[x.id,x]));
+const pool=()=>Q.filter(x=>!filter||x.s===filter);
+
+function pick(){
+  const open=pool().filter(x=>!st.mastered[x.id]);
+  if(!open.length)return null;
+  const fresh=open.filter(x=>!st.retryQueue.includes(x.id));
+  if(fresh.length)return fresh[0];
+  return byId[st.retryQueue.find(id=>open.some(x=>x.id===id))];
+}
+function renderNav(){
+  const total=Q.length,done=Q.filter(x=>st.mastered[x.id]).length;
+  $('ovText').textContent=`${done} з ${total} засвоєно`;$('ovBar').style.width=(done/total*100)+'%';
+  $('sections').innerHTML=[{id:null,name:'Усе підряд'},...SECTIONS].map(s=>{
+    const qs=Q.filter(x=>!s.id||x.s===s.id),d=qs.filter(x=>st.mastered[x.id]).length;
+    return `<button class="sec${d===qs.length?' done':''}" data-s="${s.id??''}" aria-pressed="${filter===s.id}"><b>${s.name}</b><span>${d} / ${qs.length}</span><div class="mini"><i style="width:${d/qs.length*100}%"></i></div></button>`;
+  }).join('');
+  const sec=SECTIONS.find(s=>s.id===(filter??cur?.s));
+  $('recap').hidden=!sec;
+  if(sec){$('recapTitle').textContent=`Коротко: ${sec.name.toLowerCase()}`;$('recapList').innerHTML=sec.recap.map(r=>`<li>${r}</li>`).join('');}
+}
+function render(){
+  answered=false;cur=pick();renderNav();
+  if(!cur)return renderEnd();
+  const sec=SECTIONS.find(s=>s.id===cur.s),retry=st.retryQueue.includes(cur.id);
+  $('card').innerHTML=`<div class="meta"><span class="pill sec-pill">${sec.name}</span><span class="pill">${cur.type==='num'?'порахуй':'вибери'}</span>${retry?'<span class="pill retry">повтор помилки</span>':''}</div>
+  <p class="q">${cur.q}</p>
+  ${figure(FIG[cur.id]?.img)}
+  ${cur.type==='mc'?`<div class="opts" id="opts">${cur.o.map((t,k)=>`<button class="opt" data-k="${k}">${k+1}. ${t}</button>`).join('')}</div>`
+  :`<div class="numrow"><input type="number" id="ans" step="any" inputmode="decimal" placeholder="Число" aria-label="Відповідь"><button class="btn" id="check">Перевірити</button></div>`}
+  <div class="exp" id="exp" hidden></div>
+  <div class="actions"><button class="btn primary" id="next">Далі</button>${cur.h?'<button class="btn" id="hint">Підказка</button>':''}<button class="btn ghost" id="skip">Я це знаю — пропустити</button><span class="err" id="err"></span></div>`;
+  if(cur.type==='mc')$('opts').onclick=e=>{const b=e.target.closest('.opt');if(b)answerMc(+b.dataset.k);};
+  else{$('check').onclick=answerNum;$('ans').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();e.stopPropagation();answered?next():answerNum();}});$('ans').oninput=()=>{$('err').textContent='';};$('ans').focus({preventScroll:true});}
+  $('next').onclick=next;$('skip').onclick=()=>{st.mastered[cur.id]=true;st.retryQueue=st.retryQueue.filter(id=>id!==cur.id);save();render();};
+  if(cur.h)$('hint').onclick=()=>{const ex=$('exp');if(answered)return;ex.hidden=false;ex.className='exp';ex.innerHTML='<strong>Підказка.</strong> '+cur.h;};
+}
+function result(ok,shown){
+  answered=true;
+  if(ok){st.mastered[cur.id]=true;st.retryQueue=st.retryQueue.filter(id=>id!==cur.id);}
+  else{st.misses[cur.id]=(st.misses[cur.id]||0)+1;st.retryQueue=[...st.retryQueue.filter(id=>id!==cur.id),cur.id];}
+  save();
+  const ex=$('exp');ex.hidden=false;ex.className='exp '+(ok?'ok':'bad');
+  ex.innerHTML=(ok?'<strong>Правильно.</strong> ':`<strong>Ні${shown?', правильно '+shown:''}.</strong> `)+cur.e+(ok?'':' Питання повернеться пізніше.')+figure(FIG[cur.id]?.ef);
+  $('skip').hidden=true;const h=$('hint');if(h)h.hidden=true;$('err').textContent='';
+  $('next').focus({preventScroll:true});
+}
+function answerMc(k){
+  if(answered)return;
+  [...$('opts').children].forEach((b,j)=>{b.disabled=true;if(j===cur.a)b.classList.add('ok');else if(j===k)b.classList.add('bad');});
+  result(k===cur.a);
+}
+function answerNum(){
+  if(answered)return;const v=$('ans').value.trim().replace(',','.');
+  if(v===''||isNaN(+v)){$('err').textContent='Введи число';return;}
+  const n=+v,ok=cur.tol?Math.abs(n-cur.a)/cur.a<=cur.tol:n===cur.a;
+  $('ans').classList.add(ok?'ok':'bad');$('ans').disabled=true;$('check').disabled=true;
+  result(ok,cur.a.toLocaleString('uk-UA'));
+}
+function next(){if(!answered){$('err').textContent='Спершу дай відповідь або натисни «Я це знаю»';return;}render();}
+function renderEnd(){
+  const qs=pool(),weak=qs.filter(x=>st.misses[x.id]).sort((a,b)=>st.misses[b.id]-st.misses[a.id]).slice(0,5);
+  const name=filter?SECTIONS.find(s=>s.id===filter).name:'Уся робота';
+  $('card').innerHTML=`<div class="end" style="display:flex;flex-direction:column;gap:12px"><h2>${name}: засвоєно</h2>
+  <p style="margin:0;color:var(--muted)">${weak.length?'Де помилявся найчастіше — варто перечитати пояснення:':'Без жодної помилки.'}</p>
+  ${weak.length?`<ul class="weak">${weak.map(x=>`<li>${x.q} — помилок: ${st.misses[x.id]}</li>`).join('')}</ul>`:''}
+  <div class="actions">${filter?'<button class="btn primary" id="toAll">До всієї роботи</button>':''}<button class="btn" id="again">Пройти ${filter?'розділ':'все'} ще раз</button></div></div>`;
+  if(filter)$('toAll').onclick=()=>{filter=null;render();};
+  $('again').onclick=()=>{qs.forEach(x=>{delete st.mastered[x.id];});st.retryQueue=st.retryQueue.filter(id=>!qs.some(x=>x.id===id));save();render();};
+}
+$('sections').onclick=e=>{const b=e.target.closest('.sec');if(!b)return;filter=b.dataset.s||null;render();};
+document.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT')return;
+  if(cur&&cur.type==='mc'&&!answered&&/^[1-4]$/.test(e.key)&&+e.key<=cur.o.length){answerMc(+e.key-1);}
+  else if(e.key==='Enter'&&answered&&document.activeElement?.id!=='next'){next();}
+});
+function resetZone(){
+  $('resetZone').innerHTML='<button class="btn ghost" id="resetBtn">Скинути прогрес</button>';
+  $('resetBtn').onclick=()=>{$('resetZone').innerHTML='<span class="confirm">Стерти весь прогрес? <button class="btn" id="yes">Стерти</button><button class="btn ghost" id="no">Скасувати</button></span>';
+    $('yes').onclick=()=>{st={mastered:{},misses:{},retryQueue:[]};save();filter=null;resetZone();render();};$('no').onclick=resetZone;};
+}
+resetZone();render();
+</script>

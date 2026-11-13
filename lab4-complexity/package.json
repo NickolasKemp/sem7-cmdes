@@ -1,0 +1,17 @@
+{
+  "name": "lab4-complexity",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Комп'ютерний практикум №4: оцінка складності алгоритму імітації",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "docx": "^9.8.1",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="500" viewBox="0 0 1300 500" font-family="Times New Roman, serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1300" height="500" fill="#fff"/>
+<circle cx="190" cy="260" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="190.0" y="292.0" font-size="13" text-anchor="middle">покупець</text>
+<circle cx="40" cy="260" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="40" cy="260" r="3.5" fill="#000"/>
+<circle cx="300" cy="60" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="300" y="65" font-size="14" text-anchor="middle">72</text>
+<text x="300.0" y="37.0" font-size="13" text-anchor="middle">запас</text>
+<circle cx="700" cy="260" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="700.0" y="292.0" font-size="13" text-anchor="middle">нестача до</text>
+<text x="700.0" y="307.0" font-size="13" text-anchor="middle">контрольного</text>
+<text x="700.0" y="322.0" font-size="13" text-anchor="middle">рівня</text>
+<circle cx="420" cy="260" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="420.0" y="292.0" font-size="13" text-anchor="middle">продажі, що не</text>
+<text x="420.0" y="307.0" font-size="13" text-anchor="middle">відбулися</text>
+<circle cx="420" cy="380" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="420.0" y="412.0" font-size="13" text-anchor="middle">невдоволений</text>
+<text x="420.0" y="427.0" font-size="13" text-anchor="middle">попит</text>
+<circle cx="680" cy="380" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="680.0" y="412.0" font-size="13" text-anchor="middle">продано після</text>
+<text x="680.0" y="427.0" font-size="13" text-anchor="middle">надходження</text>
+<text x="680.0" y="442.0" font-size="13" text-anchor="middle">партії</text>
+<circle cx="620" cy="60" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="620.0" y="22.0" font-size="13" text-anchor="middle">холодильники в</text>
+<text x="620.0" y="37.0" font-size="13" text-anchor="middle">дорозі</text>
+<circle cx="1050" cy="60" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="1050" cy="60" r="3.5" fill="#000"/>
+<circle cx="1110" cy="260" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="1133.0" y="257.5" font-size="13" text-anchor="start">перегляд стану</text>
+<text x="1133.0" y="272.5" font-size="13" text-anchor="start">запасу</text>
+<circle cx="880" cy="180" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="880.0" y="142.0" font-size="13" text-anchor="middle">замовлення</text>
+<text x="880.0" y="157.0" font-size="13" text-anchor="middle">розміщується</text>
+<circle cx="1050" cy="180" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="1050.0" y="142.0" font-size="13" text-anchor="middle">розміщені</text>
+<text x="1050.0" y="157.0" font-size="13" text-anchor="middle">замовлення</text>
+<circle cx="1200" cy="380" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="1200.0" y="412.0" font-size="13" text-anchor="middle">перегляди без</text>
+<text x="1200.0" y="427.0" font-size="13" text-anchor="middle">замовлення</text>
+<rect x="96.5" y="240" width="7" height="40" fill="#000"/>
+<text x="100.0" y="204.0" font-size="13" text-anchor="middle">надходження</text>
+<text x="100.0" y="219.0" font-size="13" text-anchor="middle">замовлення</text>
+<text x="100.0" y="234.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">exp(0,2)</text>
+<path d="M57.0,260.0 L96.5,260.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M103.5,260.0 L173.0,260.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M100.0,280.0 L100.0,300.0 L40.0,300.0 L40.0,277.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="296.5" y="130" width="7" height="40" fill="#000"/>
+<text x="290.5" y="135.5" font-size="13" text-anchor="end">продаж</text>
+<text x="290.5" y="150.5" font-size="13" text-anchor="end" fill="#555555" font-style="italic">pr = 2</text>
+<path d="M202.0,248.0 L296.5,153.5" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M300.0,77.0 L300.0,130.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M303.5,150.0 L700.0,150.0 L700.0,243.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="296.5" y="240" width="7" height="40" fill="#000"/>
+<text x="300.0" y="219.0" font-size="13" text-anchor="middle">відмова</text>
+<text x="300.0" y="234.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">pr = 1; p = 0,8</text>
+<path d="M207.0,260.0 L296.5,260.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M303.5,260.0 L403.0,260.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="296.5" y="360" width="7" height="40" fill="#000"/>
+<text x="290.5" y="405.0" font-size="13" text-anchor="end">повторне</text>
+<text x="290.5" y="420.0" font-size="13" text-anchor="end">замовлення</text>
+<text x="290.5" y="435.0" font-size="13" text-anchor="end" fill="#555555" font-style="italic">pr = 1; p = 0,2</text>
+<path d="M201.5,272.5 L296.5,376.2" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M303.5,380.0 L403.0,380.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M300.0,400.0 L300.0,470.0 L760.0,470.0 L760.0,300.0 L714.1,269.4" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="556.5" y="360" width="7" height="40" fill="#000"/>
+<text x="560.0" y="415.0" font-size="13" text-anchor="middle">задоволення</text>
+<text x="560.0" y="430.0" font-size="13" text-anchor="middle">попиту</text>
+<text x="560.0" y="445.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">pr = 3</text>
+<path d="M437.0,380.0 L556.5,380.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M314.1,69.4 L360.0,100.0 L530.0,340.0 L556.5,375.3" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M563.5,380.0 L663.0,380.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="456.5" y="40" width="7" height="40" fill="#000"/>
+<text x="460.0" y="19.0" font-size="13" text-anchor="middle">доставка</text>
+<text x="460.0" y="34.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">const(3)</text>
+<path d="M603.0,60.0 L463.5,60.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M456.5,60.0 L317.0,60.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="1106.5" y="40" width="7" height="40" fill="#000"/>
+<text x="1110.0" y="19.0" font-size="13" text-anchor="middle">перегляд</text>
+<text x="1110.0" y="34.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">const(4)</text>
+<path d="M1067.0,60.0 L1106.5,60.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M1110.0,80.0 L1110.0,243.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M1110.0,80.0 L1110.0,100.0 L1050.0,100.0 L1050.0,77.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="876.5" y="240" width="7" height="40" fill="#000"/>
+<text x="880.0" y="295.0" font-size="13" text-anchor="middle">розміщення</text>
+<text x="880.0" y="310.0" font-size="13" text-anchor="middle">замовлення</text>
+<text x="880.0" y="325.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">pr = 3</text>
+<path d="M1093.0,260.0 L883.5,260.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M717.0,260.0 L876.5,260.0" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<path d="M800.7,266.0 L808.7,254.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="810.7" y="252.0" font-size="13" text-anchor="start">54</text>
+<path d="M880.0,240.0 L880.0,197.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="1106.5" y="360" width="7" height="40" fill="#000"/>
+<text x="1100.5" y="377.5" font-size="13" text-anchor="end">без замовлення</text>
+<text x="1100.5" y="392.5" font-size="13" text-anchor="end" fill="#555555" font-style="italic">pr = 1</text>
+<path d="M1110.0,277.0 L1110.0,360.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M1113.5,380.0 L1183.0,380.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="616.5" y="160" width="7" height="40" fill="#000"/>
+<text x="610.5" y="170.0" font-size="13" text-anchor="end">дозамовлення</text>
+<text x="610.5" y="185.0" font-size="13" text-anchor="end">одиниці</text>
+<text x="610.5" y="200.0" font-size="13" text-anchor="end" fill="#555555" font-style="italic">pr = 4</text>
+<path d="M688.0,248.0 L623.5,183.5" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M863.0,180.0 L623.5,180.0" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<path d="M620.0,160.0 L620.0,77.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="961.5" y="160" width="7" height="40" fill="#000"/>
+<text x="965.0" y="124.0" font-size="13" text-anchor="middle">кінець</text>
+<text x="965.0" y="139.0" font-size="13" text-anchor="middle">замовлення</text>
+<text x="965.0" y="154.0" font-size="13" text-anchor="middle" fill="#555555" font-style="italic">pr = 2</text>
+<path d="M897.0,180.0 L961.5,180.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M968.5,180.0 L1033.0,180.0" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arrow)"/>
+</svg>

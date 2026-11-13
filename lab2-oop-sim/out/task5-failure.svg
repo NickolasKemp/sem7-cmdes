@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="72" y="30" font-size="19" font-weight="600" fill="#1d2433">Імовірність відмови багатоканального PROCESS</text>
+  <text x="72" y="48" font-size="13" fill="#6b7686">CREATE exp(1) → PROCESS exp(2.5) з c пристроями, черга ≤ 5, T = 200000</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#dfe4ec"/>
+  <text x="62" y="412" font-size="11" text-anchor="end" fill="#6b7686">0</text>
+  <line x1="72" y1="321" x2="872" y2="321" stroke="#dfe4ec"/>
+  <text x="62" y="325" font-size="11" text-anchor="end" fill="#6b7686">0.2</text>
+  <line x1="72" y1="234" x2="872" y2="234" stroke="#dfe4ec"/>
+  <text x="62" y="238" font-size="11" text-anchor="end" fill="#6b7686">0.4</text>
+  <line x1="72" y1="146.99999999999994" x2="872" y2="146.99999999999994" stroke="#dfe4ec"/>
+  <text x="62" y="150.99999999999994" font-size="11" text-anchor="end" fill="#6b7686">0.6</text>
+  <line x1="72" y1="60" x2="872" y2="60" stroke="#dfe4ec"/>
+  <text x="62" y="64" font-size="11" text-anchor="end" fill="#6b7686">0.8</text>
+  <text x="72" y="428" font-size="11" text-anchor="middle" fill="#6b7686">1</text>
+  <text x="272" y="428" font-size="11" text-anchor="middle" fill="#6b7686">2</text>
+  <text x="472" y="428" font-size="11" text-anchor="middle" fill="#6b7686">3</text>
+  <text x="672" y="428" font-size="11" text-anchor="middle" fill="#6b7686">4</text>
+  <text x="872" y="428" font-size="11" text-anchor="middle" fill="#6b7686">5</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#1d2433"/>
+  <line x1="72" y1="60" x2="72" y2="408" stroke="#1d2433"/>
+  <text x="472" y="452" font-size="12" text-anchor="middle" fill="#6b7686">кількість пристроїв c</text>
+  <text x="18" y="234" font-size="12" text-anchor="middle" fill="#6b7686" transform="rotate(-90 18 234)">імовірність відмови</text>
+  <path d="M72.0,146.6 L272.0,300.8 L472.0,381.2 L672.0,402.9 L872.0,407.1" fill="none" stroke="#e8590c" stroke-width="2" stroke-dasharray="7 5" stroke-linejoin="round"/>
+  <circle cx="72" cy="146.99218519978643" r="4" fill="#4c7ef3"/>
+  <circle cx="272" cy="299.95723946696455" r="4" fill="#4c7ef3"/>
+  <circle cx="472" cy="381.9500072663857" r="4" fill="#4c7ef3"/>
+  <circle cx="672" cy="402.9461984921616" r="4" fill="#4c7ef3"/>
+  <circle cx="872" cy="407.1596321940067" r="4" fill="#4c7ef3"/>
+  <line x1="72" y1="478" x2="98" y2="478" stroke="#e8590c" stroke-width="3" stroke-dasharray="7 5"/>
+  <text x="104" y="482" font-size="12" fill="#1d2433">теорія M/M/c/5</text>
+  <circle cx="223.39999999999998" cy="478" r="4" fill="#4c7ef3"/>
+  <text x="242.39999999999998" y="482" font-size="12" fill="#1d2433">імітація</text>
+</svg>

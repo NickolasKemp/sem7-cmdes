@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="72" y="30" font-size="19" font-weight="600" fill="#1d2433">Розподіл кількості зайнятих пристроїв</text>
+  <text x="72" y="48" font-size="13" fill="#6b7686">частка часу, протягом якої зайнято k пристроїв; середнє 4,01</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#dfe4ec"/>
+  <text x="62" y="412" font-size="11" text-anchor="end" fill="#6b7686">0</text>
+  <line x1="72" y1="338.4" x2="872" y2="338.4" stroke="#dfe4ec"/>
+  <text x="62" y="342.4" font-size="11" text-anchor="end" fill="#6b7686">0.1</text>
+  <line x1="72" y1="268.79999999999995" x2="872" y2="268.79999999999995" stroke="#dfe4ec"/>
+  <text x="62" y="272.79999999999995" font-size="11" text-anchor="end" fill="#6b7686">0.2</text>
+  <line x1="72" y1="199.19999999999996" x2="872" y2="199.19999999999996" stroke="#dfe4ec"/>
+  <text x="62" y="203.19999999999996" font-size="11" text-anchor="end" fill="#6b7686">0.3</text>
+  <line x1="72" y1="129.59999999999997" x2="872" y2="129.59999999999997" stroke="#dfe4ec"/>
+  <text x="62" y="133.59999999999997" font-size="11" text-anchor="end" fill="#6b7686">0.4</text>
+  <line x1="72" y1="60" x2="872" y2="60" stroke="#dfe4ec"/>
+  <text x="62" y="64" font-size="11" text-anchor="end" fill="#6b7686">0.5</text>
+  <text x="72" y="428" font-size="11" text-anchor="middle" fill="#6b7686">0</text>
+  <text x="232" y="428" font-size="11" text-anchor="middle" fill="#6b7686">1</text>
+  <text x="392" y="428" font-size="11" text-anchor="middle" fill="#6b7686">2</text>
+  <text x="552" y="428" font-size="11" text-anchor="middle" fill="#6b7686">3</text>
+  <text x="712" y="428" font-size="11" text-anchor="middle" fill="#6b7686">4</text>
+  <text x="872" y="428" font-size="11" text-anchor="middle" fill="#6b7686">5</text>
+  <line x1="72" y1="408" x2="872" y2="408" stroke="#1d2433"/>
+  <line x1="72" y1="60" x2="72" y2="408" stroke="#1d2433"/>
+  <text x="472" y="452" font-size="12" text-anchor="middle" fill="#6b7686">кількість зайнятих пристроїв k</text>
+  <text x="18" y="234" font-size="12" text-anchor="middle" fill="#6b7686" transform="rotate(-90 18 234)">частка часу</text>
+  <path d="M72.0,407.6 L232.0,402.3 L392.0,369.6 L552.0,269.4 L712.0,134.1 L872.0,169.0" fill="none" stroke="#4c7ef3" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="72" cy="407.6411506658395" r="4" fill="#4c7ef3"/>
+  <circle cx="232" cy="402.2599017539576" r="4" fill="#4c7ef3"/>
+  <circle cx="392" cy="369.5659510664194" r="4" fill="#4c7ef3"/>
+  <circle cx="552" cy="269.42500621103574" r="4" fill="#4c7ef3"/>
+  <circle cx="712" cy="134.06553943326287" r="4" fill="#4c7ef3"/>
+  <circle cx="872" cy="169.04245086948484" r="4" fill="#4c7ef3"/>
+  <line x1="72" y1="478" x2="98" y2="478" stroke="#4c7ef3" stroke-width="3"/>
+  <text x="104" y="482" font-size="12" fill="#1d2433">імітація</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="280" viewBox="0 0 470 280" font-family="Arial, Helvetica, sans-serif">
+<rect width="470" height="280" fill="#fff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z"/></marker></defs>
+<polyline points="20,130 110,130" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#a)"/>
+<polyline points="110,130 110,60 220,60" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#a)"/>
+<polyline points="110,130 110,200 220,200" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#a)"/>
+<polyline points="260,60 280,60" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="260,200 280,200" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="320,60 380,60 380,130" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="320,200 380,200 380,130" fill="none" stroke="#000" stroke-width="1.5"/>
+<polyline points="380,130 440,130" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#a)"/>
+<polyline points="110,200 110,250" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="220" y="40" width="40" height="40" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<line x1="228" y1="40" x2="228" y2="80" stroke="#000"/>
+<line x1="236" y1="40" x2="236" y2="80" stroke="#000"/>
+<line x1="244" y1="40" x2="244" y2="80" stroke="#000"/>
+<line x1="252" y1="40" x2="252" y2="80" stroke="#000"/>
+<rect x="220" y="180" width="40" height="40" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<line x1="228" y1="180" x2="228" y2="220" stroke="#000"/>
+<line x1="236" y1="180" x2="236" y2="220" stroke="#000"/>
+<line x1="244" y1="180" x2="244" y2="220" stroke="#000"/>
+<line x1="252" y1="180" x2="252" y2="220" stroke="#000"/>
+<circle cx="300" cy="60" r="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="300" y="65" font-size="13" text-anchor="middle">D1</text>
+<circle cx="300" cy="200" r="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="300" y="205" font-size="13" text-anchor="middle">D2</text>
+<text x="24" y="120" font-size="13" text-anchor="start">t = exp(1)</text>
+<text x="120" y="52" font-size="13" text-anchor="start">пріоритет 2</text>
+<text x="120" y="192" font-size="13" text-anchor="start">пріоритет 1</text>
+<text x="300" y="30" font-size="13" text-anchor="middle">основний, t = exp(1,5), max = 2</text>
+<text x="300" y="240" font-size="13" text-anchor="middle">резервний, t = exp(1,5), max = 2</text>
+<text x="388" y="120" font-size="13" text-anchor="start" fill="#555555">вихід</text>
+<text x="104" y="266" font-size="13" text-anchor="start" fill="#555555">відмова, якщо обидва зайняті</text>
+</svg>

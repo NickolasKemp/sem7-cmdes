@@ -1,0 +1,17 @@
+{
+  "name": "lab3-mo-net",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Комп'ютерний практикум №3: побудова імітаційної моделі системи з використанням формалізму моделі масового обслуговування",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "docx": "^9.8.1",
+    "typescript": "^5.6.0"
+  }
+}
